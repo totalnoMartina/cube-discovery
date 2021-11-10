@@ -8,6 +8,7 @@ import time
 
 def welcome_choice_user():
     """ Greets the user, instructions and options, about, start and quit """
+    print('Meanwhile in the middle of the dessert...')
     print('Welcome!')
     name = input('Your name, please: \n')
     print('This is a game of revelation, it will expand as you describe and')
