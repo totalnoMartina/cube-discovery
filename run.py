@@ -1,12 +1,19 @@
-# Your code goes here.
+
 # You can delete these comments, but do not change the name of this file
 # Write your code to expect a terminal of 80 characters wide and 24 rows high
-#from functions import typing
+
+import sys
+import time
 
 
 def welcome_choice_user():
     """ Greets the user, instructions and options, about, start and quit """
     print('Welcome!')
+    name = input('Your name, please: \n')
+    print('This is a game of revelation, it will expand as you describe and')
+    print(f'reveal what really hides behind imagination, ready {name}?')
+    print('Take 20 seconds for describing every object and how it relates')
+    print('Choose "a" to start, "b" to learn more or "q" to exit')
     print(r"""\
         _______            
       /\       \           
@@ -27,6 +34,7 @@ def questions():
 def information_display():
     """ Gives information of this game - activate imagination and inspire """
     pass
+
 
 def display_users_descriptions():
     """ Displays answers that users gave and clarification of the meaning """
