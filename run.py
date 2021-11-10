@@ -24,3 +24,11 @@ def display_users_descriptions():
 def end_game():
     """ To play again or quit """
     pass
+
+
+def all_funcs():
+    """ Will be used to run all functions accordingly """
+    print('All functions work properly!')
+
+
+all_funcs()
