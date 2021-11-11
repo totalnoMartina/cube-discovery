@@ -52,6 +52,20 @@ def choice_answer():
      
             """)
             print('Take a moment to imagine the ladder...')
+            print(r'''
+       >>\.
+     /_  )`.
+    /  _)`^)`.   _.---. _
+   (_,' \  `^-)""      `.\
+         |              | \
+         \              / |
+        / \  /.___.'\  (\ (_
+        < ,"||      \ |`. \`-'
+          \\ ()      )|  )/
+          |_>|>     /_] //
+            /_]       /_]
+'''
+            )
 
 
 def questions():
