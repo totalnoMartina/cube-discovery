@@ -35,24 +35,23 @@ def choice_answer():
             """)
         print('Describe the shape, position or movement, volume, etc...')
         print('Take a moment to imagine the cube...')
-    print('There is something else appearing in here...')
-    choice_b = input('...ready for the next object...?(y/n)\n')
-    if choice_b == 'y':
-        print('From out of nowhere, a ladder shows up...')
-        print('What size, shape, material of ladder do you imagine?')
-        print('Is there anything related between the cube and ladder?')
-        print(r"""
-        ╬═╬
-        ╬═╬
-        ╬═╬
-        ╬═╬
-        ╬═╬
-        ╬═╬
-        ╬═╬
-        ╬═╬
-        ╬═╬
-        """)
-        print('Take a moment to imagine the ladder...')
+        print('There is something else appearing in here...')
+        choice_b = input('...ready for the next object...?(y/n)\n')
+        if choice_b == 'y':
+            print('From out of nowhere, a ladder shows up...')
+            print('What size, shape, material of ladder do you imagine?')
+            print('Is there anything related between the cube and ladder?')
+            print(r"""
+                  ╬═╬
+                  ╬═╬
+                  ╬═╬
+                  ╬═╬
+                  ╬═╬
+                  ╬═╬
+                  ╬═╬
+     
+            """)
+            print('Take a moment to imagine the ladder...')
 
 
 def questions():
