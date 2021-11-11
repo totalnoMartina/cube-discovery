@@ -37,7 +37,7 @@ def choice_answer():
         print('Take a moment to imagine the cube...')
     print('There is something else appearing in here...')
     choice_b = input('...ready for the next object...?(y/n)\n')
-    elif choice_b == 'y':
+    if choice_b == 'y':
         print('From out of nowhere, a ladder shows up...')
         print('What size, shape, material of ladder do you imagine?')
         print('Is there anything related between the cube and ladder?')
@@ -52,7 +52,7 @@ def choice_answer():
         ╬═╬
         ╬═╬
         """)
-    choice_bb = input()
+        print('Take a moment to imagine the ladder...')
 
 
 def questions():
