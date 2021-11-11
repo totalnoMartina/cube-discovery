@@ -11,7 +11,6 @@ def welcome_choice_user():
     print('This is a game of revelation, it will expand as you describe and')
     print(f'reveal what really hides behind imagination, ready {name}?')
     print('Take 20 seconds for describing every object and how it relates')
-    print('Choose "a" to start, "b" to learn more or "q" to exit')
 
 
 def choice_answer():
@@ -25,19 +24,20 @@ def choice_answer():
         print('Nothing around you... The objects start to appear...')
         print('There is the first object! It is a cube')
         print(r"""
-        _______            
-      /\       \           
-     /  \       \          
-    /    \_______\         
-    \    /       /         
-     \  /       /          
-      \/______/
+          _______            
+        /\       \           
+       /  \       \          
+      /    \_______\         
+      \    /       /         
+       \  /       /          
+        \/______/
 
             """)
         print('Describe the shape, position or movement, volume, etc...')
         print('Take a moment to imagine the cube...')
+    print('There is something else appearing in here...')
     choice_b = input('...ready for the next object...?(y/n)\n')
-    if choice_b == 'y':
+    elif choice_b == 'y':
         print('From out of nowhere, a ladder shows up...')
         print('What size, shape, material of ladder do you imagine?')
         print('Is there anything related between the cube and ladder?')
