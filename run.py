@@ -15,7 +15,18 @@ def welcome_choice_user():
     print(f'reveal what really hides behind imagination, ready {name}?')
     print('Take 20 seconds for describing every object and how it relates')
     print('Choose "a" to start, "b" to learn more or "q" to exit')
-    print(r"""\
+    
+
+def choice_answer():
+    """ Redirect the user input with the answer """
+    choice = input('Choose a to start, b to know more about, q to quit... \n')
+    choice_a = 'a'
+    if choice == choice_a:
+        print('You have chosen a')
+        print('You started the game... You find yourself in the dessert... ')
+        print('Nothing around you... The objects start to appear...')
+        print('There is the first object! It is a cube')
+        print(r"""\n
         _______            
       /\       \           
      /  \       \          
@@ -25,6 +36,8 @@ def welcome_choice_user():
       \/______/
 
             """)
+        print('Describe the shape, position or movement, volume, color or no color...')
+        print('Take a moment to imagine the cube...')
 
 
 def questions():
@@ -49,6 +62,7 @@ def end_game():
 def all_funcs():
     """ Will be used to run all functions accordingly """
     welcome_choice_user()
+    choice_answer()
     print('All functions work properly!')
 
 
