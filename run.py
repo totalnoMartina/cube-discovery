@@ -34,9 +34,9 @@ def choice_answer():
             """)
         print('Describe the shape, position or movement, volume, etc...')
         print()
-        user_answer_first = input('Take a moment to imagine the cube... Write it down...\n')
+        user_answer_first = input('Take a moment to imagine and write it down\n')
         print('Okay, now... There is something else appearing in here...')
-        choice_b = input('\x1B[3m...ready for the next object...?(y/n)\x1B[0m\n')
+        choice_b = input('\x1B[3mReady for the next object...?(y/n)\x1B[0m\n')
         if choice_b == 'y':
             print('From out of nowhere, a ladder shows up...')
             print('What size, shape, material of ladder do you imagine?')
@@ -52,10 +52,10 @@ def choice_answer():
      
             """)
             user_answer_second = input('Take a moment to imagine the ladder... Write this down...\n')
-            choice_c = input('\x1B[3m...ready for the next object...?(y/n)\x1B[0m\n')
+            choice_c = input('\x1B[3mReady for the next object...?(y/n)\x1B[0m\n')
             if choice_c == 'y':
                 print('Something is coming towards the ladder and the cube,... looks like...')
-                print('Looks like a horse! Imagine the horse, fitness, movement, relation to the rest of the objects')
+                print('Looks like a horse! Imagine his figure, movement, relation to other objects')
                 print(r'''
        >>\.
      /_  )`.
@@ -73,11 +73,11 @@ def choice_answer():
                 print('Take a moment to imagine where is the horse, what does it look like...')
                 print('Is it related to the objects in any way? What way?')
                 user_answer_third = input('Write down describing the horse...\n')
-                print(f'There seems to be something else appearing in this scenery!')
-                choice_d = input('\x1B[3m...ready for the next object...?(y/n)\x1B[0m\n')
+                print('There seems to be something else appearing in this scenery!')
+                choice_d = input('\x1B[3mReady for the next object...?(y/n)\x1B[0m\n')
                 if choice_d == 'y':
                     print('From nowhere, flower or more of them appears...! How many in your imagination?')
-                    print('Are they just blooming or wilting, are they close to the scene or far?')
+                    print('Are they just blooming or wilting, are they related to others?')
                     print(r"""
           .'`'.'`'.
       .''.`.  :  .`.''.
@@ -90,9 +90,9 @@ def choice_answer():
 
                      """)
                     print('Take a moment to create your flower or more of them ,describe them')
-                    user_answer_fourth = input('Write down a few asociations to the idea of a flower/s... \n')
-                    print('There is something appearing and becoming more vivid... What can it be?')
-                    print('Looks like a thunderstorm... Now, imagine the strom related to the objects...')
+                    user_answer_fourth = input('Write down the details... \n')
+                    print('There is something else appearing... What can it be?')
+                    print('Looks like a thunderstorm... Is it related to others?')
                     print(r"""                          ________________________
                       ___(                        )
                      (                          _)
@@ -108,6 +108,9 @@ def choice_answer():
                //
               /'
                     """)
+                    print('How is it related, and is it temporary or staying?')
+                    user_answer_fifth = input('Write down your thought on the thunderstorm')
+
     elif choice == 'q':
       print('\x1B[3mYou are quitting the game, thanks for trying it out!\x1B[0m')
       
