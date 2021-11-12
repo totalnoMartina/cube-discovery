@@ -1,5 +1,4 @@
-
-
+# Functions to run the test
 def welcome_choice_user():
     """ Greets the user, instructions and options, about, start and quit """
     print('Meanwhile in the middle of the dessert...')
@@ -70,14 +69,14 @@ def choice_answer():
             /_]       /_]
 '''
                 )
-                print('Take a moment to imagine where is the horse, what does it look like...')
+                print('Take a moment to imagine, what does it look like...')
                 print('Is it related to the objects in any way? What way?')
                 user_answer_third = input('Write down describing the horse...\n')
-                print('There seems to be something else appearing in this scenery!')
+                print('There seems to be something else appearing...!')
                 choice_d = input('\x1B[3mReady for the next object...?(y/n)\x1B[0m\n')
                 if choice_d == 'y':
-                    print('From nowhere, flower or more of them appears...! How many in your imagination?')
-                    print('Are they just blooming or wilting, are they related to others?')
+                    print('Looks like a flower or more of them appears...! How many do you imagine?')
+                    print('Are they blooming or wilting, are they related to others?')
                     print(r"""
           .'`'.'`'.
       .''.`.  :  .`.''.
@@ -89,7 +88,7 @@ def choice_answer():
                \|
 
                      """)
-                    print('Take a moment to create your flower or more of them ,describe them')
+                    print('Take a moment to imagine, describe...')
                     user_answer_fourth = input('Write down the details... \n')
                     print('There is something else appearing... What can it be?')
                     print('Looks like a thunderstorm... Is it related to others?')
@@ -109,7 +108,7 @@ def choice_answer():
                   /'
                     """)
                     print('How is it related, and is it temporary or staying?')
-                    user_answer_fifth = input('Write down what do you imagine')
+                    user_answer_fifth = input('Write down what do you imagine\n')
 
     elif choice == 'q':
       print('\x1B[3mYou are quitting, thanks for trying it out!\x1B[0m')
@@ -121,7 +120,7 @@ def choice_answer():
       print('help you get to know you, or in company to discover')
       print('about your friends if they are open to try.\n')
       print('It is only as accurate as you are honest with yourself')
-      print('Or... It could just be used for fun!')
+      print('Or... It could just be used for fun!\n')
       while True:
         choice_answer()
  
