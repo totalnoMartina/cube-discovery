@@ -1,16 +1,14 @@
 
-# You can delete these comments, but do not change the name of this file
-# Write your code to expect a terminal of 80 characters wide and 24 rows high
-
 
 def welcome_choice_user():
     """ Greets the user, instructions and options, about, start and quit """
     print('Meanwhile in the middle of the dessert...')
+    print('. . . .___________________________________________. . . .')
     print('Welcome!')
     name = input('Your name, please: \n')
-    print('This is a game of revelation, it will expand as you describe and')
-    print(f'reveal what really hides behind imagination, ready {name}?')
-    print('Take 20 seconds for describing every object and how it relates')
+    print('This is a game where all answers are right, and is here to inspire you.')
+    print(f'The answers will be explained at the end of the test, ready {name}?')
+    print('Take some time for describing every object...')
 
 
 def choice_answer():
@@ -19,10 +17,10 @@ def choice_answer():
     choice_a = 'a'
     choice_b = 'y'
     if choice == choice_a:
-        print('You have chosen a')
-        print('You started the game... You find yourself in the dessert... ')
+        print('You have chosen a to start the game!')
+        print('Imagine now... You find yourself in the dessert... ')
         print('Nothing around you... The objects start to appear...')
-        print('There is the first object! It is a cube')
+        print('There is the first object! It seems to be a cube')
         print(r"""
           _______            
         /\       \           
@@ -34,7 +32,8 @@ def choice_answer():
 
             """)
         print('Describe the shape, position or movement, volume, etc...')
-        print('Take a moment to imagine the cube...')
+        print()
+        user_answer_first = input('Take a moment to imagine the cube... Write it down...')
         print('There is something else appearing in here...')
         choice_b = input('...ready for the next object...?(y/n)\n')
         if choice_b == 'y':
@@ -51,7 +50,9 @@ def choice_answer():
                   ╬═╬
      
             """)
-            print('Take a moment to imagine the ladder...')
+            user_answer_second = input('Take a moment to imagine the ladder... Write this down...')
+            print('Something is coming towards the ladder and the cube,... looks like...')
+            print('Looks like a horse! Imagine the horse, hair, movement, relation to the rest of the objects')
             print(r'''
        >>\.
      /_  )`.
@@ -66,6 +67,12 @@ def choice_answer():
             /_]       /_]
 '''
             )
+            print('Take a moment to imagine where is the horse, what does it look like...')
+            user_answer_third = input('Write down describing the horse...')
+            choice_b = input('...ready for the next object...?(y/n)\n')
+            if choice == 'y':
+                print('From nowhere, flower or more of them appears...! How many in your imagination?')
+                print('Are they just blooming or wilting, are they close to the scene or far?')
 
 
 def questions():
