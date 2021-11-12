@@ -18,7 +18,7 @@ def choice_answer():
     choice_b = 'y'
     choice_q = 'q'
     if choice == choice_a:
-        print('You have chosen a to start the game!')
+        print('You have chosen a to start the game!\n')
         print('Imagine now... You find yourself in the dessert... ')
         print('Nothing around you... The objects start to appear...')
         print('There is the first object! It seems to be a cube')
@@ -34,7 +34,7 @@ def choice_answer():
             """)
         print('Describe the shape, position or movement, volume, etc...')
         print()
-        user_answer_first = input('Take a moment to imagine the cube... Write it down...')
+        user_answer_first = input('Take a moment to imagine the cube... Write it down...\n')
         print('Okay, now... There is something else appearing in here...')
         choice_b = input('...ready for the next object...?(y/n)\n')
         if choice_b == 'y':
@@ -72,12 +72,23 @@ def choice_answer():
                 )
                 print('Take a moment to imagine where is the horse, what does it look like...')
                 print('Is it related to the objects in any way? What way?')
-                user_answer_third = input('Write down describing the horse...')
+                user_answer_third = input('Write down describing the horse...\n')
                 print(f'There seems to be something else appearing in this scenery!')
                 choice_d = input('...ready for the next object...?(y/n)\n')
                 if choice_d == 'y':
                     print('From nowhere, flower or more of them appears...! How many in your imagination?')
                     print('Are they just blooming or wilting, are they close to the scene or far?')
+                    print(r"""
+          .'`'.'`'.
+      .''.`.  :  .`.''.
+      '.    '._.'    .'
+      .```  .'-'.  ```.
+      '..',`  :  `,'..'
+           `-'`'-`))
+              ((    
+               \|
+
+            """)
 
 
 def questions():
