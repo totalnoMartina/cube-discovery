@@ -1,4 +1,4 @@
-# Meanwhile in the dessert App
+# Japanese test - Meanwhile in the dessert
 
 ## Description
 
@@ -31,10 +31,39 @@ Describe step by step process
 
 ![](assets/readme-images/cube-flowchart.png)
 
+# Features
+
+* Existing features
+* Future features
+
+# Libraries used
+
+# Testing 
+## Bugs
+## Test User Stories
+## Further Testing
+
+# Deployment
+
+## Github
+
+## Heroku
+
+# Credits 
+
+The italics code were found in [this link](https://stackoverflow.com/questions/13559276/can-i-write-italics-to-the-python-shell)
+
+# Caveats 
+- reasons why app is nont usable in real world, but i think it is... we'll see :)
+
+# Acknowledgements
+
+Mentor Tim is seriously the best guide and inspiration, helping me and directing my ideas toward real goal to be accomplished through creating this app 
 
 
 
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+
+
 
 Welcome Martina Grganic,
 

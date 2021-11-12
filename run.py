@@ -13,12 +13,12 @@ def welcome_choice_user():
 
 def choice_answer():
     """ Redirect the user input with the answer """
-    choice = input('Choose a to start, b to know more about, q to quit... \n')
+    choice = input('\x1B[3mChoose a to start, b to know more about, q to quit... \x1B[0m\n')
     choice_a = 'a'
     choice_b = 'y'
     choice_q = 'q'
     if choice == choice_a:
-        print('You have chosen a to start the game!\n')
+        print('\x1B[3mYou have chosen a to start the game!\x1B[0m \n')
         print('Imagine now... You find yourself in the dessert... ')
         print('Nothing around you... The objects start to appear...')
         print('There is the first object! It seems to be a cube')
@@ -36,7 +36,7 @@ def choice_answer():
         print()
         user_answer_first = input('Take a moment to imagine the cube... Write it down...\n')
         print('Okay, now... There is something else appearing in here...')
-        choice_b = input('...ready for the next object...?(y/n)\n')
+        choice_b = input('\x1B[3m...ready for the next object...?(y/n)\x1B[0m\n')
         if choice_b == 'y':
             print('From out of nowhere, a ladder shows up...')
             print('What size, shape, material of ladder do you imagine?')
@@ -52,7 +52,7 @@ def choice_answer():
      
             """)
             user_answer_second = input('Take a moment to imagine the ladder... Write this down...')
-            choice_c = input('...ready for the next object...?(y/n)\n')
+            choice_c = input('\x1B[3m...ready for the next object...?(y/n)\x1B[0m\n')
             if choice_c == 'y':
                 print('Something is coming towards the ladder and the cube,... looks like...')
                 print('Looks like a horse! Imagine the horse, fitness, movement, relation to the rest of the objects')
@@ -74,7 +74,7 @@ def choice_answer():
                 print('Is it related to the objects in any way? What way?')
                 user_answer_third = input('Write down describing the horse...\n')
                 print(f'There seems to be something else appearing in this scenery!')
-                choice_d = input('...ready for the next object...?(y/n)\n')
+                choice_d = input('\x1B[3m...ready for the next object...?(y/n)\x1B[0m\n')
                 if choice_d == 'y':
                     print('From nowhere, flower or more of them appears...! How many in your imagination?')
                     print('Are they just blooming or wilting, are they close to the scene or far?')
@@ -108,6 +108,9 @@ def choice_answer():
                //
               /'
                     """)
+    elif choice == 'q':
+      print('\x1B[3mYou are quitting the game, thanks for trying it out!\x1B[0m')
+      
 
 
 def questions():
@@ -133,7 +136,7 @@ def all_funcs():
     """ Will be used to run all functions accordingly """
     welcome_choice_user()
     choice_answer()
-    print('All functions work properly!')
+    print('\x1B[3mAll functions work properly!\x1B[0m')
 
 
 all_funcs()
