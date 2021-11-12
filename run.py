@@ -16,6 +16,7 @@ def choice_answer():
     choice = input('Choose a to start, b to know more about, q to quit... \n')
     choice_a = 'a'
     choice_b = 'y'
+    choice_q = 'q'
     if choice == choice_a:
         print('You have chosen a to start the game!')
         print('Imagine now... You find yourself in the dessert... ')
@@ -34,7 +35,7 @@ def choice_answer():
         print('Describe the shape, position or movement, volume, etc...')
         print()
         user_answer_first = input('Take a moment to imagine the cube... Write it down...')
-        print('There is something else appearing in here...')
+        print('Okay, now... There is something else appearing in here...')
         choice_b = input('...ready for the next object...?(y/n)\n')
         if choice_b == 'y':
             print('From out of nowhere, a ladder shows up...')
@@ -51,9 +52,11 @@ def choice_answer():
      
             """)
             user_answer_second = input('Take a moment to imagine the ladder... Write this down...')
-            print('Something is coming towards the ladder and the cube,... looks like...')
-            print('Looks like a horse! Imagine the horse, hair, movement, relation to the rest of the objects')
-            print(r'''
+            choice_c = input('...ready for the next object...?(y/n)\n')
+            if choice_c == 'y':
+                print('Something is coming towards the ladder and the cube,... looks like...')
+                print('Looks like a horse! Imagine the horse, fitness, movement, relation to the rest of the objects')
+                print(r'''
        >>\.
      /_  )`.
     /  _)`^)`.   _.---. _
@@ -66,13 +69,15 @@ def choice_answer():
           |_>|>     /_] //
             /_]       /_]
 '''
-            )
-            print('Take a moment to imagine where is the horse, what does it look like...')
-            user_answer_third = input('Write down describing the horse...')
-            choice_b = input('...ready for the next object...?(y/n)\n')
-            if choice == 'y':
-                print('From nowhere, flower or more of them appears...! How many in your imagination?')
-                print('Are they just blooming or wilting, are they close to the scene or far?')
+                )
+                print('Take a moment to imagine where is the horse, what does it look like...')
+                print('Is it related to the objects in any way? What way?')
+                user_answer_third = input('Write down describing the horse...')
+                print(f'There seems to be something else appearing in this scenery!')
+                choice_d = input('...ready for the next object...?(y/n)\n')
+                if choice_d == 'y':
+                    print('From nowhere, flower or more of them appears...! How many in your imagination?')
+                    print('Are they just blooming or wilting, are they close to the scene or far?')
 
 
 def questions():
