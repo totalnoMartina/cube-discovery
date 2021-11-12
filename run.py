@@ -29,7 +29,7 @@ def choice_answer():
       /    \_______\         
       \    /       /         
        \  /       /          
-        \/______/
+        \/_______/
 
             """)
         print('Describe the shape, position or movement, volume, etc...')
