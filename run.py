@@ -93,26 +93,35 @@ def choice_answer():
                     user_answer_fourth = input('Write down the details... \n')
                     print('There is something else appearing... What can it be?')
                     print('Looks like a thunderstorm... Is it related to others?')
-                    print(r"""                          ________________________
-                      ___(                        )
-                     (                          _)
-                     (_                       __))
-                       ((                _____)
-                         (__   _____)----'
-                          _/  /
-                         /  _/
-                       _/  /
-                     / __/
-                  _/ /
-                /__/
-               //
-              /'
+                    print(r"""                              ________________________
+                          ___(                        )
+                         (                          _)
+                         (_                       __))
+                           ((                _____)
+                             (__   _____)----'
+                              _/  /
+                             /  _/
+                           _/  /
+                         / __/
+                      _/ /
+                    /__/
+                   //
+                  /'
                     """)
                     print('How is it related, and is it temporary or staying?')
-                    user_answer_fifth = input('Write down your thought on the thunderstorm')
+                    user_answer_fifth = input('Write down what do you imagine')
 
     elif choice == 'q':
-      print('\x1B[3mYou are quitting the game, thanks for trying it out!\x1B[0m')
+      print('\x1B[3mYou are quitting, thanks for trying it out!\x1B[0m')
+    elif choice == 'b':
+      print('This game derived from the Japanese personality test,')
+      print('which by definition helps people discover what their')
+      print('true inner thoughts are about their current state of being.\n')
+      print('Note; this test could be tried out on your own to')
+      print('help you get to know you, or in company to discover')
+      print('about your friends if they are open to try.\n')
+      print('It is only as accurate as you are honest with yourself')
+      print('Or... It could just be used for fun!')
       
 
 
