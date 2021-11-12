@@ -136,7 +136,7 @@ def all_funcs():
     """ Will be used to run all functions accordingly """
     welcome_choice_user()
     choice_answer()
-    print('\x1B[3mAll functions work properly!\x1B[0m')
+    print('All functions work properly!')
 
 
 all_funcs()
