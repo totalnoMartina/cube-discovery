@@ -122,8 +122,9 @@ def choice_answer():
       print('about your friends if they are open to try.\n')
       print('It is only as accurate as you are honest with yourself')
       print('Or... It could just be used for fun!')
-      
-
+      while True:
+        choice_answer()
+ 
 
 def questions():
     """ Asks user to describe objects and how they relate to one another """
