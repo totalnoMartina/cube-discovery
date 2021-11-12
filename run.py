@@ -88,7 +88,26 @@ def choice_answer():
               ((    
                \|
 
-            """)
+                     """)
+                    print('Take a moment to create your flower or more of them ,describe them')
+                    user_answer_fourth = input('Write down a few asociations to the idea of a flower/s... \n')
+                    print('There is something appearing and becoming more vivid... What can it be?')
+                    print('Looks like a thunderstorm... Now, imagine the strom related to the objects...')
+                    print(r"""                          ________________________
+                      ___(                        )
+                     (                          _)
+                     (_                       __))
+                       ((                _____)
+                         (__   _____)----'
+                          _/  /
+                         /  _/
+                       _/  /
+                     / __/
+                  _/ /
+                /__/
+               //
+              /'
+                    """)
 
 
 def questions():
