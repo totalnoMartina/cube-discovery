@@ -51,7 +51,7 @@ def choice_answer():
                   ╬═╬
      
             """)
-            user_answer_second = input('Take a moment to imagine the ladder... Write this down...')
+            user_answer_second = input('Take a moment to imagine the ladder... Write this down...\n')
             choice_c = input('\x1B[3m...ready for the next object...?(y/n)\x1B[0m\n')
             if choice_c == 'y':
                 print('Something is coming towards the ladder and the cube,... looks like...')
