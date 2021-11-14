@@ -121,6 +121,8 @@ def choice_answer():
 
     elif choice == 'q':
         print('\x1B[3mYou are quitting, thanks for trying it out!\x1B[0m')
+        print('Goodbye')
+        return None
     elif choice == 'b':
         information_display()
         while True:
