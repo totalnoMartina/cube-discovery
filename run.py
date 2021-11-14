@@ -140,7 +140,7 @@ def choice_answer():
     elif choice == 'q':
         print('\x1B[3mYou are quitting, thanks for trying it out!\x1B[0m')
         print('Goodbye')
-        return None
+        return end_game()
     elif choice == 'b':
         information_display()
         while True:
@@ -170,8 +170,8 @@ def display_users_descriptions():
 
 
 def end_game():
-    """ To play again or quit """
-    pass
+    """ To quit """
+    return None
 
 
 def all_funcs():
