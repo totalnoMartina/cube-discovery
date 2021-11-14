@@ -5,17 +5,17 @@ def welcome_choice_user():
     print('. . . .___________________________________________. . . .')
     print('Welcome!')
     name = input('Your name, please: \n')
-    print('This is a game where all answers are right, and is here to inspire you.')
-    print(f'The answers will be explained at the end of the test, ready {name}?')
+    print('This is a game where all answers are right.')
+    print(f'The game is fun and insightful, ready {name}?')
     print('Take some time for describing every object...')
 
 
 def choice_answer():
     """ Redirect the user input with the answer """
-    choice = input('\x1B[3mChoose a to start, b to know more about, q to quit... \x1B[0m\n')
+    choice = input('\x1B[3mChoose a to start, b to know more, q to quit\x1B[0m\n')
     choice_a = 'a'
     choice_b = 'y'
-    choice_q = 'q'
+
     if choice == choice_a:
         print('\x1B[3mYou have chosen a to start the game!\x1B[0m \n')
         print('Imagine now... You find yourself in the dessert... ')
@@ -32,11 +32,12 @@ def choice_answer():
 
             """)
         print('Describe the shape, position or movement, volume...\n')
-        user_answer_first = input('Take a moment to imagine and write it down\n')
+        user_answer_first = input('Take a moment to imagine, write it down\n')
         print(f'This is what you wrote down "{user_answer_first}"')
         print('Okay, now... There is something else appearing in here...')
         choice_b = input('\x1B[3mReady for the next object...?(y/n)\x1B[0m\n')
         if choice_b == 'y':
+            print('You have chose to continue...')
             print('From out of nowhere, a ladder shows up...')
             print('What size, shape, material of ladder do you imagine?')
             print('Is there anything related between the cube and ladder?')
@@ -50,12 +51,13 @@ def choice_answer():
                   ╬═╬
      
             """)
-            user_answer_second = input('Take a moment to imagine the ladder... Write this down...\n')
+            user_answer_second = input('Take a moment to imagine, write it down...\n')
             choice_c = input('\x1B[3mReady for the next object...?(y/n)\x1B[0m\n')
             print(f'This is what you wrote down {user_answer_second}')
             if choice_c == 'y':
-                print('Something is coming towards the ladder and the cube,... looks like...')
-                print('Looks like a horse! Imagine his figure, movement, relation to other objects')
+                print('Something is coming towards the ladder and the cube,...')
+                print('Looks like a horse!')
+                print('Imagine his figure, movement, relation to other objects')
                 print(r'''
        >>\.
      /_  )`.
@@ -72,7 +74,8 @@ def choice_answer():
                 )
                 print('Take a moment to imagine, what does it look like...')
                 print('Is it related to the objects in any way? What way?')
-                user_answer_third = input('Write down describing the horse...\n')
+                user_answer_third = input('Write down what you imagine...\n')
+                print(f'This is what you wrote down {user_answer_third}')
                 print('There seems to be something else appearing...!')
                 choice_d = input('\x1B[3mReady for the next object...?(y/n)\x1B[0m\n')
                 if choice_d == 'y':
@@ -92,6 +95,7 @@ def choice_answer():
                      """)
                     print('Take a moment to imagine, describe...')
                     user_answer_fourth = input('Write down the details... \n')
+                    print(f'This is what you wrote down {user_answer_fourth}')
                     print('There is something else appearing... What is it?')
                     print('Looks like a thunderstorm... Related to others?')
                     print(r"""                              ________________________
@@ -110,7 +114,8 @@ def choice_answer():
                   /'
                     """)
                     print('How is it related, and is it temporary or staying?')
-                    user_answer_fifth = input('Write down what do you imagine\n')
+                    user_answer_fifth = input('Imagine, write it down\n')
+                    print(f'This is what you wrote down {user_answer_fifth}')
 
     elif choice == 'q':
         print('\x1B[3mYou are quitting, thanks for trying it out!\x1B[0m')
