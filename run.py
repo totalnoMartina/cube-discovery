@@ -33,11 +33,11 @@ def choice_answer():
             """)
         print('Describe the shape, position or movement, volume...\n')
         user_answer_first = input('Take a moment to imagine, write it down\n')
-        print(f'This is what you wrote down "{user_answer_first}"')
+        print(f'You wrote: "{user_answer_first}"')
         print('Okay, now... There is something else appearing in here...')
         choice_b = input('\x1B[3mReady for the next object...?(y/n)\x1B[0m\n')
         if choice_b == 'y':
-            print('You have chose to continue...')
+            print('You have chosen to continue...')
             print('From out of nowhere, a ladder shows up...')
             print('What size, shape, material of ladder do you imagine?')
             print('Is there anything related between the cube and ladder?')
@@ -51,9 +51,9 @@ def choice_answer():
                   ╬═╬
      
             """)
-            user_answer_second = input('Take a moment, imagine, write it down...\n')
+            user_answer_second = input('Imagine, write it down...\n')
+            print(f'You wrote: "{user_answer_second}"')
             choice_c = input('\x1B[3mReady for the next object...?(y/n)\x1B[0m\n')
-            print(f'This is what you wrote down:"{user_answer_second}"')
             if choice_c == 'y':
                 print('Something is coming towards the ladder and the cube,...')
                 print('Looks like a horse!')
@@ -71,15 +71,13 @@ def choice_answer():
           |_>|>     /_] //
             /_]       /_]
 '''
-                )
+                      )
                 print('Take a moment to imagine, what does it look like...')
                 print('Is it related to the objects in any way? What way?')
                 user_answer_third = input('Write down what you imagine...\n')
-                print(f'This is what you wrote down "{user_answer_third}"')
+                print(f'You wrote: "{user_answer_third}"')
                 print('There seems to be something else appearing...!')
                 choice_d = input('\x1B[3mReady for the next object...?(y/n)\x1B[0m\n')
-            elif choice_c == 'n':
-                print('You do not want to play anymore? All good, bye!')
                 if choice_d == 'y':
                     print('Looks like a flower or more of them appears...!')
                     print('How many do you imagine?')
@@ -97,27 +95,47 @@ def choice_answer():
                      """)
                     print('Take a moment to imagine, describe...')
                     user_answer_fourth = input('Write down the details... \n')
-                    print(f'This is what you wrote down "{user_answer_fourth}"')
-                    print('There is something else appearing... What is it?')
-                    print('Looks like a thunderstorm... Related to others?')
-                    print(r"""                              ________________________
-                          ___(                        )
-                         (                          _)
-                         (_                       __))
-                           ((                _____)
-                             (__   _____)----'
-                              _/  /
-                             /  _/
-                           _/  /
-                         / __/
-                      _/ /
-                    /__/
-                   //
-                  /'
-                    """)
-                    print('How is it related, and is it temporary or staying?')
-                    user_answer_fifth = input('Imagine, write it down\n')
-                    print(f'This is what you wrote down "{user_answer_fifth}"')
+                    print(f'You wrote: "{user_answer_fourth}"')
+                    choice_e = input('\x1B[3mReady for the next object...?(y/n)\x1B[0m\n')
+                    if choice_e == 'y':
+                        print('There is something else appearing... What is it?')
+                        print('Looks like a thunderstorm... Related to others?')
+                        print(r"""                               ________________________
+                              ___(                        )
+                             (                          _)
+                             (_                       __))
+                               ((                _____)
+                                 (__   _____)----'
+                                  _/  /
+                                 /  _/
+                               _/  /
+                             / __/
+                          _/ /
+                        /__/
+                       //
+                      /'
+                        """)
+                        print('How is it related, and is it temporary or staying?')
+                        user_answer_fifth = input('Imagine, write it down\n')
+                        print(f'You wrote: "{user_answer_fifth}"')
+                elif choice_c != 'y':
+                    print('You got out of the game pressing n or missed the "y"')
+                    welcome_choice_user()
+            print('The cube taller than your own height signifies that')
+            print('your confidence is high while a smaller one')
+            print('means that you could be shy, and if the cube is moving')
+            print('it could symbolize a mind that is open and unconventional')
+            print('while a still sitting cube is businesslike, a cube that')
+            print('is dug into the sand means that you are a planner')
+            print(f'This is how you see a cube: {user_answer_first}')
+            print(20 * '*')
+            print('The ladder represents your friends; short ladder is a small')
+            print('circle of friends, while tall means you have many')
+            print('friends, leaned onto the cube, ladder shows dependancy')
+            print('and a ladder equal size as cube shows you')
+            print('that you see your friends as equals in authorithy')
+            print(f'This is how you see ladder: {user_answer_second}')
+            print(20 * '*')
 
     elif choice == 'q':
         print('\x1B[3mYou are quitting, thanks for trying it out!\x1B[0m')
@@ -131,11 +149,6 @@ def choice_answer():
         print('You did not enter a valid letter, let\'s try again')
         welcome_choice_user()
         choice_answer()
- 
-
-def questions():
-    """ Asks user to describe objects and how they relate to one another """
-    pass
 
 
 def information_display():
@@ -153,6 +166,7 @@ def information_display():
 
 def display_users_descriptions():
     """ Displays answers that users gave and clarification of the meaning """
+    pass
 
 
 def end_game():
@@ -164,6 +178,8 @@ def all_funcs():
     """ Will be used to run all functions accordingly """
     welcome_choice_user()
     choice_answer()
+    #if choice_answer() == "return"[None]:
+    #    print('You exited the game')
     print('All functions work properly!')
 
 
