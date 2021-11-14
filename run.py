@@ -3,7 +3,7 @@ def welcome_choice_user():
     """ Greets the user, instructions and options, about, start and quit """
     print('Meanwhile in the middle of the dessert...')
     print('. . . .___________________________________________. . . .')
-    print('Welcome!')
+    print('Welcome!\n')
     name = input('Your name, please: \n')
     print('This is a game where all answers are right.')
     print(f'The game is fun and insightful, ready {name}?')
@@ -51,9 +51,9 @@ def choice_answer():
                   ╬═╬
      
             """)
-            user_answer_second = input('Take a moment to imagine, write it down...\n')
+            user_answer_second = input('Take a moment, imagine, write it down...\n')
             choice_c = input('\x1B[3mReady for the next object...?(y/n)\x1B[0m\n')
-            print(f'This is what you wrote down {user_answer_second}')
+            print(f'This is what you wrote down:"{user_answer_second}"')
             if choice_c == 'y':
                 print('Something is coming towards the ladder and the cube,...')
                 print('Looks like a horse!')
@@ -75,9 +75,11 @@ def choice_answer():
                 print('Take a moment to imagine, what does it look like...')
                 print('Is it related to the objects in any way? What way?')
                 user_answer_third = input('Write down what you imagine...\n')
-                print(f'This is what you wrote down {user_answer_third}')
+                print(f'This is what you wrote down "{user_answer_third}"')
                 print('There seems to be something else appearing...!')
                 choice_d = input('\x1B[3mReady for the next object...?(y/n)\x1B[0m\n')
+            elif choice_c == 'n':
+                print('You do not want to play anymore? All good, bye!')
                 if choice_d == 'y':
                     print('Looks like a flower or more of them appears...!')
                     print('How many do you imagine?')
@@ -95,7 +97,7 @@ def choice_answer():
                      """)
                     print('Take a moment to imagine, describe...')
                     user_answer_fourth = input('Write down the details... \n')
-                    print(f'This is what you wrote down {user_answer_fourth}')
+                    print(f'This is what you wrote down "{user_answer_fourth}"')
                     print('There is something else appearing... What is it?')
                     print('Looks like a thunderstorm... Related to others?')
                     print(r"""                              ________________________
@@ -115,21 +117,18 @@ def choice_answer():
                     """)
                     print('How is it related, and is it temporary or staying?')
                     user_answer_fifth = input('Imagine, write it down\n')
-                    print(f'This is what you wrote down {user_answer_fifth}')
+                    print(f'This is what you wrote down "{user_answer_fifth}"')
 
     elif choice == 'q':
         print('\x1B[3mYou are quitting, thanks for trying it out!\x1B[0m')
     elif choice == 'b':
-        print('This game derived from the Japanese personality test,')
-        print('which by definition helps people discover what their')
-        print('true inner thoughts are about their current state of being.\n')
-        print('Note; this test could be tried out on your own to')
-        print('help you get to know you, or in company to discover')
-        print('about your friends if they are open to try.\n')
-        print('It is only as accurate as you are honest with yourself')
-        print('Or... It could just be used for fun!\n')
+        information_display()
         while True:
             choice_answer()
+    else:
+        print('You did not enter a valid letter, let\'s try again')
+        welcome_choice_user()
+        choice_answer()
  
 
 def questions():
@@ -139,7 +138,15 @@ def questions():
 
 def information_display():
     """ Gives information of this game - activate imagination and inspire """
-    pass
+    print('This game derived from the Japanese personality test,')
+    print('which by definition helps people discover what their')
+    print('true inner thoughts are about their current state of being.\n')
+    print('Note; this test could be tried out on your own')
+    print('to inspire you to get to know yourself, or in company to discover')
+    print('about your friends if they are open to try.\n')
+    print('It is only as accurate as you are honest with yourself')
+    print('Or... It could just be used for fun!\n')
+    
 
 
 def display_users_descriptions():
