@@ -1,9 +1,11 @@
-# Functions to run the test
+""" Functions to control flow of the japanese cube test """
+
+
 def welcome_choice_user():
     """ Greets the user, instructions and options, about, start and quit """
+    print('Welcome to the Japanese Cube test!\n')
     print('Meanwhile in the middle of the dessert...')
     print('. . . .___________________________________________. . . .')
-    print('Welcome!\n')
     name = input('Your name, please: \n')
     print('This is a game where all answers are right.')
     print(f'Use your imagination, ready {name}?')
@@ -12,7 +14,7 @@ def welcome_choice_user():
 
 def choice_answer():
     """ Redirect the user input with the answer """
-    choice = input('\x1B[3mChoose a to start, b to know more, q to quit\x1B[0m\n')
+    choice = input('\x1B[3mChoose a(start), b (about), q(quit)\x1B[0m\n')
     choice_a = 'a'
     choice_b = 'y'
 
@@ -35,7 +37,7 @@ def choice_answer():
         user_answer_first = input('Take a moment to imagine, write it down\n')
         print(f'You wrote: "{user_answer_first}"')
         print('Okay, now... There is something else appearing in here...')
-        choice_b = input('\x1B[3mReady for the next object...?(y/n)\x1B[0m\n')
+        choice_b = input('\x1B[3mReady for the next object?(y/n)\x1B[0m\n')
         if choice_b == 'y':
             print('You have chosen to continue...')
             print('From out of nowhere, a ladder shows up...')
@@ -53,11 +55,11 @@ def choice_answer():
             """)
             user_answer_second = input('Imagine, write it down...\n')
             print(f'You wrote: "{user_answer_second}"')
-            choice_c = input('\x1B[3mReady for the next object...?(y/n)\x1B[0m\n')
+            choice_c = input('\x1B[3mReady for the next object?(y/n)\x1B[0m\n')
             if choice_c == 'y':
                 print('Something is coming from out of nowhere,...')
                 print('Looks like a horse!')
-                print('Imagine his figure, movement, relation to other objects')
+                print('Imagine his figure, movement, relation to others')
                 print(r'''
        >>\.
      /_  )`.
@@ -77,7 +79,7 @@ def choice_answer():
                 user_answer_third = input('Write down what you imagine...\n')
                 print(f'You wrote: "{user_answer_third}"')
                 print('There seems to be something else appearing...!')
-                choice_d = input('\x1B[3mReady for the next object...?(y/n)\x1B[0m\n')
+                choice_d = input('\x1B[3mReady for the next object?(y/n)\x1B[0m\n')
                 if choice_d == 'y':
                     print('It looks like flowers!')
                     print('How many do you imagine?')
@@ -96,10 +98,9 @@ def choice_answer():
                     print('Take a moment to imagine, describe...')
                     user_answer_fourth = input('Write down the details... \n')
                     print(f'You wrote: "{user_answer_fourth}"')
-                    choice_e = input('\x1B[3mReady for the next object...?(y/n)\x1B[0m\n')
+                    choice_e = input('\x1B[3mReady for the next object?(y/n)\x1B[0m\n')
                     if choice_e == 'y':
-                        print('There is something else appearing... A thunderstorm')
-                        print('Is it close or far? Does it affect others?')
+                        print('There is something else appearing! Thunderstorm')
                         print(r"""                               ________________________
                               ___(                        )
                              (                          _)
@@ -115,11 +116,12 @@ def choice_answer():
                        //
                       /'
                         """)
-                        print('How is it related, and is it temporary or staying?')
+                        print('Is it close or far? Does it affect others?')
+                        print('How is it related, is it temporary or staying?')
                         user_answer_fifth = input('Imagine, write it down\n')
                         print(f'You wrote: "{user_answer_fifth}"')
                 elif choice_c != 'y':
-                    print('You got out of the game pressing n or missed the "y"')
+                    print('You got out of the game, was that your intent')
                     welcome_choice_user()
             print('The cube is your true self!')
             print('If taller than your own height than')
@@ -166,6 +168,7 @@ def choice_answer():
     elif choice == 'b':
         information_display()
         while True:
+            welcome_choice_user()
             choice_answer()
     else:
         print('You did not enter a valid letter, let\'s try again')
@@ -185,7 +188,6 @@ def information_display():
     print('Or... It could just be used for fun!\n')
     
 
-
 def display_users_descriptions():
     """ Displays answers that users gave and clarification of the meaning """
     pass
@@ -200,7 +202,7 @@ def all_funcs():
     """ Will be used to run all functions accordingly """
     welcome_choice_user()
     choice_answer()
-    #if choice_answer() == "return"[None]:
+    # if choice_answer() == "return"[None]:
     #    print('You exited the game')
     print('All functions work properly!')
 
