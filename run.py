@@ -6,7 +6,7 @@ def welcome_choice_user():
     print('Welcome!\n')
     name = input('Your name, please: \n')
     print('This is a game where all answers are right.')
-    print(f'The game is fun and insightful, ready {name}?')
+    print(f'Use your imagination, ready {name}?')
     print('Take some time for describing every object...')
 
 
@@ -39,7 +39,7 @@ def choice_answer():
         if choice_b == 'y':
             print('You have chosen to continue...')
             print('From out of nowhere, a ladder shows up...')
-            print('What size, shape, material of ladder do you imagine?')
+            print('What size, position, material of ladder do you imagine?')
             print('Is there anything related between the cube and ladder?')
             print(r"""
                   ╬═╬
@@ -55,7 +55,7 @@ def choice_answer():
             print(f'You wrote: "{user_answer_second}"')
             choice_c = input('\x1B[3mReady for the next object...?(y/n)\x1B[0m\n')
             if choice_c == 'y':
-                print('Something is coming towards the ladder and the cube,...')
+                print('Something is coming from out of nowhere,...')
                 print('Looks like a horse!')
                 print('Imagine his figure, movement, relation to other objects')
                 print(r'''
@@ -79,9 +79,9 @@ def choice_answer():
                 print('There seems to be something else appearing...!')
                 choice_d = input('\x1B[3mReady for the next object...?(y/n)\x1B[0m\n')
                 if choice_d == 'y':
-                    print('Looks like a flower or more of them appears...!')
+                    print('It looks like flowers!')
                     print('How many do you imagine?')
-                    print('Are they blooming or wilting, related to others?')
+                    print('Are they blooming or wilting?')
                     print(r"""
           .'`'.'`'.
       .''.`.  :  .`.''.
@@ -98,8 +98,8 @@ def choice_answer():
                     print(f'You wrote: "{user_answer_fourth}"')
                     choice_e = input('\x1B[3mReady for the next object...?(y/n)\x1B[0m\n')
                     if choice_e == 'y':
-                        print('There is something else appearing... What is it?')
-                        print('Looks like a thunderstorm... Related to others?')
+                        print('There is something else appearing... A thunderstorm')
+                        print('Is it close or far? Does it affect others?')
                         print(r"""                               ________________________
                               ___(                        )
                              (                          _)
@@ -121,20 +121,42 @@ def choice_answer():
                 elif choice_c != 'y':
                     print('You got out of the game pressing n or missed the "y"')
                     welcome_choice_user()
-            print('The cube taller than your own height signifies that')
+            print('The cube is your true self!')
+            print('If taller than your own height than')
             print('your confidence is high while a smaller one')
-            print('means that you could be shy, and if the cube is moving')
+            print('means that you could be shy. If the cube is moving, ')
             print('it could symbolize a mind that is open and unconventional')
             print('while a still sitting cube is businesslike, a cube that')
-            print('is dug into the sand means that you are a planner')
-            print(f'This is how you see a cube: {user_answer_first}')
+            print('is dug into the sand means that you are a planner.')
+            print('A solid cube means you know who you are, while')
+            print('a hollow may mean that you are busy')
+            print('discovering your true self')
+            print(f'This is what you wrote down: {user_answer_first}')
             print(20 * '*')
-            print('The ladder represents your friends; short ladder is a small')
+            print('The ladder represents your friends/ relatives;')
+            print('A short ladder represents a small ')
             print('circle of friends, while tall means you have many')
-            print('friends, leaned onto the cube, ladder shows dependancy')
+            print('friends. If leaned onto the cube, ladder shows dependancy')
             print('and a ladder equal size as cube shows you')
             print('that you see your friends as equals in authorithy')
+            print('Lower ladder means you consider yourself')
+            print('as alpha leader of the group of friends')
             print(f'This is how you see ladder: {user_answer_second}')
+            print(20 * '*')
+            print('Next is the horse; it represents your')
+            print('partner. A horse closely related to cube means')
+            print('you strive for close relationships.')
+            print('And while brown sturdy horse can mean')
+            print('you would like a dependant partner,')
+            print('a glamorous looking horse would mean')
+            print('that you want a partner that will be')
+            print('groomed and approved by others.')
+            print('A horse moving towards the cube would signify')
+            print('a new relationship, while when horse moves away from')
+            print('the cube, means insecurities in relationship.')
+            print('Unicorn/Pegasus mean unrealistic expectations.')
+            print('A brown sturdy working horse means')
+            print('that you want a reliable and stabile partner')
             print(20 * '*')
 
     elif choice == 'q':
@@ -171,7 +193,7 @@ def display_users_descriptions():
 
 def end_game():
     """ To quit """
-    return None
+    return 'Bye'
 
 
 def all_funcs():
