@@ -3,10 +3,10 @@
 
 def welcome_choice_user():
     """ Greets the user, instructions and options, about, start and quit """
-    print('Welcome to the Japanese Cube test!\n')
-    print('Meanwhile in the middle of the dessert...')
-    print('. . . .___________________________________________. . . .')
-    name = input('Your name, please: \n')
+    print('''   Welcome to the Japanese Cube test!\n
+        Meanwhile in the middle of the dessert...
+    . . . .___________________________________________. . . .''')
+    name = input('    Your name, please: \n')
     print('This is a game where all answers are right.')
     print(f'Use your imagination, ready {name}?')
     print('Take some time for describing every object...')
@@ -186,7 +186,7 @@ def choice_answer():
     elif choice == 'q':
         print('\x1B[3mYou are quitting, thanks for trying it out!\x1B[0m')
         print('Goodbye')
-        return end_game()
+        
     elif choice == 'b':
         information_display()
         while True:
@@ -195,7 +195,6 @@ def choice_answer():
     elif choice == 'n':
         print('You want to stop the game?')
         print('Thanks for playing!')
-        return end_game()
     else:
         print('You did not enter a valid letter, let\'s try again')
         welcome_choice_user()
