@@ -6,7 +6,7 @@ def welcome_choice_user():
     print('''   Welcome to the Japanese Cube test!\n
         Meanwhile in the middle of the dessert...
     . . . .___________________________________________. . . .''')
-    name = input('    Your name, please: \n')
+    name = input('  Your name, please: \n')
     print('This is a game where all answers are right.')
     print(f'Use your imagination, ready {name}?')
     print('Take some time for describing every object...')
@@ -14,9 +14,8 @@ def welcome_choice_user():
 
 def choice_answer():
     """ Redirect the user input with the answer """
-    choice = input('\x1B[3mChoose a(start), b (about), q(quit)\x1B[0m\n')
+    choice = input('\x1B[3mChoose a(start), b(about), q(quit)\x1B[0m\n')
     choice_a = 'a'
-    choice_b = 'y'
 
     if choice == choice_a:
         print('\x1B[3mYou have chosen a to start the game!\x1B[0m \n')
@@ -141,47 +140,50 @@ def choice_answer():
                         user_answer_fifth = input('Imagine, write it down\n')
                         print(f'You wrote: "{user_answer_fifth}"')
                 
-            print(20 * '*')
-            print('The cube is your true self!')
-            print('If taller than your own height than')
-            print('your confidence is high while a smaller one')
-            print('means that you could be shy. If the cube is moving, ')
-            print('it could symbolize a mind that is open and unconventional')
-            print('while a still sitting cube is businesslike, a cube that')
-            print('is dug into the sand means that you are a planner.')
-            print('A solid cube means you know who you are, while')
-            print('a hollow may mean that you are busy')
-            print('discovering your true self')
+            print(30 * '*')
+            print('''\n    Now the explanation...
+                The cube is your true self!
+                If taller than your own height than
+                your confidence is high while a smaller one
+                means that you could be shy. If the cube is moving, 
+                it could symbolize a mind that is open and unconventional
+                while a still sitting cube is businesslike, a cube that
+                is dug into the sand means that you are a planner.
+                A solid cube means you know who you are, while
+                a hollow may mean that you are busy
+                discovering your true self''')
             print(f'This is what you wrote down: {user_answer_first}')
-            print(20 * '*')
-            print('The ladder represents your friends/ relatives;')
-            print('A short ladder represents a small ')
-            print('circle of friends, while tall means you have many')
-            print('friends. If leaned onto the cube, ladder shows dependancy')
-            print('and a ladder equal size as cube shows you')
-            print('that you see your friends as equals in authorithy')
-            print('Lower ladder means you consider yourself')
-            print('as alpha leader of the group of friends')
-            print('New looking ladder means new friendships are')
-            print('present in your life, while an old looking')
-            print('ladder would imply long enduring friendships')
+            print(30 * '*')
+            print('''\n
+            The ladder represents your friends/ relatives;')
+            A short ladder represents a small
+            circle of friends, while tall means you have many
+            friends. If leaned onto the cube, ladder shows dependancy
+            and a ladder equal size as cube shows you
+            that you see your friends as equals in authorithy
+            Lower ladder means you consider yourself
+            as alpha leader of the group of friends
+            New looking ladder means new friendships are
+            present in your life, while an old looking
+            ladder would imply long enduring friendships''')
             print(f'This is how you described ladder: {user_answer_second}')
-            print(20 * '*')
-            print('Next, the horse; it represents your')
-            print('partner. A horse closely related to cube means')
-            print('you strive for close relationships.')
-            print('And while brown sturdy horse can mean')
-            print('you would like a dependant partner,')
-            print('a glamorous looking horse would mean')
-            print('that you want a partner that will be')
-            print('groomed and approved by others.')
-            print('A horse moving towards the cube would signify')
-            print('a new relationship, while when horse moves away from')
-            print('the cube, means insecurities in relationship.')
-            print('Unicorn/Pegasus mean unrealistic expectations.')
-            print('A brown sturdy working horse means')
-            print('that you want a reliable and stabile partner')
-            print(20 * '*')
+            print(30 * '*')
+            print('''\n
+            Next, the horse; it represents your
+            partner. A horse closely related to cube means
+            you strive for close relationships.
+            And while brown sturdy horse can mean
+            you would like a dependant partner,
+            a glamorous looking horse would mean
+            that you want a partner that will be
+            groomed and approved by others.
+            A horse moving towards the cube would signify
+            a new relationship, while when horse moves away from
+            the cube, means insecurities in relationship.
+            Unicorn/Pegasus mean unrealistic expectations.
+            A brown sturdy working horse means
+            that you want a reliable and stabile partner''')
+            print(30 * '*')
 
     elif choice == 'q':
         print('\x1B[3mYou are quitting, thanks for trying it out!\x1B[0m')
@@ -217,22 +219,18 @@ def information_display():
     print('It is only as accurate as you are honest with yourself')
     print('Or... It could just be used for fun!\n')
     print(20 * '*')
-    
+
 
 def display_users_descriptions():
     """ Displays answers that users gave and clarification of the meaning """
-    pass
-
-
-
 
 
 def all_funcs():
     """ Will be used to run all functions accordingly """
     welcome_choice_user()
     choice_answer()
-    # if choice_answer() == "return"[None]:
-    #    print('You exited the game')
+    
+    print('You exited the game')
     print('All functions work properly!')
 
 
