@@ -189,9 +189,13 @@ def choice_answer():
         
     elif choice == 'b':
         information_display()
-        while True:
+        print('Want to try this out? (y/n)')
+        about_choice = input('Enter y or n\n')
+        if about_choice == 'y':
             welcome_choice_user()
             choice_answer()
+        else:
+            print('Thanks for checking this out!')
     elif choice == 'n':
         print('You want to stop the game?')
         print('Thanks for playing!')
