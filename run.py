@@ -140,8 +140,8 @@ def choice_answer():
                         user_answer_fifth = input('Imagine, write it down\n')
                         print(f'You wrote: "{user_answer_fifth}"')
                 
-            print(30 * '*')
-            print('''\n    Now the explanation...
+                        print(40 * '*')
+                        print('''\n    Now the explanation...
                 The cube is your true self!
                 If taller than your own height than
                 your confidence is high while a smaller one
@@ -152,9 +152,9 @@ def choice_answer():
                 A solid cube means you know who you are, while
                 a hollow may mean that you are busy
                 discovering your true self''')
-            print(f'This is what you wrote down: {user_answer_first}')
-            print(30 * '*')
-            print('''\n
+                        print(f'This is what you wrote down: {user_answer_first}')
+                        print(40 * '*')
+                        print('''\n
             The ladder represents your friends/ relatives;')
             A short ladder represents a small
             circle of friends, while tall means you have many
@@ -166,9 +166,9 @@ def choice_answer():
             New looking ladder means new friendships are
             present in your life, while an old looking
             ladder would imply long enduring friendships''')
-            print(f'This is how you described ladder: {user_answer_second}')
-            print(30 * '*')
-            print('''\n
+                        print(f'This is how you described ladder: {user_answer_second}')
+                        print(40 * '*')
+                        print('''\n
             Next, the horse; it represents your
             partner. A horse closely related to cube means
             you strive for close relationships.
@@ -183,7 +183,7 @@ def choice_answer():
             Unicorn/Pegasus mean unrealistic expectations.
             A brown sturdy working horse means
             that you want a reliable and stabile partner''')
-            print(30 * '*')
+                        print(40 * '*')
 
     elif choice == 'q':
         print('\x1B[3mYou are quitting, thanks for trying it out!\x1B[0m')
@@ -218,7 +218,7 @@ def information_display():
     print('Don\'t overthink it, just let imagination flow.')
     print('It is only as accurate as you are honest with yourself')
     print('Or... It could just be used for fun!\n')
-    print(20 * '*')
+    print(40 * '*')
 
 
 def display_users_descriptions():
