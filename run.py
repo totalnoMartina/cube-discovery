@@ -3,7 +3,7 @@
 
 def welcome_choice_user():
     """ Greets the user, instructions and options, about, start and quit """
-    print('''   Welcome to the Japanese Cube test!\n
+    print('''   \033[1mWelcome to the Japanese Cube test!\033[0m\n
         Meanwhile in the middle of the dessert...
     . . . .___________________________________________. . . .''')
     name = input('  Your name, please: \n')
