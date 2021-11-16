@@ -139,7 +139,6 @@ def choice_answer():
                         print('How is it related, is it temporary or staying?')
                         user_answer_fifth = input('Imagine, write it down\n')
                         print(f'You wrote: "{user_answer_fifth}"')
-                
                         print(40 * '*')
                         print('''\n    Now the explanation...
                 The cube is your true self!
@@ -184,11 +183,20 @@ def choice_answer():
             A brown sturdy working horse means
             that you want a reliable and stabile partner''')
                         print(40 * '*')
+                        print('\n')
+                        print('''
+            Next, the flowers represent your children or anything
+            you created and are taking care of. If the flowers are 
+            close to the cube, it means you are close to your 
+            children. A vibrant blossoming flowers would signify the
+            healthy strong relationship with your kids, while 
+            too many flowers could mean you could be overwhelmed with
+            too many concerns around your children. When wilting flowers
+            would represent that relationships were broken or lost.''')
 
     elif choice == 'q':
         print('\x1B[3mYou are quitting, thanks for trying it out!\x1B[0m')
-        print('Goodbye')
-        
+        print('Goodbye') 
     elif choice == 'b':
         information_display()
         print('Want to try this out? (y/n)')
@@ -229,7 +237,6 @@ def all_funcs():
     """ Will be used to run all functions accordingly """
     welcome_choice_user()
     choice_answer()
-    
     print('You exited the game')
     print('All functions work properly!')
 
