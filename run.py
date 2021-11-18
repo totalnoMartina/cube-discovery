@@ -158,51 +158,59 @@ def choice_answer():
 
         The cube is your true self!
         If taller than your own height than
-        your confidence is high while a smaller one
-        means that you could be shy. If the cube is moving,
-        it could symbolize a mind that is open and unconventional
-        while a still sitting cube is businesslike, a cube that
-        is dug into the sand means that you are a planner.
-        A solid cube means you know who you are, while
+        your confidence is high while a smaller
+        one means that you could be shy. If the
+        cube is moving, it could symbolize a mind
+        that is open and unconventional while a
+        still sitting cube is businesslike, a
+        cube that is dug into the sand means
+        that you are a planner. A solid cube
+        means you know who you are, while
         a hollow may mean that you are busy
         discovering your true self''')
                         print(f'    You described cube:{user_answer_first}')
                         print(40 * '*')
                         print('''\n
-        The ladder represents two aspects of your life;\n
+        The ladder represents two aspects of
+        your life;\n
         Your goals and frienships.
         A short ladder represents a small
-        circle of friends and realistic goals, while tall
-        ladder means you have many friends, and your
-        goals are difficult to attain.
-        If leaned onto the cube, shows closeness
-        towards your friends as well as reliability
-        your friends have towrds you,
-        and a ladder equal size as cube shows you
-        that you see your friends as equals in authorithy
-        Lower ladder means you consider yourself
-        as alpha leader of the group of friends
-        New looking ladder means new friendships are
-        present in your life, while an old looking
-        ladder would imply long enduring friendships''')
+        circle of friends and realistic goals,
+        while tall ladder means you have many
+        friends, and your goals are difficult
+        to attain. If leaned onto the cube,
+        shows closeness towards your friends
+        as well as reliability your friends
+        have towrds you, and a ladder equal
+        size as cube shows you that you see
+        your friends as equals in authorithy
+        Lower ladder means you consider
+        yourself as alpha leader of the group
+        of friends. New looking ladder means
+        new friendships are present in your
+        life, while an old looking ladder
+        would imply long enduring friendships''')
                         print(f'   You described ladder: {user_answer_second}')
                         print(40 * '*')
                         # color of the horse - explain
                         print('''\n
         Next, the horse; it represents your
-        partner. A horse closely related to cube means
-        you strive for close relationships.
-        And while brown sturdy horse can mean
-        you would like a dependant partner,
-        a glamorous looking horse would mean
-        that you want a partner that will be
-        groomed and approved by others.
-        A horse moving towards the cube would signify
-        a new relationship, while when horse moves away from
-        the cube, means insecurities in relationship.
-        Unicorn/Pegasus mean unrealistic expectations.
-        A brown sturdy working horse means
-        that you want a reliable and stabile partner''')
+        partner. A horse closely related to
+        cube means you strive for close
+        relationships. And while brown sturdy
+        horse can mean you would like a
+        dependant partner, a glamorous looking
+        horse would mean that you want a
+        partner that will be groomed and
+        approved by others. A horse moving
+        towards the cube would signify
+        a new relationship, while when horse
+        moves away from the cube, means
+        insecurities in relationship.
+        Unicorn/Pegasus mean unrealistic
+        expectations. A brown sturdy working
+        horse means that you want a reliable
+        and stabile partner''')
                         print(f'You wrote: "{user_answer_third}"')
                         print(40 * '*')
                         print('\n')
