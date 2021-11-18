@@ -37,9 +37,13 @@ def choice_answer():
         print(f'You wrote: "{user_answer_first}"')
         print('Okay, now... There is something else appearing in here...')
         choice_b = input('\x1B[3mNext object = y, Restart = n\x1B[0m\n')
-        if choice_b != 'y':
+        if choice_b != 'n':
             print('You got out of the game, was that your intent?')
             print('Back to Main menu...')
+            welcome_choice_user()
+            choice_answer()
+        elif choice_b != 'y':
+            print('Not a recognized letter, starting over')
             welcome_choice_user()
             choice_answer()
         elif choice_b == 'y':
@@ -59,9 +63,13 @@ def choice_answer():
             print(f'You wrote: "{user_answer_second}"')
             print('Okay, now... There is something else appearing in here...')
             choice_c = input('\x1B[3mNext object = y, Restart = n\x1B[0m\n')
-            if choice_c != 'y':
+            if choice_c == 'n':
                 print('You got out of the game, was that your intent?')
                 print('Back to Main menu...')
+                welcome_choice_user()
+                choice_answer()
+            elif choice_c != 'y':
+                print('Not a recognized letter, starting over')
                 welcome_choice_user()
                 choice_answer()
             elif choice_c == 'y':
@@ -88,9 +96,13 @@ def choice_answer():
                 print(f'You wrote: "{user_answer_third}"')
                 print('There seems to be something else appearing...!')
                 choice_d = input('\x1B[3mNext object = y, Restart = n\x1B[0m\n')
-                if choice_b != 'y':
+                if choice_d == 'n':
                     print('You got out of the game, was that your intent?')
                     print('Back to Main menu...')
+                    welcome_choice_user()
+                    choice_answer()
+                elif choice_d != 'y':
+                    print('Not a recognized letter, starting over')
                     welcome_choice_user()
                     choice_answer()
                 elif choice_d == 'y':
@@ -112,9 +124,13 @@ def choice_answer():
                     user_answer_fourth = input('Write down the details... \n')
                     print(f'You wrote: "{user_answer_fourth}"')
                     choice_e = input('\x1B[3mNext object = y, Restart = n\x1B[0m\n')
-                    if choice_b != 'y':
+                    if choice_b == 'n':
                         print('You got out of the game, was that your intent?')
                         print('Back to Main menu...')
+                        welcome_choice_user()
+                        choice_answer()
+                    elif choice_d != 'y':
+                        print('Not a recognized letter, starting over')
                         welcome_choice_user()
                         choice_answer()
                     elif choice_e == 'y':
@@ -191,7 +207,7 @@ def choice_answer():
                         print(40 * '*')
                         print('\n')
                         print('''
-        Next, the flowers represent your children or anything
+        Next, the flowers represent your family/ children or anything
         you created and are taking care of. If the flowers are
         close to the cube, it means you are close to your
         children. A vibrant blossoming flowers would signify the
