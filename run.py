@@ -62,7 +62,7 @@ def choice_answer():
             user_answer_second = input('Imagine, write it down...\n')
             print(f'You wrote: "{user_answer_second}"')
             print('Okay, now... There is something else appearing in here...')
-            choice_c = input('\x1B[3mNext object = y, Restart = n\x1B[0m\n')
+            choice_c = input('\x1B[3mNext = y, Restart = n\x1B[0m\n')
             if choice_c == 'n':
                 print('You got out of the game, was that your intent?')
                 print('Back to Main menu...')
@@ -95,7 +95,7 @@ def choice_answer():
                 user_answer_third = input('Write down what you imagine...\n')
                 print(f'You wrote: "{user_answer_third}"')
                 print('There seems to be something else appearing...!')
-                choice_d = input('\x1B[3mNext object = y, Restart = n\x1B[0m\n')
+                choice_d = input('\x1B[3mNext = y, Restart = n\x1B[0m\n')
                 if choice_d == 'n':
                     print('You got out of the game, was that your intent?')
                     print('Back to Main menu...')
@@ -123,7 +123,7 @@ def choice_answer():
                     print('Take a moment to imagine, describe...')
                     user_answer_fourth = input('Write down the details... \n')
                     print(f'You wrote: "{user_answer_fourth}"')
-                    choice_e = input('\x1B[3mNext object = y, Restart = n\x1B[0m\n')
+                    choice_e = input('\x1B[3mNext = y, Restart = n\x1B[0m\n')
                     if choice_b == 'n':
                         print('You got out of the game, was that your intent?')
                         print('Back to Main menu...')
