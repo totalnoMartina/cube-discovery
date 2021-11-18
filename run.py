@@ -36,7 +36,7 @@ def choice_answer():
         user_answer_first = input('Take a moment to imagine, write it down\n')
         print(f'You wrote: "{user_answer_first}"')
         print('Okay, now... There is something else appearing in here...')
-        choice_b = input('\x1B[3mReady for the next object?(y/n)\x1B[0m\n')
+        choice_b = input('\x1B[3mNext object = y, Restart = n\x1B[0m\n')
         if choice_b != 'y':
             print('You got out of the game, was that your intent?')
             print('Back to Main menu...')
@@ -59,7 +59,7 @@ def choice_answer():
             user_answer_second = input('Imagine, write it down...\n')
             print(f'You wrote: "{user_answer_second}"')
             print('Okay, now... There is something else appearing in here...')
-            choice_c = input('\x1B[3mReady for the next object?(y/n)\x1B[0m\n')
+            choice_c = input('\x1B[3mNext object = y, Restart = n\x1B[0m\n')
             if choice_c != 'y':
                 print('You got out of the game, was that your intent?')
                 print('Back to Main menu...')
@@ -88,7 +88,7 @@ def choice_answer():
                 user_answer_third = input('Write down what you imagine...\n')
                 print(f'You wrote: "{user_answer_third}"')
                 print('There seems to be something else appearing...!')
-                choice_d = input('\x1B[3mReady for the next object?(y/n)\x1B[0m\n')
+                choice_d = input('\x1B[3mNext object = y, Restart = n\x1B[0m\n')
                 if choice_b != 'y':
                     print('You got out of the game, was that your intent?')
                     print('Back to Main menu...')
@@ -112,7 +112,7 @@ def choice_answer():
                     print('Take a moment to imagine, describe...')
                     user_answer_fourth = input('Write down the details... \n')
                     print(f'You wrote: "{user_answer_fourth}"')
-                    choice_e = input('\x1B[3mReady for the next object?(y/n)\x1B[0m\n')
+                    choice_e = input('\x1B[3mNext object = y, Restart = n\x1B[0m\n')
                     if choice_b != 'y':
                         print('You got out of the game, was that your intent?')
                         print('Back to Main menu...')
@@ -141,6 +141,7 @@ def choice_answer():
                         print(f'You wrote: "{user_answer_fifth}"')
                         print(40 * '*')
                         print('''\n    Now the explanation...
+                        
                 The cube is your true self!
                 If taller than your own height than
                 your confidence is high while a smaller one
@@ -217,15 +218,15 @@ def choice_answer():
 
 def information_display():
     """ Gives information of this game - activate imagination and inspire """
-    print('This game derived from the Japanese personality test,')
-    print('which by definition helps people discover what their')
-    print('true inner thoughts are about their current state of being.\n')
-    print('Note; this test could be tried out on your own')
-    print('to inspire you to get to know yourself, or in company to discover')
-    print('about your friends if they are open to try.\n')
-    print('Don\'t overthink it, just let imagination flow.')
-    print('It is only as accurate as you are honest with yourself')
-    print('Or... It could just be used for fun!\n')
+    print('''This game derived from the Japanese personality test,
+    which helps people discover what their true inner thoughts are about 
+    their current state of being.\n
+    Note; this test could be tried out on your own
+    to inspire you to get to know yourself, or in company to discover
+    about your friends if they are open to try.\n
+    Don\'t overthink it, just let imagination flow.
+    It is only as accurate as you are honest with yourself
+    Or... It could just be used for fun!\n''')
     print(40 * '*')
 
 
