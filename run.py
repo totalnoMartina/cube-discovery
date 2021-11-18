@@ -215,14 +215,18 @@ def choice_answer():
                         print(40 * '*')
                         print('\n')
                         print('''
-        Next, the flowers represent your family/ children or anything
-        you created and are taking care of. If the flowers are
-        close to the cube, it means you are close to your
-        children. A vibrant blossoming flowers would signify the
-        healthy strong relationship with your kids, while
-        too many flowers could mean you could be overwhelmed with
-        too many concerns around your children. When wilting flowers
-        would represent that relationships were broken or lost.''')
+        Next, the flowers represent your family/
+        children or anything you created and are
+        taking care of. If the flowers are
+        close to the cube, it means you are
+        close to your children. A vibrant
+        blossoming flowers would signify the
+        healthy strong relationship with your
+        kids, while too many flowers could
+        mean you could be overwhelmed with
+        too many concerns around your children.
+        When wilting flowers would represent
+        that relationships are broken or lost.''')
                         print(f'    You wrote: "{user_answer_fourth}"')
                         print(40 * '*')
                         print('\n')
@@ -236,10 +240,10 @@ def choice_answer():
         distance means your stress is visible
         to you but manageable, while if the
         storm is affecting any of the objects,
-        you might be overwhelmed by the situation
-        in your life. Just remember, you are
-        bigger than your troubles. If the
-        storm passed through and doesn\'t
+        you might be overwhelmed by the
+        situation in your life. Just remember,
+        you are bigger than your troubles.
+        If the storm passed through and doesn\'t
         cause any change, means that you
         have confidence in resolving your
         stress.
