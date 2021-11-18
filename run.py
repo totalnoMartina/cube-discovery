@@ -153,7 +153,6 @@ def choice_answer():
                         print('Is it close or far? Does it affect others?')
                         print('How is it related, is it temporary or staying?')
                         user_answer_fifth = input('Imagine, write it down\n')
-                        print(f'You wrote: "{user_answer_fifth}"')
                         print(40 * '*')
                         print('''\n    Now the explanation...
 
@@ -167,7 +166,7 @@ def choice_answer():
         A solid cube means you know who you are, while
         a hollow may mean that you are busy
         discovering your true self''')
-                        print(f'    You wrote:{user_answer_first}')
+                        print(f'    You described cube:{user_answer_first}')
                         print(40 * '*')
                         print('''\n
         The ladder represents two aspects of your life;\n
@@ -186,7 +185,7 @@ def choice_answer():
         New looking ladder means new friendships are
         present in your life, while an old looking
         ladder would imply long enduring friendships''')
-                        print(f'You described ladder: {user_answer_second}')
+                        print(f'   You described ladder: {user_answer_second}')
                         print(40 * '*')
                         # color of the horse - explain
                         print('''\n
@@ -204,6 +203,7 @@ def choice_answer():
         Unicorn/Pegasus mean unrealistic expectations.
         A brown sturdy working horse means
         that you want a reliable and stabile partner''')
+                        print(f'You wrote: "{user_answer_third}"')
                         print(40 * '*')
                         print('\n')
                         print('''
@@ -215,6 +215,7 @@ def choice_answer():
         too many flowers could mean you could be overwhelmed with
         too many concerns around your children. When wilting flowers
         would represent that relationships were broken or lost.''')
+                        print(f'    You wrote: "{user_answer_fourth}"')
                         print(40 * '*')
                         print('\n')
                         print('''
@@ -235,6 +236,7 @@ def choice_answer():
         have confidence in resolving your
         stress.
         ''')
+                        print(f'    You wrote: "{user_answer_fifth}"')
 
     elif choice == 'q':
         print('\x1B[3mYou are quitting, thanks for trying it out!\x1B[0m')
