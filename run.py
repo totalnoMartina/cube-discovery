@@ -34,8 +34,6 @@ def choice_answer():
             """)
         print('Describe the shape, position or movement, volume...\n')
         user_answer_first = input('Take a moment to imagine, write it down\n')
-        # color_cube = input('If the cube has a specific color, please choose:')
-        # color_list = []
         print(f'You wrote: "{user_answer_first}"')
         print('Okay, now... There is something else appearing in here...')
         choice_b = input('\x1B[3mNext object = y, Restart = n\x1B[0m\n')
@@ -154,7 +152,6 @@ def choice_answer():
         a hollow may mean that you are busy
         discovering your true self''')
                         print(f'    You wrote:{user_answer_first}')
-                        # color of the cube explanation
                         print(40 * '*')
                         print('''\n
         The ladder represents two aspects of your life;\n
@@ -220,7 +217,7 @@ def choice_answer():
         storm passed through and doesn\'t
         cause any change, means that you
         have confidence in resolving your
-        stress
+        stress.
         ''')
 
     elif choice == 'q':
