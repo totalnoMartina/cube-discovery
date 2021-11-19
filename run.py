@@ -168,7 +168,7 @@ def choice_answer():
         means you know who you are, while
         a hollow may mean that you are busy
         discovering your true self''')
-                        print(f'    You described cube:{user_answer_first}')
+                        print(f'    You wrote:{user_answer_first}')
                         print(40 * '*')
                         print('''\n
         The ladder represents two aspects of
@@ -190,7 +190,7 @@ def choice_answer():
         new friendships are present in your
         life, while an old looking ladder
         would imply long enduring friendships''')
-                        print(f'   You described ladder: {user_answer_second}')
+                        print(f'   You wrote: {user_answer_second}')
                         print(40 * '*')
                         # color of the horse - explain
                         print('''\n
@@ -211,7 +211,7 @@ def choice_answer():
         expectations. A brown sturdy working
         horse means that you want a reliable
         and stabile partner''')
-                        print(f'You wrote: "{user_answer_third}"')
+                        print(f'    You wrote: "{user_answer_third}"')
                         print(40 * '*')
                         print('\n')
                         print('''
