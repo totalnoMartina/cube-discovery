@@ -72,6 +72,8 @@ def horse():
     user_answer_third = input('Write down what you imagine...\n')
     print(f'You wrote: "{user_answer_third}"')
     print('There seems to be something else appearing...!')
+    next_or_restart()
+    flowers()
 
 
 def ladder():
