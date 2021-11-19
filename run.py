@@ -1,6 +1,27 @@
 """ Functions to control flow of the japanese cube test """
 
 
+def cube():
+    print('\x1B[3mYou have chosen a to start the game!\x1B[0m \n')
+    print('Imagine now... You find yourself in the dessert... ')
+    print('Nothing around you... The objects start to appear...')
+    print('There is the first object! It seems to be a cube')
+    print(r"""
+         ________
+        /\       \
+       /  \       \
+      /    \_______\
+      \    /       /
+       \  /       /
+        \/_______/
+
+            """)
+    print('Describe the shape, position or movement, volume...\n')
+    user_answer_first = input('Take a moment to imagine, write it down\n')
+    print(f'You wrote: "{user_answer_first}"')
+    print('Okay, now... There is something else appearing in here...')
+
+
 def welcome_choice_user():
     """ Greets the user, instructions and options, about, start and quit """
     print('''   \033[1mWelcome to the Japanese Cube test!\033[0m\n
@@ -15,64 +36,66 @@ def welcome_choice_user():
     print('Take some time for describing every object...')
 
 
-def choice_answer():
-    """ Redirect the user input with the answer """
-    choice = input('\x1B[3mChoose a(start), b(about), q(quit)\x1B[0m\n')
-    if choice == 'a':
-        choice_a()
+# def choice_answer():
+#     """ Redirect the user input with the answer """
+#     choice = input('\x1B[3mChoose a(start), b(about), q(quit)\x1B[0m\n')
+#     if choice == 'a':
+#         cube()
+#     elif choice == 'b':
+#         information_display()
+#         welcome_choice_user()
+#     elif choice == 'q':
+#         print('\x1B[3mYou are quitting, thanks for trying it out!\x1B[0m')
+#         print('Goodbye')
+#     else:
+#         print('Not a recognized letter, starting over')
+#         welcome_choice_user()
 
 
-def choice_a():
-    print('\x1B[3mYou have chosen a to start the game!\x1B[0m \n')
-    print('Imagine now... You find yourself in the dessert... ')
-    print('Nothing around you... The objects start to appear...')
-    print('There is the first object! It seems to be a cube')
-    print(r"""
-          _______
-        /\       \
-       /  \       \
-      /    \_______\
-      \    /       /
-       \  /       /
-        \/_______/
-
-            """)
-    print('Describe the shape, position or movement, volume...\n')
-    user_answer_first = input('Take a moment to imagine, write it down\n')
-    print(f'You wrote: "{user_answer_first}"')
-    print('Okay, now... There is something else appearing in here...')
-    choice_b = input('\x1B[3mNext object = y, Restart = n\x1B[0m\n')
-    if choice_b == 'n':
+def ladder():
+    """Function to use second object"""
+    if ladder_ == 'n':
         print('You got out of the game, was that your intent?')
         print('Back to Main menu...')
         welcome_choice_user()
         choice_answer()
-    elif choice_b != 'y':
+    elif ladder_ != 'y':
         print('Not a recognized letter, starting over')
         welcome_choice_user()
         choice_answer()
-    elif choice_b == 'y':
+    elif ladder_ == 'y':
         print('From out of nowhere, a ladder shows up...')
         print('What size, position, material of ladder do you imagine?')
         print('Is there anything related between the cube and ladder?')
         print(r"""
-                ╬═╬
-                ╬═╬
-                ╬═╬
-                ╬═╬
-                ╬═╬
-                ╬═╬
-                ╬═╬
-        """)
-        user_answer_second = input('Imagine, write it down...\n')
-        print(f'You wrote: "{user_answer_second}"')
-        print('Okay, now... There is something else appearing in here...')
+            ╬═╬
+            ╬═╬
+            ╬═╬
+            ╬═╬
+            ╬═╬
+            ╬═╬
+            ╬═╬
+    """)
+    user_answer_second = input('Imagine, write it down...\n')
+    print(f'You wrote: "{user_answer_second}"')
+    print('Okay, now... There is something else appearing in here...')
+
+
+def next_or_restart():
+    """Function to use for iterating through objects and call it"""
+    ask_user = input('\x1B[3mNext object = y, Restart = n\x1B[0m\n')
+    if ask_user != 'y':
+        ladder()
+
+
+        
+        
         choice_c = input('\x1B[3mNext = y, Restart = n\x1B[0m\n')
         if choice_c == 'n':
-                print('You got out of the game, was that your intent?')
-                print('Back to Main menu...')
-                welcome_choice_user()
-                choice_answer()
+            print('You got out of the game, was that your intent?')
+            print('Back to Main menu...')
+            welcome_choice_user()
+            choice_answer()
         elif choice_c != 'y':
             print('Not a recognized letter, starting over')
             welcome_choice_user()
@@ -94,7 +117,7 @@ def choice_a():
         |_>|>     /_] //
         /_]       /_]
 '''
-                    )
+                            )
             print('Take a moment to imagine, what does it look like...')
             print('Is it related to the objects in any way? What way?')
             user_answer_third = input('Write down what you imagine...\n')
