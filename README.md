@@ -10,16 +10,17 @@ This application is is a personality test deriving from japanese culture, and th
 
 ## User Stories 
 * I want the user to be familiar with the rules and understanding of this application easy
-* I want the user to be able to start/quit/pause (maybe?) the app and get information on game 
+* I want the user to be able to start/restart/quit the app and get information about the game 
 * I want the user to be able to write in his own words the description
 * I want the user to have the response stored together with the answers and displayed
 * I want the user to be notified when the characters that he inputs are not supported with an apropriate message
+* I want to possibly use one of Python libraries to create a visual appearance of the results(check more libraries, check with Tim)
 
 
 ## Site Owner Goals
 
 * To offer user a display of answers to the questions
-* To be able to guide users and collect their answers
+* To be able to guide users and collect their answers, and a name
 * To be able to display a personality test in a fun way to users
 
 ## Instructions
@@ -36,7 +37,7 @@ Describe step by step process
 * Existing features
 * Future features
 
-# Libraries used
+# Libraries Used
 
 # Testing 
 ## Bugs
@@ -47,7 +48,10 @@ Describe step by step process
 
 ## Github
 
+Commiting often, on every change - explain processes
+
 ## Heroku
+Deploying right after commiting on Git - explain processes
 
 # Credits 
 
