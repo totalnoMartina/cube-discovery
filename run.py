@@ -36,7 +36,7 @@ def choice_answer():
         user_answer_first = input('Take a moment to imagine, write it down\n')
         print(f'You wrote: "{user_answer_first}"')
         print('Okay, now... There is something else appearing in here...')
-        choice_b = input('\x1B[3mNext object = y, Restart = n\x1B[0m\n')
+        choice_b = input('\x1B[3mNext = y, Restart = n\x1B[0m\n')
         if choice_b == 'n':
             print('You got out of the game, was that your intent?')
             print('Back to Main menu...')
