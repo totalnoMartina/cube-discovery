@@ -58,11 +58,12 @@ Deploying right after commiting on Git - explain processes
 The italics code were found in [this link](https://stackoverflow.com/questions/13559276/can-i-write-italics-to-the-python-shell)
 
 # Caveats 
-- reasons why app is nont usable in real world, but i think it is... we'll see :)
+- reasons why app is not usable in real world, but i think it is... we'll see :)
 
 # Acknowledgements
 
-Mentor Tim is seriously the best guide and inspiration, helping me and directing my ideas toward real goal to be accomplished through creating this app 
+Code Institute mentor, Tim Nelson is huge help and guidance, helping me and directing my ideas toward real goal to be accomplished through creating this app. I was unsure on how to start and I had perfect guidance.
+My close friends who tested the app a few times, shared insights and concerns that help me make this better for the UX.
 
 
 
