@@ -2,8 +2,9 @@
 
 
 def cube():
+    """Function to start with first object"""
     print('\x1B[3mYou have chosen a to start the game!\x1B[0m \n')
-    print('''Imagine now... You find yourself in the dessert... 
+    print('''Imagine now... You find yourself in the dessert...
         Nothing around you... The objects start to appear...
         There is the first object! It seems to be a cube''')
     print(r"""
@@ -13,9 +14,7 @@ def cube():
       /    \_______\
       \    /       /
        \  /       /
-        \/_______/
-
-            """)
+        \/_______/""")
     print('Describe the shape, position or movement, volume...\n')
     user_answer_first = input('Take a moment to imagine, write it down\n')
     print(f'You wrote: "{user_answer_first}"')
@@ -29,8 +28,6 @@ def choice_answer():
     choice = input('\x1B[3mChoose a(start), b(about), q(quit)\x1B[0m\n')
     if choice == 'a':
         cube()
-        next_or_restart()
-        # ladder()
     elif choice == 'b':
         information_display()
         welcome_choice_user()
@@ -40,6 +37,41 @@ def choice_answer():
     else:
         print('Not a recognized letter, starting over')
         welcome_choice_user()
+
+
+def next_or_restart():
+    """Function to use for iterating through objects and call it"""
+    ask_user = input('\x1B[3mNext = y, Restart = n\x1B[0m\n')
+    while ask_user == 'n':
+        print('You got out of the game, was that your intent?')
+        print('Restarting... Back to Main menu...')
+        welcome_choice_user()
+            
+
+
+def horse():
+    """Function to call third object"""
+    print('Something is coming from out of nowhere,...')
+    print('Looks like a horse!')
+    print('Imagine his figure, movement, relation to others')
+    print(r'''
+  >>\.
+ /_  )`.
+/  _)`^)`.   _.---. _
+(_,' \  `^-)""      `.\
+      |              | \
+        \              / |
+    / \  /.___.'\  (\ (_
+    < ,"||      \ |`. \`-'
+        \\ ()      )|  )/
+        |_>|>     /_] //
+        /_]       /_]
+''')
+    print('Take a moment to imagine, what does it look like...')
+    print('Is it related to the objects in any way? What way?')
+    user_answer_third = input('Write down what you imagine...\n')
+    print(f'You wrote: "{user_answer_third}"')
+    print('There seems to be something else appearing...!')
 
 
 def ladder():
@@ -59,6 +91,8 @@ def ladder():
     user_answer_second = input('Imagine, write it down...\n')
     print(f'You wrote: "{user_answer_second}"')
     print('Okay, now... There is something else appearing in here...')
+    next_or_restart()
+    horse()
 
 
 def welcome_choice_user():
@@ -73,58 +107,15 @@ def welcome_choice_user():
     print('This is a game where all answers are right.')
     print(f'Use your imagination, ready {name}?')
     print('Take some time for describing every object...')
+    choice_answer()
 
 
-def next_or_restart():
-    """Function to use for iterating through objects and call it"""
-    ask_user = input('\x1B[3mNext = y, Restart = n\x1B[0m\n')
-    while ask_user == 'n':
-        print('You got out of the game, was that your intent?')
-        print('Back to Main menu...')
-        welcome_choice_user()
-        choice_answer()
-
-
-
-def horse():
-    if horse == 'y':
-        print('Something is coming from out of nowhere,...')
-        print('Looks like a horse!')
-        print('Imagine his figure, movement, relation to others')
-        print(r'''
-    >>\.
-    /_  )`.
-/  _)`^)`.   _.---. _
-(_,' \  `^-)""      `.\
-        |              | \
-        \              / |
-    / \  /.___.'\  (\ (_
-    < ,"||      \ |`. \`-'
-        \\ ()      )|  )/
-        |_>|>     /_] //
-        /_]       /_]
-'''
-                            )
-        print('Take a moment to imagine, what does it look like...')
-        print('Is it related to the objects in any way? What way?')
-        user_answer_third = input('Write down what you imagine...\n')
-        print(f'You wrote: "{user_answer_third}"')
-        print('There seems to be something else appearing...!')
-        choice_d = input('\x1B[3mNext = y, Restart = n\x1B[0m\n')
-        if choice_d == 'n':
-            print('You got out of the game, was that your intent?')
-            print('Back to Main menu...')
-            welcome_choice_user()
-            choice_answer()
-        elif choice_d != 'y':
-            print('Not a recognized letter, starting over')
-            welcome_choice_user()
-            choice_answer()
-        elif choice_d == 'y':
-            print('It looks like flowers!')
-            print('How many do you imagine?')
-            print('Are they blooming or wilting?')
-            print(r"""
+def flowers():
+    """Function to call fourth object"""
+    print('It looks like flowers!')
+    print('How many do you imagine?')
+    print('Are they blooming or wilting?')
+    print(r"""
         .'`'.'`'.
     .''.`.  :  .`.''.
     '.    '._.'    .'
@@ -135,22 +126,19 @@ def horse():
             \|
 
                     """)
-            print('Take a moment to imagine, describe...')
-            user_answer_fourth = input('Write down the details... \n')
-            print(f'You wrote: "{user_answer_fourth}"')
-            choice_e = input('\x1B[3mNext = y, Restart = n\x1B[0m\n')
-            if choice_b == 'n':
-                print('You got out of the game, was that your intent?')
-                print('Back to Main menu...')
-                welcome_choice_user()
-                choice_answer()
-            elif choice_d != 'y':
-                print('Not a recognized letter, starting over')
-                welcome_choice_user()
-                choice_answer()
-            elif choice_e == 'y':
-                print('There is something else! Thunderstorm')
-                print(r"""                                  ________________________
+    print('Take a moment to imagine, describe...')
+    user_answer_fourth = input('Write down the details... \n')
+    print(f'You wrote: "{user_answer_fourth}"')
+    print('There is something else appearing here...')
+    next_or_restart()
+    thunder()
+
+
+def thunder():
+    """Function to call fifth object"""
+    print('It\'s a storm, more like a thundrstorm!')
+    print('Imagine, where is it? ')
+    print(r"""                                  ________________________
                         ___(                        )
                         (                          _)
                         (_                       __))
@@ -165,11 +153,11 @@ def horse():
                 //
                 /'
                 """)
-                print('Is it close or far? Does it affect others?')
-                print('How is it related, is it temporary or staying?')
-                user_answer_fifth = input('Imagine, write it down\n')
-                print(40 * '*')
-                print('''\n    Now the explanation...
+    print('Is it close or far? Does it affect others?')
+    print('How is it related, is it temporary or staying?')
+    user_answer_fifth = input('Imagine, write it down\n')
+    print(40 * '*')
+    print('''\n    Now the explanation...
 
     The cube is your true self!
     If taller than your own height than
@@ -183,9 +171,9 @@ def horse():
     means you know who you are, while
     a hollow may mean that you are busy
     discovering your true self''')
-                print(f'    You wrote:{user_answer_first}')
-                print(40 * '*')
-                print('''\n
+    # print(f'    You wrote:{user_answer_first}')
+    print(40 * '*')
+    print('''\n
 The ladder represents two aspects of
 your life;\n
 Your goals and frienships.
@@ -205,10 +193,10 @@ of friends. New looking ladder means
 new friendships are present in your
 life, while an old looking ladder
 would imply long enduring friendships''')
-                print(f'   You wrote: {user_answer_second}')
-                print(40 * '*')
-                # color of the horse - explain
-                print('''\n
+    # print(f'   You wrote: {user_answer_second}')
+    print(40 * '*')
+    # color of the horse - explain
+    print('''\n
 Next, the horse; it represents your
 partner. A horse closely related to
 cube means you strive for close
@@ -226,10 +214,10 @@ Unicorn/Pegasus mean unrealistic
 expectations. A brown sturdy working
 horse means that you want a reliable
 and stabile partner''')
-                print(f'You wrote: "{user_answer_third}"')
-                print(40 * '*')
-                print('\n')
-                print('''
+    # print(f'You wrote: "{user_answer_third}"')
+    print(40 * '*')
+    print('\n')
+    print('''
 Next, the flowers represent your family/
 children or anything you created and are
 taking care of. If the flowers are
@@ -242,10 +230,10 @@ mean you could be overwhelmed with
 too many concerns around your children.
 When wilting flowers would represent
 that relationships are broken or lost.''')
-                print(f'    You wrote: "{user_answer_fourth}"')
-                print(40 * '*')
-                print('\n')
-                print('''
+    print(f'    You wrote: "{user_answer_fourth}"')
+    print(40 * '*')
+    print('\n')
+    print('''
 Next, the thunderstorm represents the
 stress and fears in your life and
 how you look at them. A strong storm
@@ -263,7 +251,7 @@ cause any change, means that you
 have confidence in resolving your
 stress.
 ''')
-                print(f'    You wrote: "{user_answer_fifth}"')
+    print(f'    You wrote: "{user_answer_fifth}"')
 
 # if choice == 'q':
 #     print('\x1B[3mYou are quitting, thanks for trying it out!\x1B[0m')
