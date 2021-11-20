@@ -42,11 +42,15 @@ def choice_answer():
 def next_or_restart():
     """Function to use for iterating through objects and call it"""
     ask_user = input('\x1B[3mNext = y, Restart = n\x1B[0m\n')
-    while ask_user == 'n':
+    if ask_user == 'n':
         print('You got out of the game, was that your intent?')
         print('Restarting... Back to Main menu...')
         welcome_choice_user()
-            
+        choice_answer()
+    elif ask_user == '':
+        print('You entered invalid value, Back to Main menu')
+        welcome_choice_user()
+        choice_answer()
 
 
 def horse():
@@ -157,7 +161,7 @@ def thunder():
                 """)
     print('Is it close or far? Does it affect others?')
     print('How is it related, is it temporary or staying?')
-    user_answer_fifth = input('Imagine, write it down\n')
+    # user_answer_fifth = input('Imagine, write it down\n')
     print(40 * '*')
     print('''\n    Now the explanation...
 
@@ -232,7 +236,7 @@ mean you could be overwhelmed with
 too many concerns around your children.
 When wilting flowers would represent
 that relationships are broken or lost.''')
-    print(f'    You wrote: "{user_answer_fourth}"')
+    # print(f'    You wrote: "{user_answer_fourth}"')
     print(40 * '*')
     print('\n')
     print('''
@@ -253,7 +257,7 @@ cause any change, means that you
 have confidence in resolving your
 stress.
 ''')
-    print(f'    You wrote: "{user_answer_fifth}"')
+    # print(f'    You wrote: "{user_answer_fifth}"')
 
 # if choice == 'q':
 #     print('\x1B[3mYou are quitting, thanks for trying it out!\x1B[0m')
