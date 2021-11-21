@@ -1,4 +1,4 @@
-# Japanese test - Meanwhile in the dessert
+# Japanese test - Dessert, Cube, Ladder, Horse, Flowers, Storm
 
 ## Description
 
@@ -30,7 +30,7 @@ Describe step by step process
 
 # Flowchart
 
-![](assets/readme-images/cube-flowchart.png)
+![](static/readme-images/cube-flowchart.png)
 
 # Features
 
