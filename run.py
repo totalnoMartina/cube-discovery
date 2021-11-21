@@ -46,9 +46,7 @@ def flowers():
     user_answer_fourth = input('Write down the details... \n')
     print(f'You wrote: "{user_answer_fourth}"')
     print('There is something else appearing here...')
-    next_or_restart()
-    thunder()
-
+    
 
 def horse():
     """Function to call third object"""
@@ -73,8 +71,6 @@ def horse():
     user_answer_third = input('Write down what you imagine...\n')
     print(f'You wrote: "{user_answer_third}"')
     print('There seems to be something else appearing...!')
-    next_or_restart()
-    flowers()
 
 
 def ladder():
@@ -94,8 +90,6 @@ def ladder():
     user_answer_second = input('Imagine, write it down...\n')
     print(f'You wrote: "{user_answer_second}"')
     print('Okay, now... There is something else appearing in here...')
-    next_or_restart()
-    horse()
 
 
 def cube():
@@ -116,8 +110,7 @@ def cube():
     user_answer_first = input('Take a moment to imagine, write it down\n')
     print(f'You wrote: "{user_answer_first}"')
     print('Okay, now... There is something else appearing in here...')
-    next_or_restart()
-    ladder()
+    
 
 
 def choice_answer():
@@ -213,8 +206,7 @@ def display_users_descriptions():
     an old looking ladder would imply long enduring friendships''')
     # print(f'   You wrote: {user_answer_second}')
     print(40 * '*')
-    # color of the horse - explain
-    print('''\n
+    print('''
     Next, the horse; it represents your
     partner. A horse closely related to
     cube means you strive for close
@@ -234,7 +226,7 @@ def display_users_descriptions():
     and stabile partner''')
     print(40 * '*')
     print('''
-    Next, the flowers represent your family/
+    Next, the flowers represent your family
     children or anything you created and are
     taking care of. If the flowers are
     close to the cube, it means you are
@@ -270,12 +262,26 @@ def display_users_descriptions():
 def all_funcs():
     """ Will be used to run all functions accordingly """
     welcome_choice_user()
+    choice_answer()
+    next_or_restart()
+    ladder()
+    next_or_restart()
+    horse()
+    next_or_restart()
+    flowers()
+    next_or_restart()
+    thunder()
     ask_explain = input('Would you like to see your interpretation? (y/n)')
     if ask_explain == 'n':
         print('Thanks for trying this out!')
     else:
         display_users_descriptions()
-    choice_answer()
+        another_try = input('Wanna try again? (y/n)')
+        if another_try == 'y':
+            welcome_choice_user()
+            choice_answer()
+        elif another_try != 'y':
+            print('Hope you enjoyed!')
     print('You exited the game')
     print('All functions work properly!')
 
