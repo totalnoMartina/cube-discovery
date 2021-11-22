@@ -4,7 +4,30 @@
 
 This application is is a personality test deriving from japanese culture, and this [link](https://steemit.com/psychology/@breezin/cube-test-japenese-personality-test) provides all relevant information about how this game works. It can also help users to notice how do they see themselves and sparkle some imagination.
 
-[] image of the app when it is done
+Welcome Page
+
+![](static/readme-images/welcome.png)
+
+Entered test - First object - cube
+
+![](static/readme-images/started.png)
+
+Second object - Ladder
+
+![](static/readme-images/ladder.png)
+
+Third object - Horse
+
+![](static/readme-images/horse.png)
+
+Fourth object - Flowers
+
+![](static/readme-images/flowers.png)
+
+Fifth object - Thunderstorm
+
+![](static/readme-images/thunder.png)
+
 
 # Content 
 
