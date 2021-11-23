@@ -80,8 +80,7 @@ Deploying right after commiting on Git - explain processes
 
 The italics code were found in [this link](https://stackoverflow.com/questions/13559276/can-i-write-italics-to-the-python-shell)
 
-# Caveats 
-- reasons why app is not usable in real world, but i think it is... we'll see :)
+The code for prompt asking user for a name is found [here](https://python-prompt-toolkit.readthedocs.io/en/stable/pages/asking_for_input.html)
 
 # Acknowledgements
 

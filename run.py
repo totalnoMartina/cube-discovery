@@ -1,4 +1,5 @@
 """ Functions to control flow of the japanese cube test """
+from prompt_toolkit import prompt
 
 
 def thunder():
@@ -119,7 +120,12 @@ def choice_answer():
         cube()
     elif choice == 'b':
         information_display()
-        welcome_choice_user()
+        ask = input('Wanna try this now? (y/n)')
+        if ask == 'y':
+            welcome_choice_user()
+            choice_answer()
+        else:
+            print('Thanks for checking this out!')
     elif choice == 'q':
         print('\x1B[3mYou are quitting, thanks for trying it out!\x1B[0m')
         print('Goodbye')
@@ -148,12 +154,12 @@ def welcome_choice_user():
     print('''   \033[1mWelcome to the Japanese Cube test!\033[0m\n
         Meanwhile in the middle of the dessert...
     . . . .___________________________________________. . . .''')
-    name = input('  Your name, please: \n')
+    name = prompt('Nice to have you here, your name, please:\n')
     if name == '':
         print('You entered invalid value, please try again')
         welcome_choice_user()
     print('This is a game where all answers are right.')
-    print(f'Use your imagination, ready {name}?')
+    print('Use your imagination, ready %s ' % name)
     print('Take some time for describing every object...')
 
 
