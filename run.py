@@ -46,7 +46,7 @@ def flowers():
     user_answer_fourth = input('Write down the details... \n')
     print(f'You wrote: "{user_answer_fourth}"')
     print('There is something else appearing here...')
-    
+
 
 def horse():
     """Function to call third object"""
@@ -110,7 +110,6 @@ def cube():
     user_answer_first = input('Take a moment to imagine, write it down\n')
     print(f'You wrote: "{user_answer_first}"')
     print('Okay, now... There is something else appearing in here...')
-    
 
 
 def choice_answer():
@@ -142,7 +141,7 @@ def next_or_restart():
         print('You entered invalid value, Back to Main menu')
         welcome_choice_user()
         choice_answer()
-    
+
 
 def welcome_choice_user():
     """ Greets the user, instructions and options, about, start and quit """
@@ -162,13 +161,16 @@ def information_display():
     """ Gives information of this game - activate imagination and inspire """
     print('''   This game derived from the Japanese personality test,
         which helps people discover what their true inner thoughts are about
-        their current state of being.\n
+        their current state of being. Just close your eyes for a moment and
+        imagine you are in a dessert, nothing around just sand and warm sky.
+        There are 5 objects presented for to asociate your thoughts and you
+        can write down your description after each one.
         Note; this test could be tried out on your own
         to inspire you to get to know yourself, or in company to discover
-        about your friends if they are open to try.\n
-        Don\'t overthink it, just let imagination flow.
+        about your friends if they are open to try.
+        Don\'t overthink it, just let your imagination flow.
         It is only as accurate as you are honest with yourself
-        Or... It could just be used for fun!\n''')
+        Or... It could just be used for fun!''')
     print(40 * '*')
 
 
@@ -176,12 +178,12 @@ def display_users_descriptions():
     """ Displays answers that users gave and clarification of the meaning """
     print('''    Now the explanation...
 
-    The cube is your true self!
-    If taller than your own height than
-    your confidence is high while a smaller
-    one means that you could be shy. If the
-    cube is moving, it could symbolize a mind
-    that is open and unconventional while a
+    The cube is your true self! If
+    taller than cube, your confidence
+    is high while a shorter one means
+    that you could be shy. If the
+    cube is moving, it could symbolize
+    a open-minded person while a
     still sitting cube is businesslike, a
     cube that is dug into the sand means
     that you are a planner. A solid cube
@@ -191,20 +193,24 @@ def display_users_descriptions():
     print(40 * '*')
     print('''
     The ladder represents two aspects of
-    your life;
-    Your goals and frienships. A short ladder represents a small
-    circle of friends and realistic goals, while tall ladder means you
-    have many friends, and your goals are difficult
-    to attain. If leaned onto the cube, shows closeness
-    towards your friends as well as reliability your
-    friends have towrds you, and a ladder equal size as
-    cube shows you that you see your friends as equals
-    in authorithy. Lower ladder means you consider
-    yourself as alpha leader of the group
-    of friends. Brand new looking ladder means
-    new friendships are present in your life, while
-    an old looking ladder would imply long enduring friendships''')
-    # print(f'   You wrote: {user_answer_second}')
+    your life; Your goals and frienships.
+    A short ladder represents a small
+    circle of friends and realistic goals,
+    while tall one means you
+    have many friends, and your goals
+    are difficult to attain. If leaned
+    onto the cube, shows closeness
+    towards your friends as well as
+    reliability your friends have towards
+    you, and if equal size as
+    cube shows you that you see your
+    friends as equals in authorithy.
+    If lower, it means you consider
+    yourself as a leader of the group.
+    Brand new looking ladder
+    means new friendships, while an
+    old looking one would imply
+    long enduring friendships''')
     print(40 * '*')
     print('''
     Next, the horse; it represents your
@@ -226,22 +232,21 @@ def display_users_descriptions():
     and stabile partner''')
     print(40 * '*')
     print('''
-    Next, the flowers represent your family
+    The flowers represent your family or
     children or anything you created and are
     taking care of. If the flowers are
     close to the cube, it means you are
     close to your children. A vibrant
     blossoming flowers would signify the
     healthy strong relationship with your
-    kids, while too many flowers could
+    kids/relatives, while too many flowers could
     mean you could be overwhelmed with
-    too many concerns around your children.
+    too many concerns around your family.
     When wilting flowers would represent
     that relationships are broken or lost.''')
     print(40 * '*')
-    print('\n')
     print('''
-    Next, the thunderstorm represents the
+    The thunderstorm represents the
     stress and fears in your life and
     how you look at them. A strong storm
     can mean that the stress really gets
@@ -257,6 +262,7 @@ def display_users_descriptions():
     cause any change, means that you
     have confidence in resolving your
     stress.''')
+    print(40 * '*')
 
 
 def all_funcs():
