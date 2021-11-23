@@ -60,11 +60,11 @@ def horse():
 (_,' \  `^-)""      `.\
       |              | \
         \              / |
-    / \  /.___.'\  (\ (_
-    < ,"||      \ |`. \`-'
-        \\ ()      )|  )/
-        |_>|>     /_] //
-        /_]       /_]
+        / \  /.___.'\  (\ (_
+       < ,"||      \ |`. \`-'
+         \\ ()      )|  )/
+         |_>|>     /_] //
+            /_]       /_]
 ''')
     print('Take a moment to imagine, what does it look like...')
     print('Is it related to the objects in any way? What way?')
@@ -287,7 +287,7 @@ def all_funcs():
             welcome_choice_user()
             choice_answer()
         elif another_try != 'y':
-            print('Hope you enjoyed!')
+            print('Hope you enjoyed! Thanks for trying it out!')
     print('You exited the game')
     print('All functions work properly!')
 
