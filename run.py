@@ -126,6 +126,7 @@ def choice_answer():
             choice_answer()
         else:
             print('Thanks for checking this out!')
+            exit()
     elif choice == 'q':
         print('\x1B[3mYou are quitting, thanks for trying it out!\x1B[0m')
         print('Goodbye')
