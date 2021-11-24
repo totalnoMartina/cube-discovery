@@ -33,6 +33,13 @@ def thunder():
     print('Is it close or far? Does it affect others?')
     print('How is it related, is it temporary or staying?')
     user_answer_fifth = input('Imagine, write it down\n')
+    print('Use as many words as you like, describe the details and press Enter')
+    if user_answer_fifth == '':
+        clear()
+        print('Ooops, nothing is written. Please describe the shape')
+        thunder()
+    else:
+        print('That was the last object, your interpretation is ready!')
     print(f'You wrote {user_answer_fifth}')
 
 
@@ -55,8 +62,15 @@ def flowers():
     print('Are they blooming or wilting?')
     print('Take a moment to imagine, describe...')
     user_answer_fourth = input('Write down the details... \n')
-    print(f'You wrote: "{user_answer_fourth}"')
-    print('There is something else appearing here...')
+    print('Use as many words as you like, describe the details and press Enter')
+    if user_answer_fourth == '':
+        clear()
+        print('Ooops, nothing is written. Please describe the shape')
+        flowers()
+    else:
+        print(f'You wrote: "{user_answer_fourth}"')
+        print('There is something else appearing here...')
+        thunder()
 
 
 def horse():
@@ -81,8 +95,15 @@ def horse():
     print('Take a moment to imagine, what does it look like...')
     print('Is it related to the objects in any way? What way?')
     user_answer_third = input('Write down what you imagine...\n')
-    print(f'You wrote: "{user_answer_third}"')
-    print('There seems to be something else appearing...!')
+    print('Use as many words to describe many details and hit Enter')
+    if user_answer_third == '':
+        clear()
+        print('Ooops, nothing is written. Please describe the shape')
+        horse()
+    else:
+        print(f'You wrote: "{user_answer_third}"')
+        print('There seems to be something else appearing...!')
+        flowers()
 
 
 def ladder():
@@ -104,7 +125,7 @@ def ladder():
     print('Use as many words to describe many details and hit Enter')
     if user_answer_second == '':
         clear()
-        print('Now, now, nothing is written. Please describe the shape')
+        print('Ooops, nothing is written. Please describe the shape')
         ladder()
     else:    
         print(f'You wrote: "{user_answer_second}"')
@@ -191,7 +212,7 @@ def welcome_choice_user():
     """ Greets the user, instructions and options, about, start and quit"""
 
     print('''   \033[1mWelcome to the Japanese Cube test!\033[0m\n
-        Meanwhile in the middle of the dessert...
+    Meanwhile in the middle of the dessert
     . . . .___________________________________________. . . .''')
     name = input('Nice to have you here, your name, please:\n')
     if not name.isalpha() or name == '':
@@ -205,7 +226,7 @@ def welcome_choice_user():
 
 
 def information_display():
-    """ Gives information of this game - activate imagination and inspire """
+    """ Gives information of this test - activate imagination and inspire """
 
     print('''            ____________________________
             /                           \.
