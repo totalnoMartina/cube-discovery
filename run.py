@@ -34,9 +34,12 @@ def thunder():
     print('How is it related, is it temporary or staying?')
     user_answer_fifth = input('Imagine, write it down\n')
     print('Use as many words as you like, describe the details and press Enter')
-    if user_answer_fifth == '':
+    if user_answer_fifth.isalpha() == '':
         clear()
         print('Ooops, nothing is written. Please describe the shape')
+        thunder()
+    elif not user_answer_fifth.isalpha():
+        print('Not even a letter, please enter some description')
         thunder()
     else:
         print('That was the last object, your interpretation is ready!')
@@ -61,11 +64,14 @@ def flowers():
                     """)
     print('Are they blooming or wilting?')
     print('Take a moment to imagine, describe...')
-    user_answer_fourth = input('Write down the details... \n')
     print('Use as many words as you like, describe the details and press Enter')
+    user_answer_fourth = input('Write down the details... \n')
     if user_answer_fourth == '':
         clear()
-        print('Ooops, nothing is written. Please describe the shape')
+        print('Ooops, nothing is written. Please describe in details')
+        flowers()
+    elif not user_answer_fourth.isalpha():
+        print('Not even a letter, please enter some description')
         flowers()
     else:
         print(f'You wrote: "{user_answer_fourth}"')
@@ -100,6 +106,9 @@ def horse():
         clear()
         print('Ooops, nothing is written. Please describe the shape')
         horse()
+    elif not user_answer_third.isalpha():
+        print('Not even a letter, please enter some description')
+        horse()
     else:
         print(f'You wrote: "{user_answer_third}"')
         print('There seems to be something else appearing...!')
@@ -121,11 +130,14 @@ def ladder():
             ╬═╬
     """)
     print('Is there anything related between the cube and ladder?')
-    user_answer_second = input('Imagine, write it down...\n')
     print('Use as many words to describe many details and hit Enter')
+    user_answer_second = input('Imagine, write it down...\n')
     if user_answer_second == '':
         clear()
         print('Ooops, nothing is written. Please describe the shape')
+        ladder()
+    elif not user_answer_second.isalpha():
+        print('Not even a letter, please enter some description')
         ladder()
     else:    
         print(f'You wrote: "{user_answer_second}"')
@@ -153,6 +165,9 @@ def cube():
     if user_answer_first == '':
         clear()
         print('You must describe the shape, try again')
+        cube()
+    elif not user_answer_second.isalpha():
+        print('Not even a letter, please enter some description')
         cube()
     else:
         print(f'You wrote: "{user_answer_first}"')
@@ -195,13 +210,13 @@ def next_or_restart():
     """Function to use for iterating through objects and call it"""
 
     ask_user = input('\x1B[3mNext = y, Restart = n\x1B[0m\n')
-    if ask_user == 'n':
+    if ask_user.isalpha() == 'n':
         clear()
         print('You got out of the game,...')
         print('Restarting... Back to Main menu...')
         welcome_choice_user()
         choice_answer()
-    elif ask_user == '':
+    elif ask_user.isalpha == '':
         clear()
         print('You entered invalid value, Back to Main menu')
         welcome_choice_user()
@@ -358,10 +373,10 @@ def interpretation():
             exit()
         elif ask_explain.lower() == 'y':
             display_users_descriptions()
-            another_try = input('Press y to start again or Enter to exit!')
+            another_try = input('Press y to start the test again or Enter to exit!')
             if another_try.lower() == 'y':
                 clear()
-                print('You have chosen y to try again!')
+                print('You have chosen y to try this test again!')
                 welcome_choice_user()
                 choice_answer()
             elif another_try != 'y':
@@ -385,7 +400,7 @@ def all_funcs():
     # next_or_restart()
     # horse()
     # next_or_restart()
-    # flowers()
+    flowers()
     # next_or_restart()
     # thunder()
     interpretation()
