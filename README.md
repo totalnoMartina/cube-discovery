@@ -4,9 +4,13 @@
 
 This application is is a personality test deriving from japanese culture, and this [link](https://steemit.com/psychology/@breezin/cube-test-japenese-personality-test) provides all relevant information about how this game works. It can also help users to notice how do they see themselves and sparkle some imagination.
 
-Welcome Page
+### Welcome Page
 
 ![](static/readme-images/welcome.png)
+
+### About
+
+![](static/readme-images/about_test.png)
 
 Entered test - First object - cube
 

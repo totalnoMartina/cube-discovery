@@ -5,11 +5,13 @@ from os import system, name
 
 def clear():
     """Clearing function to clear the screen"""
+
     os.system("cls" if os.name == "nt" else "clear")
 
 
 def thunder():
     """Function to call fifth object"""
+
     print('It\'s a storm, more like a thundrstorm!')
     print('Imagine, where is it? ')
     print(r"""                            ________________________
@@ -35,6 +37,7 @@ def thunder():
 
 def flowers():
     """Function to call fourth object"""
+
     print('It looks like flowers!')
     print('How many do you imagine?')
     print('Are they blooming or wilting?')
@@ -57,6 +60,7 @@ def flowers():
 
 def horse():
     """Function to call third object"""
+
     print('Something is coming from out of nowhere,...')
     print('Looks like a horse!')
     print('Imagine his figure, movement, relation to others')
@@ -82,6 +86,7 @@ def horse():
 
 def ladder():
     """Function to use second object"""
+
     print('From out of nowhere, a ladder shows up...')
     print('What size, position, material of ladder do you imagine?')
     print('Is there anything related between the cube and ladder?')
@@ -101,6 +106,7 @@ def ladder():
 
 def cube():
     """Function to start with first object"""
+
     print('\x1B[3mYou have chosen a to start the game!\x1B[0m \n')
     print('''Imagine now... You find yourself in the dessert...
         Nothing around you... The objects start to appear...
@@ -121,6 +127,7 @@ def cube():
 
 def choice_answer():
     """ Redirect the user input with the answer """
+
     choice = input('\x1B[3mChoose a(start), b(about), q(quit)\x1B[0m\n')
     if choice == 'a':
         cube()
@@ -148,6 +155,7 @@ def choice_answer():
 
 def next_or_restart():
     """Function to use for iterating through objects and call it"""
+
     ask_user = input('\x1B[3mNext = y, Restart = n\x1B[0m\n')
     if ask_user == 'n':
         clear()
@@ -163,7 +171,8 @@ def next_or_restart():
 
 
 def welcome_choice_user():
-    """ Greets the user, instructions and options, about, start and quit """
+    """ Greets the user, instructions and options, about, start and quit"""
+
     print('''   \033[1mWelcome to the Japanese Cube test!\033[0m\n
         Meanwhile in the middle of the dessert...
     . . . .___________________________________________. . . .''')
@@ -179,6 +188,7 @@ def welcome_choice_user():
 
 def information_display():
     """ Gives information of this game - activate imagination and inspire """
+
     print('''          ______________________________
             /                           \.
          / \     This is an ancient     |.
@@ -201,6 +211,7 @@ def information_display():
 
 def display_users_descriptions():
     """ Displays answers that users gave and clarification of the meaning """
+
     print('''    Now the explanation...
 
     The cube is your true self! If
@@ -290,9 +301,9 @@ def display_users_descriptions():
     print(40 * '*')
 
 
-
 def interpretation():
     """ Ask user to check the interpretation"""
+
     ask_explain = input('Would you like to see your interpretation? (y/n)')
     while ask_explain:
         if ask_explain == 'n':
@@ -302,6 +313,7 @@ def interpretation():
             display_users_descriptions()
             another_try = input('Press y to start again or Enter to exit!')
             if another_try == 'y':
+                clear()
                 print('You chose yes to trying again!')
                 welcome_choice_user()
                 choice_answer()
@@ -316,6 +328,7 @@ def interpretation():
 
 def all_funcs():
     """ Will be used to run all functions accordingly """
+
     welcome_choice_user()
     choice_answer()
     next_or_restart()
