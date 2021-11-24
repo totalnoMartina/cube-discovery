@@ -296,18 +296,21 @@ def interpretation():
     while ask_explain:
         if ask_explain == 'n':
             print('You choose n! Thanks for trying this out!')
+            exit()
         elif ask_explain == 'y':
             display_users_descriptions()
-            another_try = input('Wanna try again? (y/n)')
+            another_try = input('Press y to start again or any key to exit!')
             if another_try == 'y':
                 print('You chose yes to trying again!')
                 welcome_choice_user()
                 choice_answer()
             elif another_try != 'y':
                 print('Hope you enjoyed! Thanks for trying it out!')
+                exit()
     else:
         print('You did not enter recognized letter') 
         interpretation()
+        exit()
 
 
 def all_funcs():
