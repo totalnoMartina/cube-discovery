@@ -212,7 +212,8 @@ def information_display():
 def display_users_descriptions():
     """ Displays answers that users gave and clarification of the meaning """
 
-    print('''    Now the explanation...
+    def cube_intepret():
+        print('''    Now the explanation...
 
     The cube is your true self! If
     taller than cube, your confidence
@@ -226,8 +227,8 @@ def display_users_descriptions():
     means you know who you are, while
     a hollow may mean that you are busy
     discovering your true self''')
-    print(40 * '*')
-    print('''
+    def ladder_interpret():
+        print('''
     The ladder represents two aspects of
     your life; Your goals and frienships.
     A short ladder represents a small
@@ -247,8 +248,9 @@ def display_users_descriptions():
     means new friendships, while an
     old looking one would imply
     long enduring friendships''')
-    print(40 * '*')
-    print('''
+    
+    def horse_interpret():
+        print('''
     Next, the horse; it represents your
     partner. A horse closely related to
     cube means you strive for close
@@ -266,8 +268,9 @@ def display_users_descriptions():
     expectations. A brown sturdy working
     horse means that you want a reliable
     and stabile partner''')
-    print(40 * '*')
-    print('''
+    
+    def flowers_interpret():
+        print('''
     The flowers represent your family or
     children or anything you created and are
     taking care of. If the flowers are
@@ -280,8 +283,9 @@ def display_users_descriptions():
     too many concerns around your family.
     When wilting flowers would represent
     that relationships are broken or lost.''')
-    print(40 * '*')
-    print('''
+    
+    def thunderstorm_interpret():
+        print('''
     The thunderstorm represents the
     stress and fears in your life and
     how you look at them. A strong storm
@@ -298,7 +302,9 @@ def display_users_descriptions():
     cause any change, means that you
     have confidence in resolving your
     stress.''')
-    print(40 * '*')
+    list_of_functions = [cube_intepret, ladder_interpret, horse_interpret, flowers_interpret, thunderstorm_interpret]
+    for i in range(len(list_of_functions)): 
+        list_of_functions[i]()
 
 
 def interpretation():
@@ -314,7 +320,7 @@ def interpretation():
             another_try = input('Press y to start again or Enter to exit!')
             if another_try == 'y':
                 clear()
-                print('You chose yes to trying again!')
+                print('You have chosen y to try again!')
                 welcome_choice_user()
                 choice_answer()
             elif another_try != 'y':
