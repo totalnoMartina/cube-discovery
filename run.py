@@ -1,5 +1,6 @@
 """ Functions to control flow of the japanese cube test """
-
+import tabulate
+tabulate.WIDE_CHARS_MODE = False
 import os
 from os import system, name
 
@@ -38,9 +39,8 @@ def thunder():
 def flowers():
     """Function to call fourth object"""
 
-    print('It looks like flowers!')
+    print('It looks like flowers! Where are they?')
     print('How many do you imagine?')
-    print('Are they blooming or wilting?')
     print(r"""
         .'`'.'`'.
     .''.`.  :  .`.''.
@@ -52,6 +52,7 @@ def flowers():
             \|
 
                     """)
+    print('Are they blooming or wilting?')
     print('Take a moment to imagine, describe...')
     user_answer_fourth = input('Write down the details... \n')
     print(f'You wrote: "{user_answer_fourth}"')
@@ -89,7 +90,6 @@ def ladder():
 
     print('From out of nowhere, a ladder shows up...')
     print('What size, position, material of ladder do you imagine?')
-    print('Is there anything related between the cube and ladder?')
     print(r"""
             ╬═╬
             ╬═╬
@@ -99,6 +99,7 @@ def ladder():
             ╬═╬
             ╬═╬
     """)
+    print('Is there anything related between the cube and ladder?')
     user_answer_second = input('Imagine, write it down...\n')
     print(f'You wrote: "{user_answer_second}"')
     print('Okay, now... There is something else appearing in here...')
@@ -210,11 +211,10 @@ def information_display():
 
 
 def display_users_descriptions():
-    """ Displays answers that users gave and clarification of the meaning """
+    """ Displays interpretations """
 
     def cube_intepret():
-        print('''    Now the explanation...
-
+        print('''
     The cube is your true self! If
     taller than cube, your confidence
     is high while a shorter one means
@@ -333,7 +333,7 @@ def interpretation():
 
 
 def all_funcs():
-    """ Will be used to run all functions accordingly """
+    """ Run all functions accordingly """
 
     welcome_choice_user()
     choice_answer()
