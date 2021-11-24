@@ -101,9 +101,15 @@ def ladder():
     """)
     print('Is there anything related between the cube and ladder?')
     user_answer_second = input('Imagine, write it down...\n')
-    print(f'You wrote: "{user_answer_second}"')
-    print('Okay, now... There is something else appearing in here...')
-
+    print('Use as many words to describe many details and hit Enter')
+    if user_answer_second == '':
+        clear()
+        print('Now, now, nothing is written. Please describe the shape')
+        ladder()
+    else:    
+        print(f'You wrote: "{user_answer_second}"')
+        print('Okay, now... There is something else appearing in here...')
+        horse()
 
 def cube():
     """Function to start with first object"""
@@ -122,36 +128,45 @@ def cube():
         \/_______/""")
     print('Describe the shape, position or movement, volume...\n')
     user_answer_first = input('Take a moment to imagine, write it down\n')
-    print(f'You wrote: "{user_answer_first}"')
-    print('Okay, now... There is something else appearing in here...')
+    print('Use as many words to describe many details and hit Enter')
+    if user_answer_first == '':
+        clear()
+        print('You must describe the shape, try again')
+        cube()
+    else:
+        print(f'You wrote: "{user_answer_first}"')
+        print('Okay, now... There is something else appearing in here...')
+        ladder()
 
 
 def choice_answer():
     """ Redirect the user input with the answer """
 
     choice = input('\x1B[3mChoose a(start), b(about), q(quit)\x1B[0m\n')
-    if choice == 'a':
+    if choice.lower() == 'a':
         clear()
         cube()
-    elif choice == 'b':
+    elif choice.lower() == 'b':
         information_display()
         ask = input('Wanna try this now? (y/n)')
-        if ask == 'y':
-            welcome_choice_user()
-            choice_answer()
-        elif ask == 'n':
+        if ask.lower() == 'y':
+            clear()
+            cube()
+        elif ask.lower() == 'n':
+            clear()
             print('You chose n, thanks for checking this out!')
             exit()
         else:
-            print('You did not choose valid option, try again?')
+            clear()
+            print('You did not choose valid option, try again')
             choice_answer()
-    elif choice == 'q':
+    elif choice.lower() == 'q':
         print('\x1B[3mYou are quitting, thanks for trying it out!\x1B[0m')
         print('Goodbye')
         exit()
     else:
+        clear()
         print('Not a recognized letter, starting over')
-        welcome_choice_user()
         choice_answer()
 
 
@@ -179,13 +194,14 @@ def welcome_choice_user():
         Meanwhile in the middle of the dessert...
     . . . .___________________________________________. . . .''')
     name = input('Nice to have you here, your name, please:\n')
-    if name == '':
+    if not name.isalpha() or name == '':
         print('You entered invalid value, please try again')
         welcome_choice_user()
-    print('This is a game where all answers are right.')
-    print(f'Use your imagination, ready {name}?')
-    print('Take some time for describing every object...')
-    
+    else:
+        print('This is a game where all answers are right.')
+        print(f'Use your imagination, ready {name}?')
+        print('Take some time for describing every object...\n')
+        choice_answer()
 
 
 def information_display():
@@ -306,6 +322,8 @@ def display_users_descriptions():
     list_of_functions = [cube_intepret, ladder_interpret, horse_interpret, flowers_interpret, thunderstorm_interpret]
     for i in range(len(list_of_functions)): 
         list_of_functions[i]()
+        input('Press enter to proceed')
+        clear()
 
 
 def interpretation():
@@ -337,15 +355,14 @@ def all_funcs():
     """ Run all functions accordingly """
 
     welcome_choice_user()
-    choice_answer()
-    next_or_restart()
-    ladder()
-    next_or_restart()
-    horse()
-    next_or_restart()
-    flowers()
-    next_or_restart()
-    thunder()
+    # next_or_restart()
+    # ladder()
+    # next_or_restart()
+    # horse()
+    # next_or_restart()
+    # flowers()
+    # next_or_restart()
+    # thunder()
     interpretation()
     print('You exited the game')
     print('All functions work properly!')

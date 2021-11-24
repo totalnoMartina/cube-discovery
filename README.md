@@ -4,6 +4,33 @@
 
 This application is is a personality test deriving from japanese culture, and this [link](https://steemit.com/psychology/@breezin/cube-test-japenese-personality-test) provides all relevant information about how this game works. It can also help users to notice how do they see themselves and sparkle some imagination.
 
+## User Stories 
+
+* I want the User to understand and navigate easy through the test
+* I want the User to be able to start/restart/quit the app and get information about the game 
+* I want the User to be able to write the description of objects
+* I want User to have the responses displayed
+* I want User to be notified when the characters that he inputs are not supported with an apropriate message
+* I want to possibly use one of Python libraries to create a visual appearance of the results
+
+
+## Site Owner Goals
+
+* To offer user a display of answers to the questions
+* To be able to guide users and collect their answers, and a name
+* To be able to display a personality test in a fun way to users
+
+## Instructions
+
+Describe step by step process
+
+
+## Flowchart
+
+![](static/readme-images/cube-flowchart.png)
+
+## Features
+
 ### Welcome Page
 
 ![](static/readme-images/welcome.png)
@@ -33,69 +60,52 @@ Fifth object - Thunderstorm
 ![](static/readme-images/thunder.png)
 
 
-# Content 
+### Future features
+-explain
 
-## User Stories 
+## Technologies 
+links and explain
 
-* I want the User to understand and navigate easy through the test
-* I want the User to be able to start/restart/quit the app and get information about the game 
-* I want the User to be able to write the description of objects
-* I want User to have the responses displayed
-* I want User to be notified when the characters that he inputs are not supported with an apropriate message
-* I want to possibly use one of Python libraries to create a visual appearance of the results
+* Git
+* GitHub -  used for version control
+* Gitpod - Cloud-based IDE and the steps for deployment
+* Python
 
-
-## Site Owner Goals
-
-* To offer user a display of answers to the questions
-* To be able to guide users and collect their answers, and a name
-* To be able to display a personality test in a fun way to users
-
-## Instructions
-
-Describe step by step process
+### Python Packages 
 
 
-# Flowchart
+* Prompt-toolkit if used explain every and links connect
+* Tabulate
 
-![](static/readme-images/cube-flowchart.png)
 
-# Features
+## Deployment
 
-* Existing features
-* Future features
-
-# Libraries Used
-
-* Python Prompt Toolkit library
-
-# Deployment
-
-## GitHub
-
-GitHub is used for version control, and GitPod as Cloud-based IDE and the steps for deployment are:
+### GitHub
 
 - In the [GitHub repository](https://github.com/totalnoMartina/cube-discovery),navigate to the Settings tab.
 - From the Source section drop-down menu, select the `Main` Branch (alt: `Master`).
 - Once the `Main` branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.
 
-### To clone this project
+### Local Deployment
 
 In order to make a local copy of this project, you can clone it using the following command in your IDE terminal of your choice:
 
 - `git clone https://github.com/totalnoMartina/cube-discovery.git`
+from slack add here
 
-## Heroku
+### Heroku
 
+Explain step by step, creating a heroku account, create an new app, select region, go to 'deploy' tab, sleect github as deployment method, locate your repository on Github, select 'connect reposit' , enable automatic deployments, thwn go settings tab, and packages here below:
 When deploying on Heroku, two buildpacks are installed from the _Settings_ tab.
 
 1. `heroku/python`
 2. `heroku/nodejs`
 
-A _Config Var_ was added and named `PORT`, and set to `8000` before connecting to GitHub
+A _Config Var_ was added and named `PORT`, and set to `8000` before clicking deploy branch.
+go back to deploy tab, click deploy branch, it will take coulpe minutes to install requirements, once it is finished, you can view live deployed site and list the link to your site. screenshots of the steps maybe - optional
 
 
-# Credits 
+## Credits 
 
 The italics code were found in [this link](https://stackoverflow.com/questions/13559276/can-i-write-italics-to-the-python-shell)
 
