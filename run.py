@@ -1,6 +1,6 @@
 """ Functions to control flow of the japanese cube test """
-import prompt_toolkit
-from prompt_toolkit import prompt
+# import prompt_toolkit
+# from prompt_toolkit import prompt
 import os
 from os import system, name
 
@@ -164,12 +164,12 @@ def welcome_choice_user():
     print('''   \033[1mWelcome to the Japanese Cube test!\033[0m\n
         Meanwhile in the middle of the dessert...
     . . . .___________________________________________. . . .''')
-    username = prompt('Nice to have you here, your name, please:\n')
+    username = input('Nice to have you here, your name, please:\n')
     if username == '':
         print('You entered invalid value, please try again')
         welcome_choice_user()
     print('This is a game where all answers are right.')
-    print('Use your imagination, ready %s ' % name)
+    print(f'Use your imagination, ready {username}?')
     print('Take some time for describing every object...')
     clear()
 
