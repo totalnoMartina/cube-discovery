@@ -351,7 +351,7 @@ def interpretation():
     """ Ask user to check the interpretation"""
 
     ask_explain = input('Would you like to see your interpretation? (y/n)')
-    while ask_explain:
+    while ask_explain.isalpha():
         if ask_explain == 'n':
             print('You choose n! Thanks for trying this out!')
             exit()
@@ -375,7 +375,7 @@ def interpretation():
 def all_funcs():
     """ Run all functions accordingly """
 
-    welcome_choice_user()
+    # welcome_choice_user()
     # next_or_restart()
     # ladder()
     # next_or_restart()
