@@ -1,4 +1,5 @@
 """ Functions to control flow of the japanese cube test """
+import prompt_toolkit
 from prompt_toolkit import prompt
 import os
 from os import system, name
