@@ -32,8 +32,9 @@ def thunder():
                 """)
     print('Is it close or far? Does it affect others?')
     print('How is it related, is it temporary or staying?')
-    user_answer_fifth = input('Imagine, write it down\n')
     print('Use as many words as you like, describe the details and press Enter')
+    global user_answer_fifth
+    user_answer_fifth = input('Imagine, write it down\n')
     if user_answer_fifth.isalpha() == '':
         clear()
         print('Ooops, nothing is written. Please describe the shape')
@@ -66,6 +67,7 @@ def flowers():
     print('Are they blooming or wilting?')
     print('Take a moment to imagine, describe...')
     print('Use as many words as you like, describe the details and press Enter')
+    global user_answer_fourth
     user_answer_fourth = input('Write down the details... \n')
     if user_answer_fourth == '':
         clear()
@@ -102,6 +104,7 @@ def horse():
 ''')
     print('Take a moment to imagine, what does it look like...')
     print('Is it related to the objects in any way? What way?')
+    global user_answer_third
     user_answer_third = input('Write down what you imagine...\n')
     print('Use as many words to describe many details and hit Enter')
     if user_answer_third == '':
@@ -134,6 +137,7 @@ def ladder():
     """)
     print('Is there anything related between the cube and ladder?')
     print('Use as many words to describe many details and hit Enter')
+    global user_answer_second
     user_answer_second = input('Imagine, write it down...\n')
     if user_answer_second == '':
         clear()
@@ -164,8 +168,9 @@ def cube():
        \  /       /
         \/_______/""")
     print('Describe the shape, position or movement, volume...\n')
-    user_answer_first = input('Take a moment to imagine, write it down\n')
+    global user_answer_first
     print('Use as many words to describe many details and hit Enter')
+    user_answer_first = input('Take a moment to imagine, write it down\n')
     if user_answer_first == '':
         clear()
         print('You must describe the shape, try again')
@@ -178,11 +183,14 @@ def cube():
         print(f'You wrote: "{user_answer_first}"')
         print('Okay, now... There is something else appearing in here...')
         ladder()
+    return user_answer_first
+
+
+
 
 
 def choice_answer():
     """ Redirect the user input with the answer """
-
     choice = input('\x1B[3mChoose a(start), b(about), q(quit)\x1B[0m\n')
     if choice.lower() == 'a':
         clear()
@@ -234,6 +242,7 @@ def welcome_choice_user():
     print('''   \033[1mWelcome to the Japanese Cube test!\033[0m\n
     Meanwhile in the middle of the dessert
     . . . .___________________________________________. . . .''')
+    global name
     name = input('Nice to have you here, your name, please:\n')
     if not name.isalpha() or name == '':
         print('You entered invalid value, please try again')
@@ -399,7 +408,9 @@ def interpretation():
 def all_funcs():
     """ Run all functions accordingly """
 
-    welcome_choice_user()
+    # welcome_choice_user()
+    # cube()
+    
     # next_or_restart()
     # ladder()
     # next_or_restart()
@@ -413,4 +424,11 @@ def all_funcs():
     print('All functions work properly!')
 
 
-all_funcs()
+# all_funcs()
+cube()
+print(f'You said for the cube to be described as: {user_answer_first}')
+print(f'You said for the ladder to be described as: {user_answer_second}')
+print(f'You said for the horse to be described as: {user_answer_third}')
+print(f'You said for the flowers to be described as: {user_answer_fourth}')
+print(f'You said for the thunderstorm to be described as: {user_answer_fifth}')
+
