@@ -166,7 +166,7 @@ def cube():
         clear()
         print('You must describe the shape, try again')
         cube()
-    elif not user_answer_second.isalpha():
+    elif not user_answer_first.isalpha():
         print('Not even a letter, please enter some description')
         cube()
     else:
