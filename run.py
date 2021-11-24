@@ -131,6 +131,7 @@ def choice_answer():
 
     choice = input('\x1B[3mChoose a(start), b(about), q(quit)\x1B[0m\n')
     if choice == 'a':
+        clear()
         cube()
     elif choice == 'b':
         information_display()
@@ -184,13 +185,13 @@ def welcome_choice_user():
     print('This is a game where all answers are right.')
     print(f'Use your imagination, ready {name}?')
     print('Take some time for describing every object...')
-    clear()
+    
 
 
 def information_display():
     """ Gives information of this game - activate imagination and inspire """
 
-    print('''          ______________________________
+    print('''            ____________________________
             /                           \.
          / \     This is an ancient     |.
         |  | Japanese personality test, |.
