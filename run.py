@@ -126,12 +126,16 @@ def choice_answer():
         if ask == 'y':
             welcome_choice_user()
             choice_answer()
-        else:
-            print('Thanks for checking this out!')
+        elif ask == 'n':
+            print('You chose n, thanks for checking this out!')
             exit()
+        else:
+            print('You did not choose valid option, try again?')
+            choice_answer()
     elif choice == 'q':
         print('\x1B[3mYou are quitting, thanks for trying it out!\x1B[0m')
         print('Goodbye')
+        exit()
     else:
         print('Not a recognized letter, starting over')
         welcome_choice_user()
@@ -302,7 +306,7 @@ def interpretation():
                 print('Hope you enjoyed! Thanks for trying it out!')
     else:
         print('You did not enter recognized letter') 
-        interpretation() 
+        interpretation()
 
 
 def all_funcs():
