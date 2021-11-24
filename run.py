@@ -1,8 +1,11 @@
 """ Functions to control flow of the japanese cube test """
-# import prompt_toolkit
-# from prompt_toolkit import prompt
+
 import os
 from os import system, name
+
+def clear():
+    """Clearing function to clear the screen"""
+    os.system("cls" if os.name == "nt" else "clear")
 
 
 def thunder():
@@ -164,12 +167,12 @@ def welcome_choice_user():
     print('''   \033[1mWelcome to the Japanese Cube test!\033[0m\n
         Meanwhile in the middle of the dessert...
     . . . .___________________________________________. . . .''')
-    username = input('Nice to have you here, your name, please:\n')
-    if username == '':
+    name = input('Nice to have you here, your name, please:\n')
+    if name == '':
         print('You entered invalid value, please try again')
         welcome_choice_user()
     print('This is a game where all answers are right.')
-    print(f'Use your imagination, ready {username}?')
+    print(f'Use your imagination, ready {name}?')
     print('Take some time for describing every object...')
     clear()
 
@@ -287,11 +290,9 @@ def display_users_descriptions():
     print(40 * '*')
 
 
-def clear():
-    os.system("cls" if os.name == "nt" else "clear")
-
 
 def interpretation():
+    """ Ask user to check the interpretation"""
     ask_explain = input('Would you like to see your interpretation? (y/n)')
     while ask_explain:
         if ask_explain == 'n':
@@ -299,7 +300,7 @@ def interpretation():
             exit()
         elif ask_explain == 'y':
             display_users_descriptions()
-            another_try = input('Press y to start again or any key to exit!')
+            another_try = input('Press y to start again or Enter to exit!')
             if another_try == 'y':
                 print('You chose yes to trying again!')
                 welcome_choice_user()
@@ -308,7 +309,7 @@ def interpretation():
                 print('Hope you enjoyed! Thanks for trying it out!')
                 exit()
     else:
-        print('You did not enter recognized letter') 
+        print('You did not enter recognized letter')
         interpretation()
         exit()
 
