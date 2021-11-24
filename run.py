@@ -39,6 +39,7 @@ def thunder():
         print('Ooops, nothing is written. Please describe the shape')
         thunder()
     elif not user_answer_fifth.isalpha():
+        clear()
         print('Not even a letter, please enter some description')
         thunder()
     else:
@@ -71,6 +72,7 @@ def flowers():
         print('Ooops, nothing is written. Please describe in details')
         flowers()
     elif not user_answer_fourth.isalpha():
+        clear()
         print('Not even a letter, please enter some description')
         flowers()
     else:
@@ -107,6 +109,7 @@ def horse():
         print('Ooops, nothing is written. Please describe the shape')
         horse()
     elif not user_answer_third.isalpha():
+        clear()
         print('Not even a letter, please enter some description')
         horse()
     else:
@@ -137,6 +140,7 @@ def ladder():
         print('Ooops, nothing is written. Please describe the shape')
         ladder()
     elif not user_answer_second.isalpha():
+        clear()
         print('Not even a letter, please enter some description')
         ladder()
     else:    
@@ -167,6 +171,7 @@ def cube():
         print('You must describe the shape, try again')
         cube()
     elif not user_answer_first.isalpha():
+        clear()
         print('Not even a letter, please enter some description')
         cube()
     else:
