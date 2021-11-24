@@ -1,6 +1,6 @@
 """ Functions to control flow of the japanese cube test """
-import tabulate
-tabulate.WIDE_CHARS_MODE = False
+# import tabulate
+# tabulate.WIDE_CHARS_MODE = False
 import os
 from os import system, name
 
