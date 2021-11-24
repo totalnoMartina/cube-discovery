@@ -71,12 +71,29 @@ Describe step by step process
 
 # Deployment
 
-## Github
+## GitHub
 
-Commiting often, on every change - explain processes
+GitHub is used for version control, and GitPod as Cloud-based IDE and the steps for deployment are:
+
+- In the [GitHub repository](https://github.com/totalnoMartina/cube-discovery),navigate to the Settings tab.
+- From the Source section drop-down menu, select the `Main` Branch (alt: `Master`).
+- Once the `Main` branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.
+
+### To clone this project
+
+In order to make a local copy of this project, you can clone it using the following command in your IDE terminal of your choice:
+
+- `git clone https://github.com/totalnoMartina/cube-discovery.git`
 
 ## Heroku
-Deploying right after commiting on Git - explain processes
+
+When deploying on Heroku, two buildpacks are installed from the _Settings_ tab.
+
+1. `heroku/python`
+2. `heroku/nodejs`
+
+A _Config Var_ was added and named `PORT`, and set to `8000` before connecting to GitHub
+
 
 # Credits 
 
@@ -86,42 +103,9 @@ The code for prompt asking user for a name is found [here](https://python-prompt
 
 The code for clearing the screen before moving on to next object is [here]( https://www.geeksforgeeks.org/clear-screen-python/)
 
+The help to find a list of functions is found on this [link](https://www.quora.com/How-can-you-make-a-list-of-functions-in-Python)
+
 # Acknowledgements
 
 Code Institute mentor, Tim Nelson is huge help and guidance, helping me and directing my ideas toward real goal to be accomplished through creating this app. I was unsure on how to start and I had perfect guidance.
 My close friends who tested the app a few times, shared insights and concerns that help me make this better for the UX.
-
-
-
-
-
-
-Welcome Martina Grganic,
-
-This is the Code Institute student template for deploying your third portfolio project, the Python command-line project. The last update to this file was: **August 17, 2021**
-
-## Reminders
-
-* Your code must be placed in the `run.py` file
-* Your dependencies must be placed in the `requirements.txt` file
-* Do not edit any of the other files or your code may not deploy properly
-
-## Creating the Heroku app
-
-When you create the app, you will need to add two buildpacks from the _Settings_ tab. The ordering is as follows:
-
-1. `heroku/python`
-2. `heroku/nodejs`
-
-You must then create a _Config Var_ called `PORT`. Set this to `8000`
-
-If you have credentials, such as in the Love Sandwiches project, you must create another _Config Var_ called `CREDS` and paste the JSON into the value field.
-
-Connect your GitHub repository and deploy as normal.
-
-## Constraints
-
-The deployment terminal is set to 80 columns by 24 rows. That means that each line of text needs to be 80 characters or less otherwise it will be wrapped onto a second line. --- what does this mean??? ask tim
-
------
-Happy coding!
