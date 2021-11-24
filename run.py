@@ -166,18 +166,24 @@ def welcome_choice_user():
 
 def information_display():
     """ Gives information of this game - activate imagination and inspire """
-    print('''   This game derived from the Japanese personality test,
-        which helps people discover what their true inner thoughts are about
-        their current state of being. Just close your eyes for a moment and
-        imagine you are in a dessert, nothing around just sand and warm sky.
-        There are 5 objects presented for to asociate your thoughts and you
-        can write down your description after each one.
-        Note; this test could be tried out on your own
-        to inspire you to get to know yourself, or in company to discover
-        about your friends if they are open to try.
-        Don\'t overthink it, just let your imagination flow.
-        It is only as accurate as you are honest with yourself
-        Or... It could just be used for fun!''')
+    print('''          ______________________________
+            /                           \.
+         / \     This is an ancient     |.
+        |  | Japanese personality test, |.
+        \_ | which helps people discover|.
+           | what their true inner      |.
+           | thoughts are about their   |.
+           | current state of being.Just|.
+           | close your eyes and imagine|.
+           | you are in a dessert,      |.
+           | nothing around, just sand &|.
+           | sky. Objects will appear to|.
+           | inspire you and you can    |.
+           | write your description.    |.
+           |      Have fun with this!   |.
+           |   _________________________|___
+           |  /                            /.
+           \_/____________________________/.''')
     print(40 * '*')
 
 
