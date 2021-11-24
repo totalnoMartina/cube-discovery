@@ -351,14 +351,15 @@ def interpretation():
     """ Ask user to check the interpretation"""
 
     ask_explain = input('Would you like to see your interpretation? (y/n)')
-    while ask_explain.isalpha():
-        if ask_explain == 'n':
+    ask_explain = ask_explain.lower()
+    if ask_explain.isalpha():
+        if ask_explain.lower() == 'n':
             print('You choose n! Thanks for trying this out!')
             exit()
-        elif ask_explain == 'y':
+        elif ask_explain.lower() == 'y':
             display_users_descriptions()
             another_try = input('Press y to start again or Enter to exit!')
-            if another_try == 'y':
+            if another_try.lower() == 'y':
                 clear()
                 print('You have chosen y to try again!')
                 welcome_choice_user()
@@ -366,8 +367,11 @@ def interpretation():
             elif another_try != 'y':
                 print('Hope you enjoyed! Thanks for trying it out!')
                 exit()
+        else:
+            print('Wrong letter, try again!')
+            interpretation()
     else:
-        print('You did not enter recognized letter')
+        print('You did not enter recognized character')
         interpretation()
         exit()
 
