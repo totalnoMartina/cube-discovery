@@ -1,5 +1,7 @@
 """ Functions to control flow of the japanese cube test """
 from prompt_toolkit import prompt
+import os
+from os import system, name
 
 
 def thunder():
@@ -140,11 +142,13 @@ def next_or_restart():
     """Function to use for iterating through objects and call it"""
     ask_user = input('\x1B[3mNext = y, Restart = n\x1B[0m\n')
     if ask_user == 'n':
+        clear()
         print('You got out of the game,...')
         print('Restarting... Back to Main menu...')
         welcome_choice_user()
         choice_answer()
     elif ask_user == '':
+        clear()
         print('You entered invalid value, Back to Main menu')
         welcome_choice_user()
         choice_answer()
@@ -155,13 +159,14 @@ def welcome_choice_user():
     print('''   \033[1mWelcome to the Japanese Cube test!\033[0m\n
         Meanwhile in the middle of the dessert...
     . . . .___________________________________________. . . .''')
-    name = prompt('Nice to have you here, your name, please:\n')
-    if name == '':
+    username = prompt('Nice to have you here, your name, please:\n')
+    if username == '':
         print('You entered invalid value, please try again')
         welcome_choice_user()
     print('This is a game where all answers are right.')
     print('Use your imagination, ready %s ' % name)
     print('Take some time for describing every object...')
+    clear()
 
 
 def information_display():
@@ -184,7 +189,6 @@ def information_display():
            |   _________________________|___
            |  /                            /.
            \_/____________________________/.''')
-    print(40 * '*')
 
 
 def display_users_descriptions():
@@ -278,6 +282,29 @@ def display_users_descriptions():
     print(40 * '*')
 
 
+def clear():
+    os.system("cls" if os.name == "nt" else "clear")
+
+
+def interpretation():
+    ask_explain = input('Would you like to see your interpretation? (y/n)')
+    while ask_explain:
+        if ask_explain == 'n':
+            print('You choose n! Thanks for trying this out!')
+        elif ask_explain == 'y':
+            display_users_descriptions()
+            another_try = input('Wanna try again? (y/n)')
+            if another_try == 'y':
+                print('You chose yes to trying again!')
+                welcome_choice_user()
+                choice_answer()
+            elif another_try != 'y':
+                print('Hope you enjoyed! Thanks for trying it out!')
+    else:
+        print('You did not enter recognized letter') 
+        interpretation() 
+
+
 def all_funcs():
     """ Will be used to run all functions accordingly """
     welcome_choice_user()
@@ -290,17 +317,7 @@ def all_funcs():
     flowers()
     next_or_restart()
     thunder()
-    ask_explain = input('Would you like to see your interpretation? (y/n)')
-    if ask_explain == 'n':
-        print('Thanks for trying this out!')
-    else:
-        display_users_descriptions()
-        another_try = input('Wanna try again? (y/n)')
-        if another_try == 'y':
-            welcome_choice_user()
-            choice_answer()
-        elif another_try != 'y':
-            print('Hope you enjoyed! Thanks for trying it out!')
+    interpretation()
     print('You exited the game')
     print('All functions work properly!')
 
