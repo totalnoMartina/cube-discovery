@@ -4,6 +4,7 @@
 import os
 from os import system, name
 
+
 def clear():
     """Clearing function to clear the screen"""
 
@@ -139,7 +140,11 @@ def ladder():
     print('Use as many words to describe many details and hit Enter')
     global user_answer_second
     user_answer_second = input('Imagine, write it down...\n')
-    if user_answer_second == '':
+    if user_answer_second.isspace():
+        print(f'You wrote: "{user_answer_second}"')
+        print('Okay, now... There is something else appearing in here...')
+        horse()
+    elif user_answer_second == '':
         clear()
         print('Ooops, nothing is written. Please describe the shape')
         ladder()
@@ -147,10 +152,7 @@ def ladder():
         clear()
         print('Not even a letter, please enter some description')
         ladder()
-    else:    
-        print(f'You wrote: "{user_answer_second}"')
-        print('Okay, now... There is something else appearing in here...')
-        horse()
+
 
 def cube():
     """Function to start with first object"""
@@ -168,25 +170,20 @@ def cube():
        \  /       /
         \/_______/""")
     print('Describe the shape, position or movement, volume...\n')
-    global user_answer_first
     print('Use as many words to describe many details and hit Enter')
     user_answer_first = input('Take a moment to imagine, write it down\n')
-    if user_answer_first == '':
-        clear()
-        print('You must describe the shape, try again')
-        cube()
-    elif not user_answer_first.isalpha():
-        clear()
-        print('Not even a letter, please enter some description')
-        cube()
-    else:
+    if user_answer_first.isspace():
         print(f'You wrote: "{user_answer_first}"')
         print('Okay, now... There is something else appearing in here...')
         ladder()
-    return user_answer_first
-
-
-
+    elif user_answer_first == '':
+        clear()
+        print('No description, try again')
+        cube()
+    elif not user_answer_first.isalpha():
+        clear()
+        print('Not really a letter, please enter some description')
+        cube()
 
 
 def choice_answer():
@@ -242,7 +239,6 @@ def welcome_choice_user():
     print('''   \033[1mWelcome to the Japanese Cube test!\033[0m\n
     Meanwhile in the middle of the dessert
     . . . .___________________________________________. . . .''')
-    global name
     name = input('Nice to have you here, your name, please:\n')
     if not name.isalpha() or name == '':
         print('You entered invalid value, please try again')
@@ -294,6 +290,7 @@ def display_users_descriptions():
     means you know who you are, while
     a hollow may mean that you are busy
     discovering your true self''')
+
     def ladder_interpret():
         print('''
     The ladder represents two aspects of
@@ -315,7 +312,7 @@ def display_users_descriptions():
     means new friendships, while an
     old looking one would imply
     long enduring friendships''')
-    
+
     def horse_interpret():
         print('''
     Next, the horse; it represents your
@@ -335,7 +332,7 @@ def display_users_descriptions():
     expectations. A brown sturdy working
     horse means that you want a reliable
     and stabile partner''')
-    
+
     def flowers_interpret():
         print('''
     The flowers represent your family or
@@ -350,7 +347,7 @@ def display_users_descriptions():
     too many concerns around your family.
     When wilting flowers would represent
     that relationships are broken or lost.''')
-    
+
     def thunderstorm_interpret():
         print('''
     The thunderstorm represents the
@@ -370,7 +367,7 @@ def display_users_descriptions():
     have confidence in resolving your
     stress.''')
     list_of_functions = [cube_intepret, ladder_interpret, horse_interpret, flowers_interpret, thunderstorm_interpret]
-    for i in range(len(list_of_functions)): 
+    for i in enumerate(list_of_functions):
         list_of_functions[i]()
         input('Press enter to proceed')
         clear()
@@ -384,7 +381,7 @@ def interpretation():
     if ask_explain.isalpha():
         if ask_explain.lower() == 'n':
             print('You choose n! Thanks for trying this out!')
-            exit()
+            sys.exit()
         elif ask_explain.lower() == 'y':
             display_users_descriptions()
             another_try = input('Press y to start the test again or Enter to exit!')
@@ -395,14 +392,14 @@ def interpretation():
                 choice_answer()
             elif another_try != 'y':
                 print('Hope you enjoyed! Thanks for trying it out!')
-                exit()
+                sys.exit()
         else:
             print('Wrong letter, try again!')
             interpretation()
     else:
         print('You did not enter recognized character')
         interpretation()
-        exit()
+        sys.exit()
 
 
 def all_funcs():
@@ -410,7 +407,6 @@ def all_funcs():
 
     # welcome_choice_user()
     # cube()
-    
     # next_or_restart()
     # ladder()
     # next_or_restart()
@@ -423,12 +419,11 @@ def all_funcs():
     print('You exited the game')
     print('All functions work properly!')
 
-
-# all_funcs()
 cube()
-print(f'You said for the cube to be described as: {user_answer_first}')
-print(f'You said for the ladder to be described as: {user_answer_second}')
-print(f'You said for the horse to be described as: {user_answer_third}')
-print(f'You said for the flowers to be described as: {user_answer_fourth}')
-print(f'You said for the thunderstorm to be described as: {user_answer_fifth}')
-
+# all_funcs()
+# welcome_choice_user()
+# print(f'You said for the cube to be described as: {user_answer_first}')
+# print(f'You said for the ladder to be described as: {user_answer_second}')
+# print(f'You said for the horse to be described as: {user_answer_third}')
+# print(f'You said for the flowers to be described as: {user_answer_fourth}')
+# print(f'You said for the thunderstorm to be described as: {user_answer_fifth}')
