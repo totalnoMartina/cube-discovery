@@ -15,6 +15,8 @@ Another option considered was using creating a list from user input, adding inpu
 For user to input the name, I tried using Python [prompt_toolkit](https://python-prompt-toolkit.readthedocs.io/en/master/) and heroku did not seem to recognize, so I removed that.
 Some infinite loops are caused and that was handled with exiting function.
 
+For iterating from one object to another, I had an idea to use separate function called next_or_restart() which was used before the functions were ready to connect to each other. As the app evolved, the function is no longer needed and therefore, deleted.
+
 Original validation was discovered through these bugs.
 
 

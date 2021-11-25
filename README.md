@@ -2,7 +2,7 @@
 
 ## Description
 
-This application is is a personality test deriving from japanese culture, and this [link](https://steemit.com/psychology/@breezin/cube-test-japenese-personality-test) provides all relevant information about how this game works. It can also help users to notice how do they see themselves and sparkle some imagination.
+This application is a personality test deriving from Japanese culture, and this [link](https://steemit.com/psychology/@breezin/cube-test-japenese-personality-test) provides all relevant information about how this game works. It can also help users to notice how do they see themselves and sparkle some imagination.
 
 ## User Stories 
 
@@ -30,8 +30,8 @@ The welcome page is presenting the test, without too many details, asking for th
 If chosen to quit, users exit the app with appropriate 'Goodbye' message,
 if chosen to see about, users can read a bit more about the details of this Japanese Cube test and then asked to try the test or not, and if not, the user exits with apropriate message displayed. If chosen to try it, user starts with first object, cube.
 - Describing the objects
-There are 5 different objects, starting from cube, to be describedby the user, than to horse, to the flowers and lastly, the thunderstorm. Users are asked to describe in details what do they imagine,and what kind of setting they imagine, also the relation between objects if there is any.
-- After answering and describing every object, user is offered reading about the interpretation of every object and what could it mean for the user, or if not wanting to read this moment, choose n to exit or start the test over.
+There are 5 different objects, starting from cube, to be described by the user, then horse, the flowers and lastly, the thunderstorm. Users are asked to describe in details what do they imagine, and what kind of setting they imagine, also the relation between objects if there is any.
+- After answering and describing every object, user is offered reading about the interpretation of every object, or if not wanting to read this moment, user can choose n to exit or start the test over.
 
 
 ## Flowchart

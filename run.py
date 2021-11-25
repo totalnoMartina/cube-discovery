@@ -382,4 +382,3 @@ def information_display():
 
 
 welcome_choice_user()
-
