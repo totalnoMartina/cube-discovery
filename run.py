@@ -82,7 +82,7 @@ def display_users_descriptions():
     def thunderstorm_interpret():
         print(r'''
 
-                                                                   .---.
+                                                               .---.
                                                               /  .  \
                                                              |\_/|   |
                                                              |   |  /|
@@ -95,7 +95,7 @@ def display_users_descriptions():
 |       |   gets to you but it's manageable, while if the storm is   | 
 |       |   affecting the objects, you might be overwhelmed by the   |
 |       |   events in your life. If the storm passes by and there is/
-\       |   no change, means you have confidence in solving issues./                                         /
+\       |   no change, means you have confidence in solving issues./
  \     /---------------------------------------------------------''
   `---'
   ''')
