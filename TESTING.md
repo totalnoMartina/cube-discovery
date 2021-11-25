@@ -21,7 +21,15 @@ Original validation was discovered through these bugs.
 
 
 ## Test User Stories
- copy from readme
+
+* I want the User to understand and navigate easy through the test
+* I want the User to be able to start/restart/quit the app and get information about the game 
+* I want the User to be able to write the description of objects
+* I want User to have the responses displayed
+* I want User to be notified when the characters that he inputs are not supported with an apropriate message
+* I want the User to be notified of empty input and given another chance to put information
+* I want to possibly use one of Python libraries to create a visual appearance of the results
+
 
  add screenshots from feature section
 

@@ -80,23 +80,25 @@ def display_users_descriptions():
     that relationships are broken or lost.''')
 
     def thunderstorm_interpret():
-        print('''
-    The thunderstorm represents the
-    stress and fears in your life and
-    how you look at them. A strong storm
-    can mean that the stress really gets
-    to you, and it might be difficult to
-    bounce back. A passing storm in the
-    distance means your stress is visible
-    to you but manageable, while if the
-    storm is affecting any of the objects,
-    you might be overwhelmed by the
-    situation in your life. Just remember,
-    you are bigger than your troubles.
-    If the storm passed through and doesn\'t
-    cause any change, means that you
-    have confidence in resolving your
-    stress.''')
+        print(r'''
+
+                                                                   .---.
+                                                              /  .  \
+                                                             |\_/|   |
+                                                             |   |  /|
+  .----------------------------------------------------------------' |
+ /  .-.                                                              |
+|  /   \   The thunderstorm represents the stress and fears in your  |
+| |\_.  |   life and how you look at them. A strong storm can mean   |
+|\|  | /|   that the stress really gets to you, and it mightbe hard  |
+| `---' |   to bounce back. A passing storm far away means stress    |
+|       |   gets to you but it's manageable, while if the storm is   | 
+|       |   affecting the objects, you might be overwhelmed by the   |
+|       |   events in your life. If the storm passes by and there is/
+\       |   no change, means you have confidence in solving issues./                                         /
+ \     /---------------------------------------------------------''
+  `---'
+  ''')
     list_of_functions = [cube_intepret, ladder_interpret,
     horse_interpret, flowers_interpret, thunderstorm_interpret]
     for i in range(len(list_of_functions)):
