@@ -8,76 +8,85 @@ def display_users_descriptions():
     """ Displays interpretations """
 
     def cube_intepret():
-        print('''
-    The cube is your true self! If
-    taller than cube, your confidence
-    is high while a shorter one means
-    that you could be shy. If the
-    cube is moving, it could symbolize
-    a open-minded person while a
-    still sitting cube is businesslike, a
-    cube that is dug into the sand means
-    that you are a planner. A solid cube
-    means you know who you are, while
-    a hollow may mean that you are busy
-    discovering your true self''')
+        print(r'''
+                                                               .---.
+                                                              /  .  \
+                                                             |\_/|   |
+                                                             |   |  /|
+  .----------------------------------------------------------------' |
+ /  .-.                                                              |
+|  /   \   The cube is your true self! If taller than cube, your     |
+| |\_.  |  confidence is high while a shorter one means that you     |
+|\|  | /|  could be shy. If the cube is moving, it could symbolize   |
+| `---' |  an open-minded person while a still sitting cube is more  |
+|       |  logoical and businesslike, a cube that is dug into the    | 
+|       |  sand means you are a planner. A solid cube means you know |
+|       |  who you are, while a hollow may mean that you are busy   /
+\       |  discovering your true self.                             /
+ \     /----------------------------------------------------------'
+  `---'
+    ''')
 
     def ladder_interpret():
-        print('''
-    The ladder represents two aspects of
-    your life; Your goals and frienships.
-    A short ladder represents a small
-    circle of friends and realistic goals,
-    while tall one means you
-    have many friends, and your goals
-    are difficult to attain. If leaned
-    onto the cube, shows closeness
-    towards your friends as well as
-    reliability your friends have towards
-    you, and if equal size as
-    cube shows you that you see your
-    friends as equals in authorithy.
-    If lower, it means you consider
-    yourself as a leader of the group.
-    Brand new looking ladder
-    means new friendships, while an
-    old looking one would imply
-    long enduring friendships''')
+        print(r'''
+
+                                                               .---.
+                                                              /  .  \
+                                                             |\_/|   |
+                                                             |   |  /|
+  .----------------------------------------------------------------' |
+ /  .-.                    THE LADDER                                |
+|  /   \  The ladder represents two aspects of your life; Your goals |
+| |\_.  | and frienships. A short ladder represents a small circle   |
+|\|  | /| of friends and realistic goals, while a tall one means you |
+| `---' | have many friends, and your goals are difficult to attain. |
+|       | If leaned onto the cube, shows closeness towards your      | 
+|       | friends as well as reliability your friends have towards   |
+|       | you. Equal size as cube shows that you see your friends as |
+\       | equals in authorithy. Small ladder - you are the leader!  /
+ \     /----------------------------------------------------------'
+  `---'
+    ''')
 
     def horse_interpret():
-        print('''
-    Next, the horse; it represents your
-    partner. A horse closely related to
-    cube means you strive for close
-    relationships. And while brown sturdy
-    horse can mean you would like a
-    dependant partner, a glamorous looking
-    horse would mean that you want a
-    partner that will be groomed and
-    approved by others. A horse moving
-    towards the cube would signify
-    a new relationship, while when horse
-    moves away from the cube, means
-    insecurities in relationship.
-    Unicorn/Pegasus mean unrealistic
-    expectations. A brown sturdy working
-    horse means that you want a reliable
-    and stabile partner''')
+        print(r'''
+                                                               .---.
+                                                              /  .  \
+                                                             |\_/|   |
+                                                             |   |  /|
+  .----------------------------------------------------------------' |
+ /  .-.                    THE  HORSE                                |
+|  /   \   Next, the horse; it represents your partner. A horse      |
+| |\_.  |  closely related to cube means you strive in close, warm   |
+|\|  | /|  relationships. And while brown sturdy horse can mean you  |
+| `---' |  would a reliable and stabile partner, a shiny, well-kept  |     
+|       |  horse means that you want a partner that will be groomed  | 
+|       |  and approved by others. A horse moving towards the cube   |
+|       |  would signify a new relationship, while when horse moves  |
+\       |  away from the cube, symbolizes insecurities.             /
+ \     /----------------------------------------------------------'
+  `---'
+    ''')
 
     def flowers_interpret():
-        print('''
-    The flowers represent your family or
-    children or anything you created and are
-    taking care of. If the flowers are
-    close to the cube, it means you are
-    close to your children. A vibrant
-    blossoming flowers would signify the
-    healthy strong relationship with your
-    kids/relatives, while too many flowers could
-    mean you could be overwhelmed with
-    too many concerns around your family.
-    When wilting flowers would represent
-    that relationships are broken or lost.''')
+        print(r'''
+                                                               .---.
+                                                              /  .  \
+                                                             |\_/|   |
+                                                             |   |  /|
+  .----------------------------------------------------------------' |
+ /  .-.                    THE FLOWERS                               |
+|  /   \  The flowers represent your family/children/anything you    |
+| |\_.  | created and are taking care of. If the flowers are close to|
+|\|  | /| the cube, it means you have deep connection with your loved|
+| `---' | ones. A vibrant blossoming flowers would signify a strong  |
+|       | and healthy relationship, while too many flowers might be  | 
+|       | showing overwhelment with concerns around your family/kids |
+|       | Wilting flowers would represent relationships that are     |
+\       | broken or lost.                                           /                                              
+ \     /----------------------------------------------------------'
+  `---'
+    ''')
 
     def thunderstorm_interpret():
         print(r'''
@@ -87,7 +96,7 @@ def display_users_descriptions():
                                                              |\_/|   |
                                                              |   |  /|
   .----------------------------------------------------------------' |
- /  .-.                                                              |
+ /  .-.                    THE THUNDERSTORM                          |
 |  /   \   The thunderstorm represents the stress and fears in your  |
 | |\_.  |   life and how you look at them. A strong storm can mean   |
 |\|  | /|   that the stress really gets to you, and it mightbe hard  |
