@@ -1,6 +1,5 @@
 """ Functions to control flow of the japanese cube test """
-# import tabulate
-# tabulate.WIDE_CHARS_MODE = False
+import sys
 import os
 from os import system, name
 
@@ -33,19 +32,15 @@ def thunder():
                 """)
     print('Is it close or far? Does it affect others?')
     print('How is it related, is it temporary or staying?')
-    print('Use as many words as you like, describe the details and press Enter')
+    print('Use as many words as you like to describe and press Enter')
     user_answer_fifth = input('Imagine, write it down\n')
-    if user_answer_fifth.isalpha() == '':
+    if user_answer_fifth == '':
         clear()
         print('Ooops, nothing is written. Please describe the shape')
         thunder()
-    elif not user_answer_fifth.isalpha():
-        clear()
-        print('Not even a letter, please enter some description')
-        thunder()
     else:
         print('That was the last object, your interpretation is ready!')
-    print(f'You wrote {user_answer_fifth}')
+        print(f'You wrote {user_answer_fifth}')
 
 
 def flowers():
@@ -71,10 +66,6 @@ def flowers():
     if user_answer_fourth == '':
         clear()
         print('Ooops, nothing is written. Please describe in details')
-        flowers()
-    elif not user_answer_fourth.isalpha():
-        clear()
-        print('Not even a letter, please enter some description')
         flowers()
     else:
         print(f'You wrote: "{user_answer_fourth}"')
@@ -109,10 +100,6 @@ def horse():
         clear()
         print('Ooops, nothing is written. Please describe the shape')
         horse()
-    elif not user_answer_third.isalpha():
-        clear()
-        print('Not even a letter, please enter some description')
-        horse()
     else:
         print(f'You wrote: "{user_answer_third}"')
         print('There seems to be something else appearing...!')
@@ -146,7 +133,7 @@ def ladder():
         ladder()
     elif not user_answer_second.isalpha():
         clear()
-        print('Not even a letter, please enter some description')
+        print('Not a letter, please enter some description')
         ladder()
 
 
@@ -166,20 +153,16 @@ def cube():
        \  /       /
         \/_______/""")
     print('Describe the shape, position or movement, volume...\n')
-    print('Use as many words to describe many details and hit Enter')
+    print('Use as many words to describe the details and press Enter')
     user_answer_first = input('Take a moment to imagine, write it down\n')
-    if user_answer_first.isspace():
-        print(f'You wrote: "{user_answer_first.isspace()}"')
+    if user_answer_first == '':
+        clear()
+        print('No description, try again')
+        cube()
+    elif user_answer_first:
+        print(f'You wrote: "{user_answer_first}"')
         print('Okay, now... There is something else appearing in here...')
         ladder()
-    # elif user_answer_first == '':
-        # clear()
-        # print('No description, try again')
-        # cube()
-    elif not user_answer_first.isspace() and not user_answer_first.isalpha():
-        clear()
-        print('Not really a letter, please enter some description')
-        cube()
 
 
 def choice_answer():
@@ -197,7 +180,7 @@ def choice_answer():
         elif ask.lower() == 'n':
             clear()
             print('You chose n, thanks for checking this out!')
-            exit()
+            sys.exit()
         else:
             clear()
             print('You did not choose valid option, try again')
@@ -249,7 +232,7 @@ def welcome_choice_user():
 def information_display():
     """ Gives information of this test - activate imagination and inspire """
 
-    print('''            ____________________________
+    print(r'''            ____________________________
             /                           \.
          / \     This is an ancient     |.
         |  | Japanese personality test, |.
@@ -417,3 +400,4 @@ def all_funcs():
 
 
 welcome_choice_user()
+cube()

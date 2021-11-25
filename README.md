@@ -11,18 +11,28 @@ This application is is a personality test deriving from japanese culture, and th
 * I want the User to be able to write the description of objects
 * I want User to have the responses displayed
 * I want User to be notified when the characters that he inputs are not supported with an apropriate message
+* I want the User to be notified of empty input and given another chance to put information
 * I want to possibly use one of Python libraries to create a visual appearance of the results
-
 
 ## Site Owner Goals
 
+* To entertain users by inspiring them to know themselves better
 * To offer user a display of answers to the questions
-* To be able to guide users and collect their answers, and a name
+* To be able to guide users and collect their answers, name
 * To be able to display a personality test in a fun way to users
 
 ## Instructions
 
-Describe step by step process
+This is a personality test, inspired by Japanese culture, where you gain insight of what your perspective is like.
+- Welcome and name to start
+The welcome page is presenting the test, without too many details, asking for the name. It is part of the mystery, so curiosity is sparkled. After user enters the name, users are greeted back and encouraged to be creative and take time to describe objects. As the name contains a word 'test', I wanted to assure the users mentioning all answers are right, so they feel free to describe in greater details.
+- Choosing a to start, b to read about, and q to quit
+If chosen to quit, users exit the app with appropriate 'Goodbye' message,
+if chosen to see about, users can read a bit more about the details of this Japanese Cube test and then asked to try the test or not, and if not, the user exits with apropriate message displayed. If chosen to try it, user starts with first object, cube.
+- Describing the objects
+There are 5 different objects, starting from cube, to be describedby the user, than to horse, to the flowers and lastly, the thunderstorm. Users are asked to describe in details what do they imagine,and what kind of setting they imagine, also the relation between objects if there is any.
+- After answering and describing every object, user is offered reading about the interpretation of every object an what could it mean for the user, or if not wanting to read this moment, choose n to exit or start the test over.
+
 
 
 ## Flowchart
