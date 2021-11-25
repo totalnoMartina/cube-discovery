@@ -34,7 +34,6 @@ def thunder():
     print('Is it close or far? Does it affect others?')
     print('How is it related, is it temporary or staying?')
     print('Use as many words as you like, describe the details and press Enter')
-    global user_answer_fifth
     user_answer_fifth = input('Imagine, write it down\n')
     if user_answer_fifth.isalpha() == '':
         clear()
@@ -68,7 +67,6 @@ def flowers():
     print('Are they blooming or wilting?')
     print('Take a moment to imagine, describe...')
     print('Use as many words as you like, describe the details and press Enter')
-    global user_answer_fourth
     user_answer_fourth = input('Write down the details... \n')
     if user_answer_fourth == '':
         clear()
@@ -105,7 +103,6 @@ def horse():
 ''')
     print('Take a moment to imagine, what does it look like...')
     print('Is it related to the objects in any way? What way?')
-    global user_answer_third
     user_answer_third = input('Write down what you imagine...\n')
     print('Use as many words to describe many details and hit Enter')
     if user_answer_third == '':
@@ -138,7 +135,6 @@ def ladder():
     """)
     print('Is there anything related between the cube and ladder?')
     print('Use as many words to describe many details and hit Enter')
-    global user_answer_second
     user_answer_second = input('Imagine, write it down...\n')
     if user_answer_second.isspace():
         print(f'You wrote: "{user_answer_second}"')
@@ -173,14 +169,14 @@ def cube():
     print('Use as many words to describe many details and hit Enter')
     user_answer_first = input('Take a moment to imagine, write it down\n')
     if user_answer_first.isspace():
-        print(f'You wrote: "{user_answer_first}"')
+        print(f'You wrote: "{user_answer_first.isspace()}"')
         print('Okay, now... There is something else appearing in here...')
         ladder()
-    elif user_answer_first == '':
-        clear()
-        print('No description, try again')
-        cube()
-    elif not user_answer_first.isalpha():
+    # elif user_answer_first == '':
+        # clear()
+        # print('No description, try again')
+        # cube()
+    elif not user_answer_first.isspace() and not user_answer_first.isalpha():
         clear()
         print('Not really a letter, please enter some description')
         cube()
@@ -209,7 +205,7 @@ def choice_answer():
     elif choice.lower() == 'q':
         print('\x1B[3mYou are quitting, thanks for trying it out!\x1B[0m')
         print('Goodbye')
-        exit()
+        sys.exit()
     else:
         clear()
         print('Not a recognized letter, starting over')
@@ -419,11 +415,5 @@ def all_funcs():
     print('You exited the game')
     print('All functions work properly!')
 
-cube()
-# all_funcs()
-# welcome_choice_user()
-# print(f'You said for the cube to be described as: {user_answer_first}')
-# print(f'You said for the ladder to be described as: {user_answer_second}')
-# print(f'You said for the horse to be described as: {user_answer_third}')
-# print(f'You said for the flowers to be described as: {user_answer_fourth}')
-# print(f'You said for the thunderstorm to be described as: {user_answer_fifth}')
+
+welcome_choice_user()
