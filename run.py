@@ -19,11 +19,11 @@ def display_users_descriptions():
 | |\_.  |  confidence is high while a shorter one means that you     |
 |\|  | /|  could be shy. If the cube is moving, it could symbolize   |
 | `---' |  an open-minded person while a still sitting cube is more  |
-|       |  logoical and businesslike, a cube that is dug into the    | 
+|       |  logical and businesslike, a cube that is dug into the     | 
 |       |  sand means you are a planner. A solid cube means you know |
 |       |  who you are, while a hollow may mean that you are busy   /
 \       |  discovering your true self.                             /
- \     /----------------------------------------------------------'
+ \     /---------------------------------------------------------''
   `---'
     ''')
 
@@ -44,7 +44,7 @@ def display_users_descriptions():
 |       | friends as well as reliability your friends have towards   |
 |       | you. Equal size as cube shows that you see your friends as |
 \       | equals in authorithy. Small ladder - you are the leader!  /
- \     /----------------------------------------------------------'
+ \     /----------------------------------------------------------''
   `---'
     ''')
 
@@ -56,15 +56,15 @@ def display_users_descriptions():
                                                              |   |  /|
   .----------------------------------------------------------------' |
  /  .-.                    THE  HORSE                                |
-|  /   \   Next, the horse; it represents your partner. A horse      |
-| |\_.  |  closely related to cube means you strive in close, warm   |
+|  /   \   The horse represents your partner. If a horse is closely  |
+| |\_.  |  related to the cube, means you strive in close and warm   |
 |\|  | /|  relationships. And while brown sturdy horse can mean you  |
-| `---' |  would a reliable and stabile partner, a shiny, well-kept  |     
+| `---' |  want a reliable and stabile partner, a shiny, well-kept   |     
 |       |  horse means that you want a partner that will be groomed  | 
 |       |  and approved by others. A horse moving towards the cube   |
-|       |  would signify a new relationship, while when horse moves  |
+|       |  would signify a new relationship, while if horse goes     |
 \       |  away from the cube, symbolizes insecurities.             /
- \     /----------------------------------------------------------'
+ \     /----------------------------------------------------------''
   `---'
     ''')
 
@@ -82,9 +82,9 @@ def display_users_descriptions():
 | `---' | ones. A vibrant blossoming flowers would signify a strong  |
 |       | and healthy relationship, while too many flowers might be  | 
 |       | showing overwhelment with concerns around your family/kids |
-|       | Wilting flowers would represent relationships that are     |
+|       | Wilting flowers could represent a relationship that is     |
 \       | broken or lost.                                           /                                              
- \     /----------------------------------------------------------'
+ \     /----------------------------------------------------------''
   `---'
     ''')
 
@@ -98,13 +98,13 @@ def display_users_descriptions():
   .----------------------------------------------------------------' |
  /  .-.                    THE THUNDERSTORM                          |
 |  /   \   The thunderstorm represents the stress and fears in your  |
-| |\_.  |   life and how you look at them. A strong storm can mean   |
-|\|  | /|   that the stress really gets to you, and it mightbe hard  |
-| `---' |   to bounce back. A passing storm far away means stress    |
-|       |   gets to you but it's manageable, while if the storm is   | 
-|       |   affecting the objects, you might be overwhelmed by the   |
-|       |   events in your life. If the storm passes by and there is/
-\       |   no change, means you have confidence in solving issues./
+| |\_.  |  life and how you look at them. A strong storm can mean    |
+|\|  | /|  that the stress really gets to you, and it mightbe hard   |
+| `---' |  to bounce back. A passing storm far away means stress     |
+|       |  gets to you but it's manageable, while if the storm is    | 
+|       |  affecting the objects, you might be overwhelmed by the    |
+|       |  events in your life. If the storm passes by and there is /
+\       |  no change, means you have confidence in solving issues ./
  \     /---------------------------------------------------------''
   `---'
   ''')
@@ -291,7 +291,8 @@ def cube():
       /    \_______\
       \    /       /
        \  /       /
-        \/_______/""")
+        \/_______/
+        """)
     print('Describe the shape, position or movement, volume...\n')
     print('Use as many words to describe the details and press Enter')
     user_answer_first = input('Take a moment to imagine, write it down\n')
