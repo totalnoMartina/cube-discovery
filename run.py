@@ -96,6 +96,7 @@ def horse():
     print('Is it related to the objects in any way? What way?')
     user_answer_third = input('Write down what you imagine...\n')
     print('Use as many words to describe many details and hit Enter')
+
     if user_answer_third == '':
         clear()
         print('Ooops, nothing is written. Please describe the shape')
@@ -123,17 +124,14 @@ def ladder():
     print('Is there anything related between the cube and ladder?')
     print('Use as many words to describe many details and hit Enter')
     user_answer_second = input('Imagine, write it down...\n')
-    if user_answer_second.isspace():
+
+    if user_answer_second:
         print(f'You wrote: "{user_answer_second}"')
         print('Okay, now... There is something else appearing in here...')
         horse()
     elif user_answer_second == '':
         clear()
         print('Ooops, nothing is written. Please describe the shape')
-        ladder()
-    elif not user_answer_second.isalpha():
-        clear()
-        print('Not a letter, please enter some description')
         ladder()
 
 

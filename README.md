@@ -31,8 +31,7 @@ If chosen to quit, users exit the app with appropriate 'Goodbye' message,
 if chosen to see about, users can read a bit more about the details of this Japanese Cube test and then asked to try the test or not, and if not, the user exits with apropriate message displayed. If chosen to try it, user starts with first object, cube.
 - Describing the objects
 There are 5 different objects, starting from cube, to be describedby the user, than to horse, to the flowers and lastly, the thunderstorm. Users are asked to describe in details what do they imagine,and what kind of setting they imagine, also the relation between objects if there is any.
-- After answering and describing every object, user is offered reading about the interpretation of every object an what could it mean for the user, or if not wanting to read this moment, choose n to exit or start the test over.
-
+- After answering and describing every object, user is offered reading about the interpretation of every object and what could it mean for the user, or if not wanting to read this moment, choose n to exit or start the test over.
 
 
 ## Flowchart
@@ -71,7 +70,8 @@ Fifth object - Thunderstorm
 
 
 ### Future features
--explain
+
+I would like this app to be able to generate the whole document with answers and interpretations for users so they could print and keep a hard copy if they like
 
 ## Technologies 
 links and explain
@@ -82,7 +82,6 @@ links and explain
 * Python
 
 ### Python Packages 
-
 
 * Prompt-toolkit if used explain every and links connect
 * Tabulate
