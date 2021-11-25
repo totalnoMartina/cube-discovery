@@ -4,6 +4,136 @@ import os
 from os import system, name
 
 
+def display_users_descriptions():
+    """ Displays interpretations """
+
+    def cube_intepret():
+        print('''
+    The cube is your true self! If
+    taller than cube, your confidence
+    is high while a shorter one means
+    that you could be shy. If the
+    cube is moving, it could symbolize
+    a open-minded person while a
+    still sitting cube is businesslike, a
+    cube that is dug into the sand means
+    that you are a planner. A solid cube
+    means you know who you are, while
+    a hollow may mean that you are busy
+    discovering your true self''')
+
+    def ladder_interpret():
+        print('''
+    The ladder represents two aspects of
+    your life; Your goals and frienships.
+    A short ladder represents a small
+    circle of friends and realistic goals,
+    while tall one means you
+    have many friends, and your goals
+    are difficult to attain. If leaned
+    onto the cube, shows closeness
+    towards your friends as well as
+    reliability your friends have towards
+    you, and if equal size as
+    cube shows you that you see your
+    friends as equals in authorithy.
+    If lower, it means you consider
+    yourself as a leader of the group.
+    Brand new looking ladder
+    means new friendships, while an
+    old looking one would imply
+    long enduring friendships''')
+
+    def horse_interpret():
+        print('''
+    Next, the horse; it represents your
+    partner. A horse closely related to
+    cube means you strive for close
+    relationships. And while brown sturdy
+    horse can mean you would like a
+    dependant partner, a glamorous looking
+    horse would mean that you want a
+    partner that will be groomed and
+    approved by others. A horse moving
+    towards the cube would signify
+    a new relationship, while when horse
+    moves away from the cube, means
+    insecurities in relationship.
+    Unicorn/Pegasus mean unrealistic
+    expectations. A brown sturdy working
+    horse means that you want a reliable
+    and stabile partner''')
+
+    def flowers_interpret():
+        print('''
+    The flowers represent your family or
+    children or anything you created and are
+    taking care of. If the flowers are
+    close to the cube, it means you are
+    close to your children. A vibrant
+    blossoming flowers would signify the
+    healthy strong relationship with your
+    kids/relatives, while too many flowers could
+    mean you could be overwhelmed with
+    too many concerns around your family.
+    When wilting flowers would represent
+    that relationships are broken or lost.''')
+
+    def thunderstorm_interpret():
+        print('''
+    The thunderstorm represents the
+    stress and fears in your life and
+    how you look at them. A strong storm
+    can mean that the stress really gets
+    to you, and it might be difficult to
+    bounce back. A passing storm in the
+    distance means your stress is visible
+    to you but manageable, while if the
+    storm is affecting any of the objects,
+    you might be overwhelmed by the
+    situation in your life. Just remember,
+    you are bigger than your troubles.
+    If the storm passed through and doesn\'t
+    cause any change, means that you
+    have confidence in resolving your
+    stress.''')
+    list_of_functions = [cube_intepret, ladder_interpret,
+    horse_interpret, flowers_interpret, thunderstorm_interpret]
+    for i in range(len(list_of_functions)):
+        list_of_functions[i]()
+        input('Press enter to proceed')
+        clear()
+
+
+def interpretation():
+    """ Ask user to check the interpretation"""
+
+    ask_explain = input('Would you like to see your interpretation? (y/n)')
+    ask_explain = ask_explain.lower()
+    if ask_explain.isalpha():
+        if ask_explain.lower() == 'n':
+            print('You choose n! Thanks for trying this out!')
+            sys.exit()
+        elif ask_explain.lower() == 'y':
+            display_users_descriptions()
+            another_try = input('Press y to start again or Enter to exit!')
+            if another_try.lower() == 'y':
+                clear()
+                print('You have chosen y to try this test again!')
+                welcome_choice_user()
+                choice_answer()
+            elif another_try != 'y':
+                print('Hope you enjoyed! Thanks for trying it out!')
+                sys.exit()
+        else:
+            print('Wrong letter, try again!')
+            interpretation()
+    else:
+        print('You did not enter recognized character')
+        interpretation()
+        sys.exit()
+
+
 def clear():
     """Clearing function to clear the screen"""
 
@@ -13,7 +143,7 @@ def clear():
 def thunder():
     """Function to call fifth object"""
 
-    print('It\'s a storm, more like a thundrstorm!')
+    print('It\'s a storm, more like a thunderstorm!')
     print('Imagine, where is it? ')
     print(r"""                            ________________________
                          __(                        )
@@ -39,8 +169,9 @@ def thunder():
         print('Ooops, nothing is written. Please describe the shape')
         thunder()
     else:
-        print('That was the last object, your interpretation is ready!')
         print(f'You wrote {user_answer_fifth}')
+        print('That was the last object, your interpretation is ready!')
+        interpretation()
 
 
 def flowers():
@@ -61,7 +192,7 @@ def flowers():
                     """)
     print('Are they blooming or wilting?')
     print('Take a moment to imagine, describe...')
-    print('Use as many words as you like, describe the details and press Enter')
+    print('Use as many words as you like to describe, then press Enter')
     user_answer_fourth = input('Write down the details... \n')
     if user_answer_fourth == '':
         clear()
@@ -193,21 +324,21 @@ def choice_answer():
         choice_answer()
 
 
-def next_or_restart():
-    """Function to use for iterating through objects and call it"""
+# def next_or_restart():
+#     """Function to use for iterating through objects and call it"""
 
-    ask_user = input('\x1B[3mNext = y, Restart = n\x1B[0m\n')
-    if ask_user.isalpha() == 'n':
-        clear()
-        print('You got out of the game,...')
-        print('Restarting... Back to Main menu...')
-        welcome_choice_user()
-        choice_answer()
-    elif ask_user.isalpha == '':
-        clear()
-        print('You entered invalid value, Back to Main menu')
-        welcome_choice_user()
-        choice_answer()
+#     ask_user = input('\x1B[3mNext = y, Restart = n\x1B[0m\n')
+#     if ask_user.isalpha() == 'n':
+#         clear()
+#         print('You got out of the game,...')
+#         print('Restarting... Back to Main menu...')
+#         welcome_choice_user()
+#         choice_answer()
+#     elif ask_user.isalpha == '':
+#         clear()
+#         print('You entered invalid value, Back to Main menu')
+#         welcome_choice_user()
+#         choice_answer()
 
 
 def welcome_choice_user():
@@ -250,152 +381,5 @@ def information_display():
            \_/____________________________/.''')
 
 
-def display_users_descriptions():
-    """ Displays interpretations """
-
-    def cube_intepret():
-        print('''
-    The cube is your true self! If
-    taller than cube, your confidence
-    is high while a shorter one means
-    that you could be shy. If the
-    cube is moving, it could symbolize
-    a open-minded person while a
-    still sitting cube is businesslike, a
-    cube that is dug into the sand means
-    that you are a planner. A solid cube
-    means you know who you are, while
-    a hollow may mean that you are busy
-    discovering your true self''')
-
-    def ladder_interpret():
-        print('''
-    The ladder represents two aspects of
-    your life; Your goals and frienships.
-    A short ladder represents a small
-    circle of friends and realistic goals,
-    while tall one means you
-    have many friends, and your goals
-    are difficult to attain. If leaned
-    onto the cube, shows closeness
-    towards your friends as well as
-    reliability your friends have towards
-    you, and if equal size as
-    cube shows you that you see your
-    friends as equals in authorithy.
-    If lower, it means you consider
-    yourself as a leader of the group.
-    Brand new looking ladder
-    means new friendships, while an
-    old looking one would imply
-    long enduring friendships''')
-
-    def horse_interpret():
-        print('''
-    Next, the horse; it represents your
-    partner. A horse closely related to
-    cube means you strive for close
-    relationships. And while brown sturdy
-    horse can mean you would like a
-    dependant partner, a glamorous looking
-    horse would mean that you want a
-    partner that will be groomed and
-    approved by others. A horse moving
-    towards the cube would signify
-    a new relationship, while when horse
-    moves away from the cube, means
-    insecurities in relationship.
-    Unicorn/Pegasus mean unrealistic
-    expectations. A brown sturdy working
-    horse means that you want a reliable
-    and stabile partner''')
-
-    def flowers_interpret():
-        print('''
-    The flowers represent your family or
-    children or anything you created and are
-    taking care of. If the flowers are
-    close to the cube, it means you are
-    close to your children. A vibrant
-    blossoming flowers would signify the
-    healthy strong relationship with your
-    kids/relatives, while too many flowers could
-    mean you could be overwhelmed with
-    too many concerns around your family.
-    When wilting flowers would represent
-    that relationships are broken or lost.''')
-
-    def thunderstorm_interpret():
-        print('''
-    The thunderstorm represents the
-    stress and fears in your life and
-    how you look at them. A strong storm
-    can mean that the stress really gets
-    to you, and it might be difficult to
-    bounce back. A passing storm in the
-    distance means your stress is visible
-    to you but manageable, while if the
-    storm is affecting any of the objects,
-    you might be overwhelmed by the
-    situation in your life. Just remember,
-    you are bigger than your troubles.
-    If the storm passed through and doesn\'t
-    cause any change, means that you
-    have confidence in resolving your
-    stress.''')
-    list_of_functions = [cube_intepret, ladder_interpret, horse_interpret, flowers_interpret, thunderstorm_interpret]
-    for i in enumerate(list_of_functions):
-        list_of_functions[i]()
-        input('Press enter to proceed')
-        clear()
-
-
-def interpretation():
-    """ Ask user to check the interpretation"""
-
-    ask_explain = input('Would you like to see your interpretation? (y/n)')
-    ask_explain = ask_explain.lower()
-    if ask_explain.isalpha():
-        if ask_explain.lower() == 'n':
-            print('You choose n! Thanks for trying this out!')
-            sys.exit()
-        elif ask_explain.lower() == 'y':
-            display_users_descriptions()
-            another_try = input('Press y to start the test again or Enter to exit!')
-            if another_try.lower() == 'y':
-                clear()
-                print('You have chosen y to try this test again!')
-                welcome_choice_user()
-                choice_answer()
-            elif another_try != 'y':
-                print('Hope you enjoyed! Thanks for trying it out!')
-                sys.exit()
-        else:
-            print('Wrong letter, try again!')
-            interpretation()
-    else:
-        print('You did not enter recognized character')
-        interpretation()
-        sys.exit()
-
-
-def all_funcs():
-    """ Run all functions accordingly """
-
-    # welcome_choice_user()
-    # cube()
-    # next_or_restart()
-    # ladder()
-    # next_or_restart()
-    # horse()
-    # next_or_restart()
-    # flowers()
-    # next_or_restart()
-    # thunder()
-    interpretation()
-    print('You exited the game')
-    print('All functions work properly!')
-
-
 welcome_choice_user()
-cube()
+
