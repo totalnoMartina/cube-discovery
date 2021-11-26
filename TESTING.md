@@ -114,4 +114,4 @@ Interpretation - Thunderstorm
 
 ## Further Testing
 
-
+One idea was to keep user input as global variables at the start, than use in a function where interpretation is displayed, so they come up together. But the screen of terminal is limited, so this is why I was happy to find a function which clears the screen. That noted, cleared screen would free up space for the visual space and remove the inputs as nothing existed, so therefore I did not implement this idea in this application.

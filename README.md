@@ -2,17 +2,30 @@
 
 ## Description
 
-This application is a personality test deriving from Japanese culture, and this [link](https://steemit.com/psychology/@breezin/cube-test-japenese-personality-test) provides all relevant information about how this game works. It can also help users to notice how do they see themselves and sparkle some imagination.
+This Python application is a personality test deriving from Japanese culture, and this [link](https://steemit.com/psychology/@breezin/cube-test-japenese-personality-test) inspired this application. Terminal runs on Heroku, a container-based cloud Platform as a Service (PaaS).
+
+## Instructions
+
+This is a personality test, inspired by Japanese culture, where you gain insight of what your perspective is like.
+
+- Welcome is displayed, user is asked for a name to start
+The welcome page is presenting the test, without too many details, asking for the name. It is part of the mystery, so curiosity is sparkled. After user enters the name, users are greeted back and encouraged to be creative and take time to describe objects. As the name contains a word 'test', I wanted to assure the users mentioning all answers are right, so they feel free to describe in greater details.
+- Choosing a to start, b to read about, and q to quit
+If chosen to quit, users exit the app with appropriate 'Goodbye' message,
+if chosen to see about, users can read a bit more about the details of this Japanese Cube test and then asked to try the test or not, and if not, the user exits with appropriate message displayed. If chosen to try it, user starts with first object, the cube.
+- Describing the objects
+There are 5 different objects, starting from cube, to be described by the user, then horse, the flowers and lastly, the thunderstorm. Users are asked to describe in details what do they imagine, and what kind of setting they imagine, also the relation between objects if there is any.
+- After answering and describing every object, user is offered to read about the interpretation of every object, or if not wanting to read at that moment, user can choose n to exit or start the test over.
 
 ## User Stories 
 
-* I want the User to understand and navigate easy through the test
-* I want the User to be able to start/restart/quit the app and get information about the game 
+* I want the User to easily understand and navigate through the test
+* I want the User to be able to start/quit the app and get information about the game 
 * I want the User to be able to write the description of objects
-* I want User to have the responses displayed
-* I want User to be notified when the characters that he inputs are not supported with an apropriate message
-* I want the User to be notified of empty input and given another chance to put information
-* I want to possibly use one of Python libraries to create a visual appearance of the results
+* I want User to have the responses displayed after the user input
+* I want User to be notified when the empty space that he inputs is not supported and prompted with an appropriate message
+* I want the User to be given another chance to put information for description
+* I want the User to have fun, get personal and have a positive experience
 
 ## Site Owner Goals
 
@@ -20,19 +33,6 @@ This application is a personality test deriving from Japanese culture, and this 
 * To offer user a display of answers to the questions
 * To be able to guide users and collect their answers, name
 * To be able to display a personality test in a fun way to users
-
-## Instructions
-
-This is a personality test, inspired by Japanese culture, where you gain insight of what your perspective is like.
-- Welcome and name to start
-The welcome page is presenting the test, without too many details, asking for the name. It is part of the mystery, so curiosity is sparkled. After user enters the name, users are greeted back and encouraged to be creative and take time to describe objects. As the name contains a word 'test', I wanted to assure the users mentioning all answers are right, so they feel free to describe in greater details.
-- Choosing a to start, b to read about, and q to quit
-If chosen to quit, users exit the app with appropriate 'Goodbye' message,
-if chosen to see about, users can read a bit more about the details of this Japanese Cube test and then asked to try the test or not, and if not, the user exits with apropriate message displayed. If chosen to try it, user starts with first object, cube.
-- Describing the objects
-There are 5 different objects, starting from cube, to be described by the user, then horse, the flowers and lastly, the thunderstorm. Users are asked to describe in details what do they imagine, and what kind of setting they imagine, also the relation between objects if there is any.
-- After answering and describing every object, user is offered reading about the interpretation of every object, or if not wanting to read this moment, user can choose n to exit or start the test over.
-
 
 ## Flowchart
 
@@ -104,6 +104,10 @@ links and explain
 * Prompt-toolkit if used explain every and links connect
 * Tabulate
 
+## Validator - PEP8
+
+Validating through PEP8 online website, and no issues presented
+![](documentation/readme-images/thunder-interpret.png)
 
 ## Deployment
 
@@ -115,10 +119,13 @@ links and explain
 
 ### Local Deployment
 
-In order to make a local copy of this project, you can clone it using the following command in your IDE terminal of your choice:
+In order to make a local copy of this project, you can clone it using the following link in your IDE terminal of your choice:
 
 - `git clone https://github.com/totalnoMartina/cube-discovery.git`
-from slack add here
+
+Alternatively, if using Gitpod, you can click below to create your own workspace using this repository.
+
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/totalnoMartina/cube-discovery)
 
 ### Heroku
 
