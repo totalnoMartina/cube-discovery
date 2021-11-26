@@ -113,6 +113,7 @@ def display_users_descriptions():
         horse_interpret,
         flowers_interpret,
         thunderstorm_interpret]
+
     for i in range(len(list_of_functions)):
         list_of_functions[i]()
         input('Press enter to proceed')
