@@ -8,16 +8,13 @@ Testing entering empty space when starting with the first object
 ![](documentation/readme-images/cube-empty-input-test.png)
 
 Testing second object for empty input by user
-![](documentation/readme-images/ladder-empty-input-test.png)
+![](documentation/readme-images/ladder-empty-test.png)
 
 Testing third object for empty space input by user
-![](documentation/readme-images/horse-empty-input-test.png)
+![](documentation/readme-images/horse-empty-test.png)
 
 Testing fourth object for empty space input by user
-![](documentation/readme-images/flowers-empty-input-test.png)
-
-
-![](documentation/readme-images/cube-empty-input-test.png)
+![](documentation/readme-images/flowers-empty-test.png)
 
 Testing user for the input on choosing to see interpretation
 ![](documentation/readme-images/interpretation-validation-test.png)
@@ -68,8 +65,52 @@ Original validation was discovered through these bugs.
 * I want the User to be notified of empty input and given another chance to put information
 * I want to possibly use one of Python libraries to create a visual appearance of the results
 
+## Features
 
- add screenshots from feature section
+
+### Welcome Page
+
+![](documentation/readme-images/welcome.png)
+
+### About
+
+![](documentation/readme-images/about_test.png)
+
+Entered test - First object - Cube
+
+![](documentation/readme-images/cube-start.png)
+
+Second object - Ladder
+
+![](documentation/readme-images/ladder.png)
+
+Third object - Horse
+
+![](documentation/readme-images/horse.png)
+
+Fourth object - Flowers
+
+![](documentation/readme-images/flowers.png)
+
+Fifth object - Thunderstorm
+
+![](documentation/readme-images/thunder.png)
+
+Interpretation - Cube
+![](documentation/readme-images/cube-interpret.png)
+
+Interpretation - Horse
+![](documentation/readme-images/horse-interpret.png)
+
+Interpretation - Ladder
+![](documentation/readme-images/ladder-interpret.png)
+
+Interpretation - Flowers
+![](documentation/readme-images/flowers-interpret.png)
+
+Interpretation - Thunderstorm
+![](documentation/readme-images/thunder-interpret.png)
+
 
 ## Further Testing
 

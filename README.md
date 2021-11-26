@@ -87,6 +87,10 @@ Interpretation - Thunderstorm
 
 I would like this app to be able to generate the whole document with answers and interpretations for users so they could print and keep a hard copy if they like
 
+## Testing
+
+The link to testing is [here](https://github.com/totalnoMartina/cube-discovery/blob/main/TESTING.md)
+
 ## Technologies 
 links and explain
 

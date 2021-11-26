@@ -39,7 +39,7 @@ def display_users_descriptions():
 | |\_.  | and frienships. A short ladder represents a small circle   |
 |\|  | /| of friends and realistic goals, while a tall one means you |
 | `---' | have many friends, and your goals are difficult to attain. |
-|       | If leaned onto the cube, shows closeness towards your      | 
+|       | If leaned onto the cube, shows closeness towards your      |
 |       | friends as well as reliability your friends have towards   |
 |       | you. Equal size as cube shows that you see your friends as |
 \       | equals in authorithy. Small ladder - you are the leader!  /
@@ -107,8 +107,12 @@ def display_users_descriptions():
   `---'
   ''')
 
-    list_of_functions = [cube_intepret, ladder_interpret,
-            horse_interpret, flowers_interpret, thunderstorm_interpret]
+    list_of_functions = [
+        cube_intepret,
+        ladder_interpret,
+        horse_interpret,
+        flowers_interpret,
+        thunderstorm_interpret]
     for i in range(len(list_of_functions)):
         list_of_functions[i]()
         input('Press enter to proceed')
