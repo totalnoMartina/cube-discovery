@@ -4,6 +4,9 @@
 Testing user input for many different characters or empty space
 ![](documentation/readme-images/welcome-validation-test.png)
 
+Testing user input while starting the test
+![](documentation/readme-images/empty-input-starting-test.png)
+
 Testing entering empty space when starting with the first object
 ![](documentation/readme-images/cube-empty-input-test.png)
 
@@ -16,20 +19,20 @@ Testing third object for empty space input by user
 Testing fourth object for empty space input by user
 ![](documentation/readme-images/flowers-empty-test.png)
 
+Testing the fifth object for empty input by user
+![](documentation/readme-images/thunder-empty-input-test.png)
+
 Testing user for the input on choosing to see interpretation
 ![](documentation/readme-images/interpretation-validation-test.png)
 
-Testing user input while starting the test
-![](documentation/readme-images/empty-input-starting-test.png)
+Checking Enter to exit the application at the end
+![](documentation/readme-images/ending-goodbye-test.png)
 
 Start test, choose quit if user wanted and get appropriate message
 ![](documentation/readme-images/quitting-starting-valid-test.png)
 
 Validating input for characters not accepted and present appropriate message
 ![](documentation/readme-images/about-symbols-test.png)
-
-Testing at the object thunderstorm for empty space, user gets appropriate message
-![](documentation/readme-images/empty-input-thunderstorm-test.png)
 
 Testing validation for putting more words and characters which should be accepted from user and displayed
 ![](documentation/readme-images/ladder-all-characters-accepted-test.png)
