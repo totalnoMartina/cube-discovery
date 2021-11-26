@@ -4,6 +4,10 @@
 
 This Python application is a personality test deriving from Japanese culture, and this [link](https://steemit.com/psychology/@breezin/cube-test-japenese-personality-test) inspired this application. Terminal runs on Heroku, a container-based cloud Platform as a Service (PaaS).
 
+The image of the Welcome page
+
+![](documentation/readme-images/welcome.png)
+
 ## Instructions
 
 As user is describing and probably using spaces, the applicaton allows for commas/dots/other symbols as inputs to make it more personalized for users. Only at description inputs.

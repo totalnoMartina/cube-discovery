@@ -56,13 +56,15 @@ User is able to start again at the end of this test
 
 ### Solved bugs
 
-Double function cube showed up as a bug during creating this test, dicovered after testing that it just stayed uncommented like a few other functions, and got resolved after testing.
+Double function cube showed up as a bug during creating this test, and dicovered after testing that it just stayed uncommented like a few other functions, and got resolved after testing.
 
-I realized that isalpha() as a function does not suit in taking input without spaces, and this concept, so it took some time to accept and apply another simple solution instead. I mostly focused on empty space being entered and validated with appropriate message for the user at all occasions.
+Trying using isalpha() as a function does not suit in taking input without spaces, and this concept, so it took some time to accept and apply another simple solution instead. I mostly focused on empty space being entered and validated with appropriate message for the user at all occasions.
+
+At the welcome, the input that takes the name of the user could be more detailed in explanation, and stating that user should write in one word. I wanted only normal letters and one word to be accepted and obvious to user.
 
 ### Unresolved bugs
 
-This application is created using Chromebook based on Chromium (Linux) and sometimes it would freeze, not sure is it because of machine, or the app, or the fact that the changes are recorded by heroku and that could make it freeze. Refreshing resolves this issue.
+This application is created using Chromebook based on Chromium (Linux) and sometimes it would freeze, not sure is it because of machine, or the app, or the fact that the changes are recorded by Heroku and that could make it freeze. Refreshing resolves this issue.
 
 ### Validation testing
 
@@ -70,20 +72,19 @@ No errors were returned from PEP8online.com
 
 #### Validation testing Notes
 
-Please Note - accepting all characters in user_answer_inputs is planned for this app.
-Explanation below:
-During testing the function cube() for validation of the user input being symbols/characters as '#;08=-' or space character, a method .isalpha() was tested many times, which is also spacebar-sensitive, and will not take user input if entered space in between. The method is taken out of the function for the reason of user possibly wanting to describe in long sentences with a comma or space and possibly exclamation marks or similar. Therefore, the function prints out exact input of user with the symbols included, if any. 
-By putting this method I might have had limited user to describe everything in one go and made it more complicated. So this was my reason to not use validation for isalpha() and accept symbols as user input.
+Please Note - accepting all characters in user_answer_inputs ('user_anwer_first/second/third/fourth/fifth') is planned for this app.
+Details below:
+During testing the function cube() for validation of the user input being symbols/characters as '#;08=-' or space character, a method .isalpha() was tested many times, which is also spacebar-sensitive, and will not take user input if entered space in between. The method is taken out of the function because of user possibly wanting to describe in long sentences with a comma or space and possibly exclamation marks or similar. Therefore, the function prints out exact input of user with the symbols included, if any. 
+By putting this method I might have had limited user to describe everything in one go and made it more complicated. So this was my reason to not use validation for isalpha() and accept symbols as user input and only respond to user once the empty space is entered.
 
 Another option considered was creating a list from user input, splitting by space, adding inputs into a list, separating by a comma or space (again, something that complicates function further), and then later using for loop to place them back as user wrote them or a common method in Python called tostring(). In my perspective, this validation is only relevant if user slips a finger without writing anything in, so we bring user back to the beginning to write the description again, with apropriate prompt message. And if user wants to put commas/spaces, I wanted that to be allowed.
 
-While infinite loops are caused when placed instead conditionals, that was handled with an exiting function, and some are changed back to conditional as it did not suit like for welcome.
-I also did not want the application to keep being in a loop, so I made an option to stop the function for user. I find it could be annoying if it keeps insisting on users to try again.
+While infinite loops are caused, that was handled with an exiting function, and some are changed to conditional as it did not suit - like for welcome. I did not want the application to keep being in a loop, so I made an option to stop the function for user. I find it could be annoying if it keeps insisting on users to try again. There is 'Run Program' to direct user after playing if he wants to start again so it is on user to decide.
 
 For iterating from one object to another, I had an idea to use separate function called next_or_restart() which was used before the functions were ready to connect to each other. As the app evolved, the function is no longer needed and therefore, deleted.
 At the bottom of this [image](https://github.com/totalnoMartina/cube-discovery/blob/main/documentation/readme-images/ladder.png) you can see user being asked to go 'Next or Restart'.
 
-The testing of app in the start was done by creating a function called all_funcs() that had smaller functions for me to test and manipulate. It was deleted as it was no longer needed.
+The testing of app in the start was done by creating a function called all_funcs() that had smaller functions for me to test and manipulate. It was deleted after the app is ready, as it was no longer needed.
 
 ## User Stories 
 
