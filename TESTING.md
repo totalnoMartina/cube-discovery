@@ -4,6 +4,21 @@
 Testing user input for many different characters or empty space
 ![](documentation/readme-images/welcome-validation-test.png)
 
+Testing entering empty space when starting with the first object
+![](documentation/readme-images/cube-empty-input-test.png)
+
+Testing second object for empty input by user
+![](documentation/readme-images/ladder-empty-input-test.png)
+
+Testing third object for empty space input by user
+![](documentation/readme-images/horse-empty-input-test.png)
+
+Testing fourth object for empty space input by user
+![](documentation/readme-images/flowers-empty-input-test.png)
+
+
+![](documentation/readme-images/cube-empty-input-test.png)
+
 Testing user for the input on choosing to see interpretation
 ![](documentation/readme-images/interpretation-validation-test.png)
 
@@ -18,6 +33,7 @@ Validating input for characters not accepted and present apropriate message
 
 Testing at the object thunderstorm for empty space, user gets apropriate message
 ![](documentation/readme-images/empty-input-thunderstorm-test.png)
+
 
 
 
