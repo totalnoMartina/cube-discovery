@@ -7,6 +7,24 @@ Testing user input for many different characters or empty space
 Testing user for the input on choosing to see interpretation
 ![](documentation/readme-images/interpretation-validation-test.png)
 
+Empty input validation tested while starting the test
+![](documentation/readme-images/empty-input-starting-test.png)
+
+Start test, choose quit if user changed mind and get apropriate message
+![](documentation/readme-images/quitting-starting-valid-test.png)
+
+Validating input for characters not accepted and present apropriate message
+![](documentation/readme-images/about-symbols-test.png)
+
+Testing at the object thunderstorm for empty space, user gets apropriate message
+![](documentation/readme-images/empty-input-thunderstorm-test.png)
+
+
+
+
+User is able to start again at the end of this test
+![](documentation/readme-images/end-trying-again-test.png)
+
 ## Bugs
 
 ### Validation testing Notes

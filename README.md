@@ -68,6 +68,20 @@ Fifth object - Thunderstorm
 
 ![](documentation/readme-images/thunder.png)
 
+Interpretation - Cube
+![](documentation/readme-images/cube-interpret.png)
+
+Interpretation - Horse
+![](documentation/readme-images/horse-interpret.png)
+
+Interpretation - Ladder
+![](documentation/readme-images/ladder-interpret.png)
+
+Interpretation - Flowers
+![](documentation/readme-images/flowers-interpret.png)
+
+Interpretation - Thunderstorm
+![](documentation/readme-images/thunder-interpret.png)
 
 ### Future features
 
