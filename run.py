@@ -220,7 +220,6 @@ def flowers():
 def horse():
     """Function to call third object"""
 
-    print('Something is coming from out of nowhere,...')
     print('Looks like a horse!')
     print('Imagine his figure, movement, relation to others')
     print(r'''
