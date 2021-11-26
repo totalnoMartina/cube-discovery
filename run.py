@@ -128,6 +128,7 @@ def interpretation():
     if ask_explain.isalpha():
         if ask_explain.lower() == 'n':
             print('You choose n! Thanks for trying this out!')
+            print('RUN PROGRAM for starting over! Have fun!')
             sys.exit()
         elif ask_explain.lower() == 'y':
             display_users_descriptions()
@@ -219,7 +220,7 @@ def flowers():
         flowers()
     else:
         clear()
-        print(f'You wrote: "{user_answer_fourth}" \n')
+        print(f'You wrote: "{user_answer_fourth}"\n')
         print('There is something else appearing here...')
         thunder()
 
@@ -255,7 +256,7 @@ def horse():
         horse()
     else:
         clear()
-        print(f'You wrote: "{user_answer_third}"')
+        print(f'You wrote: "{user_answer_third}"\n')
         print('There seems to be something else appearing...!')
         flowers()
 
