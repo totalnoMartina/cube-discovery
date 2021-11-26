@@ -13,10 +13,11 @@ The image of the Welcome page
 As user is describing and probably using spaces, the applicaton allows for commas/dots/other symbols as inputs to make it more personalized for users. Only at description inputs.
 Steps are as follows:
 
-- Welcome is displayed, user is asked for a name to start. The welcome page is presenting the test, without too many details, asking for the name. It is part of the mystery, so curiosity is sparkled. After user enters the name, users are greeted back and encouraged to be creative and take time to describe objects. As the name contains a word 'test', I wanted to assure the users mentioning that all answers are right, so they feel free to describe in greater details.
-- Choosing a to start, b to read about, and q to quit. If chosen q to quit, users exit the application with appropriate 'Goodbye' message, if chosen to see informations about the test, users can read a bit more, and after reading about the application, users are asked to try the test or not, and if not, the users exit the test with appropriate message displayed. If chosen to try it, user starts with first object, the cube.
-- Describing the objects - 5 different objects, starting from the cube, to be described, then a horse, then the flowers and lastly, a thunderstorm. Users are asked to describe in details what do they imagine, and what kind of setting they imagine, position and the relation between objects if there is any.
-- After answering and describing every object, user is offered to read about the interpretation of every object. If not wanting to read at that moment, user can choose 'n' to exit or start the test again by entering 'y'.
+- Welcome is displayed, user is asked for a name to start. The welcome page is presenting the test, without too many details, asking for the name. It is part of the mystery, so curiosity is sparkled.
+- After user enters the name, users are greeted back and encouraged to be creative and take time to describe objects. As the name contains a word 'test', I wanted to assure the users mentioning that all answers are right, so they feel free to describe in greater details.
+- Choosing 'a' to start, 'b' to read about, and 'q' to quit. If chosen 'q', users exit the application with appropriate 'Goodbye' message, if chosen to see informations about the test, users can read a bit more, and after reading about the application, users are asked to try the test or not; if not, the users exit the test with appropriate message displayed. If chosen to try it, user starts with first object, the cube.
+- Describing the objects - 5 different objects, starting from the cube, to be described, then a horse, then the flowers and lastly, a thunderstorm. Users are asked to describe in detail what do they imagine, what kind of setting they imagine, position and the relation between objects if there is any.
+- After describing every object, user is offered to read about the interpretation of every object. If not wanting to read at that moment, user can choose 'n' to exit or start the test again by entering 'y'.
 
 ## User Stories 
 
@@ -39,7 +40,7 @@ Steps are as follows:
 
 ## Flowchart
 
-Display of the flow of this application
+Display of the starting idea flowchart for this application
 
 ![](documentation/readme-images/cube-flowchart.png)
 
@@ -99,14 +100,14 @@ Interpretation - Thunderstorm
 
 ### Future features
 
-I would like this app to be able to generate the whole document with answers and interpretations together for users so they could print and keep a hard copy if they would like. More work on graphic display for the future features, as an idea.
+I would like this app to be able to generate the whole document with answers and interpretations together for users so they could print and keep a hard copy if they would like. More work on graphic display for the future features, also an idea.
 
 ## Application Model
 
-Pure Python is used to create this application. It is made for a user to interact by writing down user name, descriptions and navigate using keyboard, mostly 'y/n' options. 
+Pure Python and python libraries as 'os' and 'sys' are used to create this application. It is made for a user to interact by writing down user name, descriptions and navigate using keyboard, mostly 'y/n' options. 
 The Flow of functions is relevant as the goal is for the user to control to start playing this test or exit the test.
-ASCII visual display is used in a print() with 'r'(raw) before triple quotes, as well as conditional, nested conditionals, a for loop, checking input by calling lower() for to be accepted any letter.
-At the name input, it is checked with a function isalpha(). It is created to be entertaining and practical for users to use.
+ASCII visual display is used in a print() with 'r'(raw) before triple quotes, as well as conditional, nested conditionals, a for loop, checking input by calling lower() for to be accepted any letter, regardless of capitalization.
+At the name input, it is checked with a function isalpha(), accepting one word only. It is created to be entertaining and practical for users to use.
 
 ## Testing
 
@@ -141,7 +142,7 @@ Validating through PEP8 online website, and no issues were presented
 
 ### Local Deployment
 
-In order to make a local copy of this project, you can clone it using the following link in your IDE terminal of your choice:
+In order to make a local copy of this project, you can clone it using the following link in an IDE terminal of your choice:
 
 - `git clone https://github.com/totalnoMartina/cube-discovery.git`
 
@@ -155,16 +156,16 @@ This project was deployed using Code Institute's Python mock terminal for Heroku
 
 The steps are as follows:
 - If not having a 'Heroku' account, create one by clicking on 'Sign up' and follow instructions until you confirm with your email that the account is created
-- Create a new app, by clicking 'New' in the top right part of the welcome page
-- Choose app name and select the region 
-- Go to 'Deploy' tab and select GitHub as deployment method
-- Locate your repository on Github, then select 'connect repository'
+- Create a new app, by clicking 'New' in the top right section of the welcome page
+- Choose a name for your new application and select your region 
+- Go to 'Deploy' tab and select 'GitHub' as deployment method
+- Locate your repository on 'Github', then select 'connect repository'
 - Enable automatic deployments, then go to the _Settings__ tab, and add two buildpacks in this exact order;
 
 1. `heroku/python`
 2. `heroku/nodejs`
 
-A _Config Var_ was also added and named `PORT`, and set to `8000` before clicking the deploy branch.
+A new _Config Var_ was also added and named `PORT`, set to `8000`, before clicking the deploy branch, so this is also a requirement to be able to view your site live.
 
 ## Credits 
 
