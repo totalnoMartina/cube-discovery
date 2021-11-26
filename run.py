@@ -185,6 +185,7 @@ def thunder():
         print('Ooops, nothing is written. Please describe the shape')
         thunder()
     else:
+        clear()
         print(f'You wrote "{user_answer_fifth}" \n')
         print('That was the last object, your interpretation is ready!')
         interpretation()
@@ -217,6 +218,7 @@ def flowers():
         print('Ooops, nothing is written. Please describe in details')
         flowers()
     else:
+        clear()
         print(f'You wrote: "{user_answer_fourth}" \n')
         print('There is something else appearing here...')
         thunder()
@@ -252,6 +254,7 @@ def horse():
         print('Ooops, nothing is written. Please describe the shape')
         horse()
     else:
+        clear()
         print(f'You wrote: "{user_answer_third}"')
         print('There seems to be something else appearing...!')
         flowers()
@@ -277,14 +280,15 @@ def ladder():
     print('Use as many words to describe many details and hit Enter')
     user_answer_second = input('Imagine, write it down...\n')
 
-    if user_answer_second:
-        print(f'You wrote: "{user_answer_second}" \n')
-        print('Okay, now... There is something else appearing in here...')
-        horse()
-    elif user_answer_second == '':
+    if user_answer_second == '':
         clear()
         print('Ooops, nothing is written. Please describe the shape')
         ladder()
+    elif user_answer_second:
+        clear()
+        print(f'You wrote: "{user_answer_second}" \n')
+        print('Okay, now... There is something else appearing in here...')
+        horse()
 
 
 def cube():
@@ -313,6 +317,7 @@ def cube():
         print('No description, try again')
         cube()
     elif user_answer_first:
+        clear()
         print(f'You wrote: "{user_answer_first}" \n')
         print('Okay, now... There is something else appearing in here...')
         ladder()
@@ -359,9 +364,9 @@ def welcome_choice_user():
         print('You entered invalid value, please try again')
         welcome_choice_user()
     else:
-        print_slow('This is a game where all answers are right.')
-        print_slow(f'Use your imagination, ready {name}?')
-        print_slow('Take some time for describing every object...\n')
+        print('This is a game where all answers are right.')
+        print(f'Use your imagination, ready {name}?')
+        print('Take some time for describing every object...\n')
         choice_answer()
 
 
