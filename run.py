@@ -8,6 +8,8 @@ def display_users_descriptions():
     """ Displays interpretations """
 
     def cube_intepret():
+        """ Description of the cube """
+
         print(r'''
                                                                .---.
                                                               /  .  \
@@ -28,6 +30,8 @@ def display_users_descriptions():
     ''')
 
     def ladder_interpret():
+        """ Description of the ladder """
+
         print(r'''
                                                                .---.
                                                               /  .  \
@@ -48,6 +52,8 @@ def display_users_descriptions():
     ''')
 
     def horse_interpret():
+        """ Description of the horse """
+
         print(r'''
                                                                .---.
                                                               /  .  \
@@ -68,6 +74,8 @@ def display_users_descriptions():
     ''')
 
     def flowers_interpret():
+        """ Description of the flowers """
+
         print(r'''
                                                                .---.
                                                               /  .  \
@@ -88,6 +96,8 @@ def display_users_descriptions():
     ''')
 
     def thunderstorm_interpret():
+        """ Description of the thunder """
+
         print(r'''
                                                                .---.
                                                               /  .  \
