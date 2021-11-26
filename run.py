@@ -1,5 +1,6 @@
 """ Functions to control flow of the japanese cube test """
 import sys
+import time
 import os
 from os import system, name
 
@@ -347,23 +348,6 @@ def choice_answer():
         choice_answer()
 
 
-# def next_or_restart():
-#     """Function to use for iterating through objects and call it"""
-
-#     ask_user = input('\x1B[3mNext = y, Restart = n\x1B[0m\n')
-#     if ask_user.isalpha() == 'n':
-#         clear()
-#         print('You got out of the game,...')
-#         print('Restarting... Back to Main menu...')
-#         welcome_choice_user()
-#         choice_answer()
-#     elif ask_user.isalpha == '':
-#         clear()
-#         print('You entered invalid value, Back to Main menu')
-#         welcome_choice_user()
-#         choice_answer()
-
-
 def welcome_choice_user():
     """ Greets the user, instructions and options, about, start and quit"""
 
@@ -375,9 +359,9 @@ def welcome_choice_user():
         print('You entered invalid value, please try again')
         welcome_choice_user()
     else:
-        print('This is a game where all answers are right.')
-        print(f'Use your imagination, ready {name}?')
-        print('Take some time for describing every object...\n')
+        print_slow('This is a game where all answers are right.')
+        print_slow(f'Use your imagination, ready {name}?')
+        print_slow('Take some time for describing every object...\n')
         choice_answer()
 
 
