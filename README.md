@@ -9,14 +9,10 @@ This Python application is a personality test deriving from Japanese culture, an
 As user is describing and probably using spaces, the applicaton allows for commas/dots/other symbols as inputs to make it more personalized for users. Only at description inputs.
 Steps are as follows:
 
-- Welcome is displayed, user is asked for a name to start.
-The welcome page is presenting the test, without too many details, asking for the name. It is part of the mystery, so curiosity is sparkled. After user enters the name, users are greeted back and encouraged to be creative and take time to describe objects. As the name contains a word 'test', I wanted to assure the users mentioning that all answers are right, so they feel free to describe in greater details.
-- Choosing a to start, b to read about, and q to quit
-If chosen q to quit, users exit the application with appropriate 'Goodbye' message,
-if chosen to see informations about the test, users can read a bit more, and after reading about the application, users are asked to try the test or not, and if not, the users exit the test with appropriate message displayed. If chosen to try it, user starts with first object, the cube.
-- Describing the objects
-There are 5 different objects, starting from the cube, to be described, then a horse, then flowers and lastly, a thunderstorm. Users are asked to describe in details what do they imagine, and what kind of setting they imagine, position and the relation between objects if there is any.
-- After answering and describing every object, user is offered to read about the interpretation of every object. If not wanting to read at that moment, user can choose n to exit or start the test over entering y.
+- Welcome is displayed, user is asked for a name to start. The welcome page is presenting the test, without too many details, asking for the name. It is part of the mystery, so curiosity is sparkled. After user enters the name, users are greeted back and encouraged to be creative and take time to describe objects. As the name contains a word 'test', I wanted to assure the users mentioning that all answers are right, so they feel free to describe in greater details.
+- Choosing a to start, b to read about, and q to quit. If chosen q to quit, users exit the application with appropriate 'Goodbye' message, if chosen to see informations about the test, users can read a bit more, and after reading about the application, users are asked to try the test or not, and if not, the users exit the test with appropriate message displayed. If chosen to try it, user starts with first object, the cube.
+- Describing the objects - 5 different objects, starting from the cube, to be described, then a horse, then the flowers and lastly, a thunderstorm. Users are asked to describe in details what do they imagine, and what kind of setting they imagine, position and the relation between objects if there is any.
+- After answering and describing every object, user is offered to read about the interpretation of every object. If not wanting to read at that moment, user can choose 'n' to exit or start the test again by entering 'y'.
 
 ## User Stories 
 
@@ -35,11 +31,12 @@ There are 5 different objects, starting from the cube, to be described, then a h
 * To offer user a display of answers to the questions
 * To be able to guide users and collect their answers and a name
 * To be able to display a personality test in a fun way to users
-* To inspire people to love themselves more by paying more attention to thoughts
+* To inspire people to love themselves more by paying more attention to their thoughts
 
 ## Flowchart
 
-Displaying the flow of this application
+Display of the flow of this application
+
 ![](documentation/readme-images/cube-flowchart.png)
 
 ## Features
@@ -51,6 +48,7 @@ Displaying the flow of this application
 ### About
 
 Choosing option 'b' it displays some information about this test, to sparkle imagination
+
 ![](documentation/readme-images/about_test.png)
 
 Entered test - First object - user is asked to describe
@@ -75,34 +73,41 @@ Fifth object - Thunderstorm - user is asked to describe
 
 After writing out descriptions, user can see the interpretations of their objects one by one, navigating by pressing 'Enter'
 Interpretation - Cube
+
 ![](documentation/readme-images/cube-interpret.png)
 
-Interpretation - Horse
-![](documentation/readme-images/horse-interpret.png)
-
 Interpretation - Ladder
+
 ![](documentation/readme-images/ladder-interpret.png)
 
+Interpretation - Horse
+
+![](documentation/readme-images/horse-interpret.png)
+
+
 Interpretation - Flowers
+
 ![](documentation/readme-images/flowers-interpret.png)
 
 Interpretation - Thunderstorm
+
 ![](documentation/readme-images/thunder-interpret.png)
 
 ### Future features
 
-I would like this app to be able to generate the whole document with answers and interpretations together for users so they could print and keep a hard copy if they like
+I would like this app to be able to generate the whole document with answers and interpretations together for users so they could print and keep a hard copy if they would like. More work on graphic display for the future features, as an idea.
 
 ## Application Model
 
-Pure Python is used to create this application. It is made for a user to interact by writing down user name, descriptions and navigate using keyboard, mostly y/n options. 
+Pure Python is used to create this application. It is made for a user to interact by writing down user name, descriptions and navigate using keyboard, mostly 'y/n' options. 
 The Flow of functions is relevant as the goal is for the user to control to start playing this test or exit the test.
-ASCII visual display is used in a print() with 'r' before triple quotes, as well as conditional, nested conditionals, a for loop, checking input by calling lower() for to be accepted any letter.
-At the name input, checked with a function isalpha()
+ASCII visual display is used in a print() with 'r'(raw) before triple quotes, as well as conditional, nested conditionals, a for loop, checking input by calling lower() for to be accepted any letter.
+At the name input, it is checked with a function isalpha(). It is created to be entertaining and practical for users to use.
 
 ## Testing
 
 I have manually tested this application by doing the following:
+
 - Passed the code through PEP8 linter and confirmed there is no issues
 - Given empty space as input, when characters are expected
 - Given wrong letter when specific letter is expected
@@ -111,28 +116,22 @@ I have manually tested this application by doing the following:
 The link to images and more details on all testing is [here](https://github.com/totalnoMartina/cube-discovery/blob/main/TESTING.md)
 
 ## Technologies 
-links and explain
 
-* Git
-* GitHub -  used for version control
-* Gitpod - Cloud-based IDE and the steps for deployment
-* Python
-
-### Python Packages 
-
-* Prompt-toolkit if used explain every and links connect
-* Tabulate
+* [GitHub](https://github.com/) - used for version control
+* [Gitpod](https://github.com/) - cloud-based IDE and the steps for deployment are below in the 'Deployment' section
+* [Python](https://www.python.org/) - Python is used for creating this application
 
 ## Validator - PEP8
 
-Validating through PEP8 online website, and no issues presented
+Validating through PEP8 online website, and no issues were presented
 ![](documentation/readme-images/thunder-interpret.png)
 
 ## Deployment
 
 ### GitHub
 
-- In the [GitHub repository](https://github.com/totalnoMartina/cube-discovery),navigate to the Settings tab.
+- If not already a user on GitHub, create an account on [GitHub](https://github.com/)
+- In the [GitHub repository](https://github.com/totalnoMartina/cube-discovery), navigate to the Settings tab.
 - From the Source section drop-down menu, select the `Main` Branch (alt: `Master`).
 - Once the `Main` branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.
 
@@ -148,15 +147,20 @@ Alternatively, if using Gitpod, you can click below to create your own workspace
 
 ### Heroku
 
-Explain step by step, creating a heroku account, create an new app, select region, go to 'deploy' tab, sleect github as deployment method, locate your repository on Github, select 'connect reposit' , enable automatic deployments, thwn go settings tab, and packages here below:
-When deploying on Heroku, two buildpacks are installed from the _Settings_ tab.
+This project was deployed using Code Institute's Python mock terminal for Heroku
+
+The steps are as follows:
+- If not having a 'Heroku' account, create one by clicking on 'Sign up' and follow instructions until you confirm with your email that the account is created
+- Create a new app, by clicking 'New' in the top right part of the welcome page
+- Choose app name and select the region 
+- Go to 'Deploy' tab and select GitHub as deployment method
+- Locate your repository on Github, then select 'connect repository'
+- Enable automatic deployments, then go to the _Settings__ tab, and add two buildpacks in this exact order;
 
 1. `heroku/python`
 2. `heroku/nodejs`
 
-A _Config Var_ was added and named `PORT`, and set to `8000` before clicking deploy branch.
-go back to deploy tab, click deploy branch, it will take coulpe minutes to install requirements, once it is finished, you can view live deployed site and list the link to your site. screenshots of the steps maybe - optional
-
+A _Config Var_ was also added and named `PORT`, and set to `8000` before clicking the deploy branch.
 
 ## Credits 
 

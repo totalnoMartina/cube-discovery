@@ -1,6 +1,5 @@
 """ Functions to control flow of the japanese cube test """
 import sys
-import time
 import os
 from os import system, name
 

@@ -2,52 +2,73 @@
 # Testing
 
 Testing user input for many different characters or empty space
+
 ![](documentation/readme-images/welcome-validation-test.png)
 
 Testing user input while starting the test
+
 ![](documentation/readme-images/empty-input-starting-test.png)
 
 Testing entering empty space when starting with the first object
+
 ![](documentation/readme-images/cube-empty-input-test.png)
 
 Testing second object for empty input by user
+
 ![](documentation/readme-images/ladder-empty-test.png)
 
 Testing third object for empty space input by user
+
 ![](documentation/readme-images/horse-empty-test.png)
 
 Testing fourth object for empty space input by user
+
 ![](documentation/readme-images/flowers-empty-test.png)
 
 Testing the fifth object for empty input by user
+
 ![](documentation/readme-images/thunder-empty-input-test.png)
 
 Testing user for the input on choosing to see interpretation
+
 ![](documentation/readme-images/interpretation-validation-test.png)
 
 Checking Enter to exit the application at the end
+
 ![](documentation/readme-images/ending-goodbye-test.png)
 
 Start test, choose quit if user wanted and get appropriate message
 ![](documentation/readme-images/quitting-starting-valid-test.png)
 
 Validating input for characters not accepted and present appropriate message
+
 ![](documentation/readme-images/about-symbols-test.png)
 
 Testing validation for putting more words and characters which should be accepted from user and displayed
+
 ![](documentation/readme-images/ladder-all-characters-accepted-test.png)
 
 User is able to start again at the end of this test
+
 ![](documentation/readme-images/end-trying-again-test.png)
 
 ## Bugs
+
+### Solved bugs
 
 Double function cube showed up as a bug during creating this test, dicovered after testing that it just stayed uncommented like a few other functions, and got resolved after testing.
 
 I realized that isalpha() as a function does not suit in taking input without spaces, and this concept so it took some time to accept and apply simple solution instead. I mostly focused on empty space being entered and validated with appropriate message for the user at all occasions.
 
+### Unresolved bugs
 
-### Validation testing Notes
+No bugs remaining
+
+### Validation testing
+
+No errors were returned from PEP8online.com
+
+#### Validation testing Notes
 
 Please Note - accepting all characters in user_answer_inputs is planned for this app.
 Explanation below:
@@ -105,25 +126,29 @@ Fifth object - Thunderstorm
 ![](documentation/readme-images/thunder.png)
 
 Interpretation - Cube
+
 ![](documentation/readme-images/cube-interpret.png)
 
 Interpretation - Ladder
+
 ![](documentation/readme-images/ladder-interpret.png)
 
 Interpretation - Horse
+
 ![](documentation/readme-images/horse-interpret.png)
 
 Interpretation - Flowers
+
 ![](documentation/readme-images/flowers-interpret.png)
 
 Interpretation - Thunderstorm
+
 ![](documentation/readme-images/thunder-interpret.png)
 
 Ending of the Test
+
 ![](documentation/readme-images/ending-goodbye-test.png)
-
-
 
 ## Further Testing
 
-One idea was to keep user input as global variables at the start, than use in a function where interpretation is displayed, so they come up together. But the screen of terminal is limited, so this is why I was happy to find a function which clears the screen. That noted, cleared screen would free up space for the visual space and remove the inputs as nothing existed, so therefore I did not implement this idea in this application.
+One idea was to keep user input as global variables at the start, than use later in a function where interpretation is displayed, so they come up together. But the screen of terminal is limited, so this is why I was happy to find a function which clears the screen. That noted, cleared screen would free up space for the visual space and remove the inputs as nothing existed, so therefore I did not implement this idea in this application. 
