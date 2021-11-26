@@ -8,13 +8,13 @@ This Python application is a personality test deriving from Japanese culture, an
 
 This is a personality test, inspired by Japanese culture, where you gain insight of what your perspective is like.
 
-- Welcome is displayed, user is asked for a name to start
+- Welcome is displayed, user is asked for a name to start.
 The welcome page is presenting the test, without too many details, asking for the name. It is part of the mystery, so curiosity is sparkled. After user enters the name, users are greeted back and encouraged to be creative and take time to describe objects. As the name contains a word 'test', I wanted to assure the users mentioning all answers are right, so they feel free to describe in greater details.
 - Choosing a to start, b to read about, and q to quit
 If chosen to quit, users exit the app with appropriate 'Goodbye' message,
 if chosen to see about, users can read a bit more about the details of this Japanese Cube test and then asked to try the test or not, and if not, the user exits with appropriate message displayed. If chosen to try it, user starts with first object, the cube.
 - Describing the objects
-There are 5 different objects, starting from cube, to be described by the user, then horse, the flowers and lastly, the thunderstorm. Users are asked to describe in details what do they imagine, and what kind of setting they imagine, also the relation between objects if there is any.
+There are 5 different objects, starting from the cube, to be described, then a horse, the flowers and lastly, a thunderstorm. Users are asked to describe in details what do they imagine, and what kind of setting they imagine, also the relation between objects if there is any.
 - After answering and describing every object, user is offered to read about the interpretation of every object, or if not wanting to read at that moment, user can choose n to exit or start the test over.
 
 ## User Stories 
@@ -36,6 +36,7 @@ There are 5 different objects, starting from cube, to be described by the user, 
 
 ## Flowchart
 
+Displaying the flow of this application
 ![](documentation/readme-images/cube-flowchart.png)
 
 ## Features
@@ -46,28 +47,30 @@ There are 5 different objects, starting from cube, to be described by the user, 
 
 ### About
 
+Choosing option 'b' it displays some information about this test, to sparkle imagination
 ![](documentation/readme-images/about_test.png)
 
-Entered test - First object - cube
+Entered test - First object - user is asked to describe
 
-![](documentation/readme-images/started.png)
+![](documentation/readme-images/cube-start.png)
 
-Second object - Ladder
+Second object - Ladder - user is asked to describe
 
 ![](documentation/readme-images/ladder.png)
 
-Third object - Horse
+Third object - Horse - user is asked to describe
 
 ![](documentation/readme-images/horse.png)
 
-Fourth object - Flowers
+Fourth object - Flowers - user is asked to describe
 
 ![](documentation/readme-images/flowers.png)
 
-Fifth object - Thunderstorm
+Fifth object - Thunderstorm - user is asked to describe
 
 ![](documentation/readme-images/thunder.png)
 
+After writing out descriptions, user can see the interpretations of their objects one by one, navigating by pressing 'Enter'
 Interpretation - Cube
 ![](documentation/readme-images/cube-interpret.png)
 
