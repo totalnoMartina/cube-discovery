@@ -1,7 +1,11 @@
 
 # Testing
 
-screenshot of testing inputs, valid and invalid
+Testing user input for many different characters or empty space
+![](documentation/readme-images/welcome-validation-test.png)
+
+Testing user for the input on choosing to see interpretation
+![](documentation/readme-images/interpretation-validation-test.png)
 
 ## Bugs
 
