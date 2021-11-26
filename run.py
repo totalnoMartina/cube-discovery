@@ -296,8 +296,8 @@ def cube():
 
     print('\x1B[3mYou have chosen a to start the game!\x1B[0m \n')
     print('''Imagine now... You find yourself in the dessert...
-    Nothing around you... The objects start to appear...
-    There is the first object! It seems to be a cube''')
+Nothing around you... The objects start to appear...
+There is the first object! Looks like a cube''')
     print(r"""
 
          ________
