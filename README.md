@@ -6,16 +6,17 @@ This Python application is a personality test deriving from Japanese culture, an
 
 ## Instructions
 
-This is a personality test, inspired by Japanese culture, where you gain insight of what your perspective is like.
+As user is describing and probably using spaces, the applicaton allows for commas/dots/other symbols as inputs to make it more personalized for users. Only at description inputs.
+Steps are as follows:
 
 - Welcome is displayed, user is asked for a name to start.
-The welcome page is presenting the test, without too many details, asking for the name. It is part of the mystery, so curiosity is sparkled. After user enters the name, users are greeted back and encouraged to be creative and take time to describe objects. As the name contains a word 'test', I wanted to assure the users mentioning all answers are right, so they feel free to describe in greater details.
+The welcome page is presenting the test, without too many details, asking for the name. It is part of the mystery, so curiosity is sparkled. After user enters the name, users are greeted back and encouraged to be creative and take time to describe objects. As the name contains a word 'test', I wanted to assure the users mentioning that all answers are right, so they feel free to describe in greater details.
 - Choosing a to start, b to read about, and q to quit
-If chosen to quit, users exit the app with appropriate 'Goodbye' message,
-if chosen to see about, users can read a bit more about the details of this Japanese Cube test and then asked to try the test or not, and if not, the user exits with appropriate message displayed. If chosen to try it, user starts with first object, the cube.
+If chosen q to quit, users exit the application with appropriate 'Goodbye' message,
+if chosen to see informations about the test, users can read a bit more, and after reading about the application, users are asked to try the test or not, and if not, the users exit the test with appropriate message displayed. If chosen to try it, user starts with first object, the cube.
 - Describing the objects
-There are 5 different objects, starting from the cube, to be described, then a horse, the flowers and lastly, a thunderstorm. Users are asked to describe in details what do they imagine, and what kind of setting they imagine, also the relation between objects if there is any.
-- After answering and describing every object, user is offered to read about the interpretation of every object, or if not wanting to read at that moment, user can choose n to exit or start the test over.
+There are 5 different objects, starting from the cube, to be described, then a horse, then flowers and lastly, a thunderstorm. Users are asked to describe in details what do they imagine, and what kind of setting they imagine, position and the relation between objects if there is any.
+- After answering and describing every object, user is offered to read about the interpretation of every object. If not wanting to read at that moment, user can choose n to exit or start the test over entering y.
 
 ## User Stories 
 
@@ -24,15 +25,17 @@ There are 5 different objects, starting from the cube, to be described, then a h
 * I want the User to be able to write the description of objects
 * I want User to have the responses displayed after the user input
 * I want User to be notified when the empty space that he inputs is not supported and prompted with an appropriate message
-* I want the User to be given another chance to put information for description
+* I want the User to be given another chance to put information for description if nothing entered
+* I want the User to be able to stop the test from asking, and exit with a greeting
 * I want the User to have fun, get personal and have a positive experience
 
 ## Site Owner Goals
 
 * To entertain users by inspiring them to know themselves better
 * To offer user a display of answers to the questions
-* To be able to guide users and collect their answers, name
+* To be able to guide users and collect their answers and a name
 * To be able to display a personality test in a fun way to users
+* To inspire people to love themselves more by paying more attention to thoughts
 
 ## Flowchart
 
@@ -88,11 +91,24 @@ Interpretation - Thunderstorm
 
 ### Future features
 
-I would like this app to be able to generate the whole document with answers and interpretations for users so they could print and keep a hard copy if they like
+I would like this app to be able to generate the whole document with answers and interpretations together for users so they could print and keep a hard copy if they like
+
+## Application Model
+
+Pure Python is used to create this application. It is made for a user to interact by writing down user name, descriptions and navigate using keyboard, mostly y/n options. 
+The Flow of functions is relevant as the goal is for the user to control to start playing this test or exit the test.
+ASCII visual display is used in a print() with 'r' before triple quotes, as well as conditional, nested conditionals, a for loop, checking input by calling lower() for to be accepted any letter.
+At the name input, checked with a function isalpha()
 
 ## Testing
 
-The link to testing is [here](https://github.com/totalnoMartina/cube-discovery/blob/main/TESTING.md)
+I have manually tested this application by doing the following:
+- Passed the code through PEP8 linter and confirmed there is no issues
+- Given empty space as input, when characters are expected
+- Given wrong letter when specific letter is expected
+- Tested in my local terminal and the Code Institute Heroku terminal 
+
+The link to images and more details on all testing is [here](https://github.com/totalnoMartina/cube-discovery/blob/main/TESTING.md)
 
 ## Technologies 
 links and explain
