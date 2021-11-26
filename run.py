@@ -17,7 +17,7 @@ def display_users_descriptions():
                                                              |\_/|   |
                                                              |   |  /|
   .----------------------------------------------------------------' |
- /  .-.                                                              |
+ /  .-.                    THE CUBE                                  |
 |  /   \   The cube is your true self! If taller than cube, your     |
 | |\_.  |  confidence is high while a shorter one means that you     |
 |\|  | /|  could be shy. If the cube is moving, it could symbolize   |
