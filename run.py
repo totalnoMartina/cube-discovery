@@ -9,9 +9,6 @@ def display_users_descriptions():
 
     def cube_intepret():
         print(r'''
-
-
-
                                                                .---.
                                                               /  .  \
                                                              |\_/|   |
@@ -32,7 +29,6 @@ def display_users_descriptions():
 
     def ladder_interpret():
         print(r'''
-
                                                                .---.
                                                               /  .  \
                                                              |\_/|   |
@@ -93,7 +89,6 @@ def display_users_descriptions():
 
     def thunderstorm_interpret():
         print(r'''
-
                                                                .---.
                                                               /  .  \
                                                              |\_/|   |
@@ -139,6 +134,7 @@ def interpretation():
                 choice_answer()
             elif another_try != 'y':
                 print('Hope you enjoyed! Thanks for trying it out!')
+                print('Refreshing the screen lets you start over! Have fun!')
                 sys.exit()
         else:
             print('Wrong letter, try again!')
