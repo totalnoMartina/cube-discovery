@@ -36,37 +36,37 @@ There are 5 different objects, starting from cube, to be described by the user, 
 
 ## Flowchart
 
-![](static/readme-images/cube-flowchart.png)
+![](documentation/readme-images/cube-flowchart.png)
 
 ## Features
 
 ### Welcome Page
 
-![](static/readme-images/welcome.png)
+![](documentation/readme-images/welcome.png)
 
 ### About
 
-![](static/readme-images/about_test.png)
+![](documentation/readme-images/about_test.png)
 
 Entered test - First object - cube
 
-![](static/readme-images/started.png)
+![](documentation/readme-images/started.png)
 
 Second object - Ladder
 
-![](static/readme-images/ladder.png)
+![](documentation/readme-images/ladder.png)
 
 Third object - Horse
 
-![](static/readme-images/horse.png)
+![](documentation/readme-images/horse.png)
 
 Fourth object - Flowers
 
-![](static/readme-images/flowers.png)
+![](documentation/readme-images/flowers.png)
 
 Fifth object - Thunderstorm
 
-![](static/readme-images/thunder.png)
+![](documentation/readme-images/thunder.png)
 
 
 ### Future features
@@ -123,6 +123,8 @@ The code for prompt asking user for a name is found [here](https://python-prompt
 The code for clearing the screen before moving on to next object is [here]( https://www.geeksforgeeks.org/clear-screen-python/)
 
 The help to find a list of functions is found on this [link](https://www.quora.com/How-can-you-make-a-list-of-functions-in-Python)
+
+The frame for interpretations are found [here](https://textart4u.blogspot.com/2012/03/frame-borders-text-art-ascii-art.html)
 
 # Acknowledgements
 

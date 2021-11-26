@@ -9,6 +9,9 @@ def display_users_descriptions():
 
     def cube_intepret():
         print(r'''
+
+
+
                                                                .---.
                                                               /  .  \
                                                              |\_/|   |
@@ -19,7 +22,7 @@ def display_users_descriptions():
 | |\_.  |  confidence is high while a shorter one means that you     |
 |\|  | /|  could be shy. If the cube is moving, it could symbolize   |
 | `---' |  an open-minded person while a still sitting cube is more  |
-|       |  logical and businesslike, a cube that is dug into the     | 
+|       |  logical and businesslike, a cube that is dug into the     |
 |       |  sand means you are a planner. A solid cube means you know |
 |       |  who you are, while a hollow may mean that you are busy   /
 \       |  discovering your true self.                             /
@@ -59,8 +62,8 @@ def display_users_descriptions():
 |  /   \   The horse represents your partner. If a horse is closely  |
 | |\_.  |  related to the cube, means you strive in close and warm   |
 |\|  | /|  relationships. And while brown sturdy horse can mean you  |
-| `---' |  want a reliable and stabile partner, a shiny, well-kept   |     
-|       |  horse means that you want a partner that will be groomed  | 
+| `---' |  want a reliable and stabile partner, a shiny, well-kept   |
+|       |  horse means that you want a partner that will be groomed  |
 |       |  and approved by others. A horse moving towards the cube   |
 |       |  would signify a new relationship, while if horse goes     |
 \       |  away from the cube, symbolizes insecurities.             /
@@ -80,10 +83,10 @@ def display_users_descriptions():
 | |\_.  | created and are taking care of. If the flowers are close to|
 |\|  | /| the cube, it means you have deep connection with your loved|
 | `---' | ones. A vibrant blossoming flowers would signify a strong  |
-|       | and healthy relationship, while too many flowers might be  | 
+|       | and healthy relationship, while too many flowers might be  |
 |       | showing overwhelment with concerns around your family/kids |
 |       | Wilting flowers could represent a relationship that is     |
-\       | broken or lost.                                           /                                              
+\       | broken or lost.                                           /
  \     /----------------------------------------------------------''
   `---'
     ''')
@@ -101,15 +104,16 @@ def display_users_descriptions():
 | |\_.  |  life and how you look at them. A strong storm can mean    |
 |\|  | /|  that the stress really gets to you, and it mightbe hard   |
 | `---' |  to bounce back. A passing storm far away means stress     |
-|       |  gets to you but it's manageable, while if the storm is    | 
+|       |  gets to you but it's manageable, while if the storm is    |
 |       |  affecting the objects, you might be overwhelmed by the    |
 |       |  events in your life. If the storm passes by and there is /
 \       |  no change, means you have confidence in solving issues ./
  \     /---------------------------------------------------------''
   `---'
   ''')
+
     list_of_functions = [cube_intepret, ladder_interpret,
-    horse_interpret, flowers_interpret, thunderstorm_interpret]
+            horse_interpret, flowers_interpret, thunderstorm_interpret]
     for i in range(len(list_of_functions)):
         list_of_functions[i]()
         input('Press enter to proceed')
@@ -140,7 +144,7 @@ def interpretation():
             print('Wrong letter, try again!')
             interpretation()
     else:
-        print('You did not enter recognized character')
+        print('You did not enter recognized character. Try again')
         interpretation()
         sys.exit()
 
@@ -180,7 +184,7 @@ def thunder():
         print('Ooops, nothing is written. Please describe the shape')
         thunder()
     else:
-        print(f'You wrote {user_answer_fifth}')
+        print(f'You wrote "{user_answer_fifth}" \n')
         print('That was the last object, your interpretation is ready!')
         interpretation()
 
@@ -191,6 +195,8 @@ def flowers():
     print('It looks like flowers! Where are they?')
     print('How many do you imagine?')
     print(r"""
+
+
         .'`'.'`'.
     .''.`.  :  .`.''.
     '.    '._.'    .'
@@ -210,7 +216,7 @@ def flowers():
         print('Ooops, nothing is written. Please describe in details')
         flowers()
     else:
-        print(f'You wrote: "{user_answer_fourth}"')
+        print(f'You wrote: "{user_answer_fourth}" \n')
         print('There is something else appearing here...')
         thunder()
 
@@ -222,12 +228,14 @@ def horse():
     print('Looks like a horse!')
     print('Imagine his figure, movement, relation to others')
     print(r'''
-  >>\.
- /_  )`.
-/  _)`^)`.   _.---. _
-(_,' \  `^-)""      `.\
-      |              | \
-        \              / |
+
+
+    >>\.
+   /_  )`.
+  /  _)`^)`.   _.---. _
+ (_,' \  `^-)""      `.\
+       |               | \
+         \              / |
         / \  /.___.'\  (\ (_
        < ,"||      \ |`. \`-'
          \\ ()      )|  )/
@@ -255,6 +263,7 @@ def ladder():
     print('From out of nowhere, a ladder shows up...')
     print('What size, position, material of ladder do you imagine?')
     print(r"""
+
             ╬═╬
             ╬═╬
             ╬═╬
@@ -262,13 +271,14 @@ def ladder():
             ╬═╬
             ╬═╬
             ╬═╬
+
     """)
     print('Is there anything related between the cube and ladder?')
     print('Use as many words to describe many details and hit Enter')
     user_answer_second = input('Imagine, write it down...\n')
 
     if user_answer_second:
-        print(f'You wrote: "{user_answer_second}"')
+        print(f'You wrote: "{user_answer_second}" \n')
         print('Okay, now... There is something else appearing in here...')
         horse()
     elif user_answer_second == '':
@@ -285,6 +295,7 @@ def cube():
         Nothing around you... The objects start to appear...
         There is the first object! It seems to be a cube''')
     print(r"""
+
          ________
         /\       \
        /  \       \
@@ -292,6 +303,7 @@ def cube():
       \    /       /
        \  /       /
         \/_______/
+
         """)
     print('Describe the shape, position or movement, volume...\n')
     print('Use as many words to describe the details and press Enter')
@@ -301,7 +313,7 @@ def cube():
         print('No description, try again')
         cube()
     elif user_answer_first:
-        print(f'You wrote: "{user_answer_first}"')
+        print(f'You wrote: "{user_answer_first}" \n')
         print('Okay, now... There is something else appearing in here...')
         ladder()
 
