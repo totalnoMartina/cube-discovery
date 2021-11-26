@@ -58,11 +58,11 @@ User is able to start again at the end of this test
 
 Double function cube showed up as a bug during creating this test, dicovered after testing that it just stayed uncommented like a few other functions, and got resolved after testing.
 
-I realized that isalpha() as a function does not suit in taking input without spaces, and this concept so it took some time to accept and apply simple solution instead. I mostly focused on empty space being entered and validated with appropriate message for the user at all occasions.
+I realized that isalpha() as a function does not suit in taking input without spaces, and this concept, so it took some time to accept and apply another simple solution instead. I mostly focused on empty space being entered and validated with appropriate message for the user at all occasions.
 
 ### Unresolved bugs
 
-No bugs remaining
+This application is created using Chromebook based on Chromium (Linux) and sometimes it would freeze, not sure is it because of machine, or the app, or the fact that the changes are recorded by heroku and that could make it freeze. Refreshing resolves this issue.
 
 ### Validation testing
 
