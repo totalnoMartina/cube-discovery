@@ -173,6 +173,12 @@ The italics code were found in [this link](https://stackoverflow.com/questions/1
 
 The code for prompt asking user for a name is found [here](https://python-prompt-toolkit.readthedocs.io/en/stable/pages/asking_for_input.html)
 
+The ladder have special characters and were found [here](https://textart4u.blogspot.com/2012/03/ladder-text-art-ascii-art.html)
+
+Most of the art, like the horse, comes from this webpage [here](https://asciiart.cc/view/12452)
+
+The ascii art for the frame of the 'about' text is found [here](https://www.asciiart.eu/art-and-design/borders)
+
 The code for clearing the screen before moving on to next object is [here]( https://www.geeksforgeeks.org/clear-screen-python/)
 
 The help to find a list of functions is found on this [link](https://www.quora.com/How-can-you-make-a-list-of-functions-in-Python)
@@ -182,4 +188,4 @@ The frame for interpretations are found [here](https://textart4u.blogspot.com/20
 # Acknowledgements
 
 Code Institute mentor, Tim Nelson is huge help and guidance, helping me and directing my ideas toward real goal to be accomplished through creating this app. I was unsure on how to start and I had perfect guidance.
-My close friends who tested the app a few times, shared insights and concerns that help me make this better for the UX.
+My friends tested the app a few times, Slack channel for #peer-review-code also helped with feedbacks.
