@@ -187,7 +187,7 @@ def thunder():
         thunder()
     else:
         clear()
-        print(f'You wrote "{user_answer_fifth}" \n')
+        print(f'About the thunder, you wrote "{user_answer_fifth}" \n')
         print('That was the last object, your interpretation is ready!')
         interpretation()
 
@@ -220,7 +220,7 @@ def flowers():
         flowers()
     else:
         clear()
-        print(f'You wrote: "{user_answer_fourth}"\n')
+        print(f'About the flowers, you wrote: "{user_answer_fourth}"\n')
         print('There is something else appearing here...')
         thunder()
 
@@ -256,7 +256,7 @@ def horse():
         horse()
     else:
         clear()
-        print(f'You wrote: "{user_answer_third}"\n')
+        print(f'About the horse, you wrote: "{user_answer_third}"\n')
         print('There seems to be something else appearing...!')
         flowers()
 
@@ -278,7 +278,7 @@ def ladder():
 
     """)
     print('Is there anything related between the cube and ladder?')
-    print('Use as many words to describe many details and hit Enter')
+    print('Use as many words to describe many details and press Enter')
     user_answer_second = input('Imagine, write it down...\n')
 
     if user_answer_second == '':
@@ -287,7 +287,7 @@ def ladder():
         ladder()
     elif user_answer_second:
         clear()
-        print(f'You wrote: "{user_answer_second}" \n')
+        print(f'About the ladder, you wrote: "{user_answer_second}" \n')
         print('Okay, now... There is something else appearing in here...')
         horse()
 
@@ -319,7 +319,7 @@ There is the first object! Looks like a cube''')
         cube()
     elif user_answer_first:
         clear()
-        print(f'You wrote: "{user_answer_first}" \n')
+        print(f'About the cube, you wrote: "{user_answer_first}" \n')
         print('Okay, now... There is something else appearing in here...')
         ladder()
 
@@ -360,12 +360,12 @@ def welcome_choice_user():
     print('''   \033[1mWelcome to the Japanese Cube test!\033[0m\n
     Meanwhile in the middle of the dessert
     . . . .___________________________________________. . . .''')
-    name = input('Nice to have you here, your name, please:\n')
+    name = input('Nice to have you here, your name in one word, please:\n')
     if not name.isalpha() or name == '':
         print('You entered invalid value, please try again')
         welcome_choice_user()
     else:
-        print('This is a game where all answers are right.')
+        print('This is a test where all answers are right.')
         print(f'Use your imagination, ready {name}?')
         print('Take some time for describing every object...\n')
         choice_answer()
