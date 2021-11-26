@@ -1,4 +1,5 @@
 """ Functions to control flow of the japanese cube test """
+
 import sys
 import os
 from os import system, name
@@ -191,6 +192,7 @@ def thunder():
     print('How is it related, is it temporary or staying?')
     print('Use as many words as you like to describe and press Enter')
     user_answer_fifth = input('Imagine, write it down\n')
+    # Check for empty space as user input
     if user_answer_fifth == '':
         clear()
         print('Ooops, nothing is written. Please describe the shape')
@@ -224,6 +226,7 @@ def flowers():
     print('Take a moment to imagine, describe...')
     print('Use as many words as you like to describe, then press Enter')
     user_answer_fourth = input('Write down the details... \n')
+    # Check empty space for user input
     if user_answer_fourth == '':
         clear()
         print('Ooops, nothing is written. Please describe in details')
@@ -259,7 +262,7 @@ def horse():
     print('Is it related to the objects in any way? What way?')
     user_answer_third = input('Write down what you imagine...\n')
     print('Use as many words to describe many details and hit Enter')
-
+    # Check empty space for user input
     if user_answer_third == '':
         clear()
         print('Ooops, nothing is written. Please describe the shape')
@@ -290,7 +293,7 @@ def ladder():
     print('Is there anything related between the cube and ladder?')
     print('Use as many words to describe many details and press Enter')
     user_answer_second = input('Imagine, write it down...\n')
-
+    # Check empty space for user input
     if user_answer_second == '':
         clear()
         print('Ooops, nothing is written. Please describe the shape')
@@ -323,6 +326,7 @@ There is the first object! Looks like a cube''')
     print('Describe the shape, position or movement, volume...\n')
     print('Use as many words to describe the details and press Enter')
     user_answer_first = input('Take a moment to imagine, write it down\n')
+    # Check empty space as user input
     if user_answer_first == '':
         clear()
         print('No description, try again')
@@ -336,7 +340,9 @@ There is the first object! Looks like a cube''')
 
 def choice_answer():
     """ Redirect the user input with the answer """
+
     choice = input('\x1B[3mChoose a(start), b(about), q(quit)\x1B[0m\n')
+    # Check user input for specific letters
     if choice.lower() == 'a':
         clear()
         cube()
@@ -371,6 +377,7 @@ def welcome_choice_user():
     Meanwhile in the middle of the dessert
     . . . .___________________________________________. . . .''')
     name = input('Nice to have you here, your name in one word, please:\n')
+    # Check empty or special characters for users name
     if not name.isalpha() or name == '':
         print('You entered invalid value, please try again')
         welcome_choice_user()
@@ -378,6 +385,7 @@ def welcome_choice_user():
         print('This is a test where all answers are right.')
         print(f'Use your imagination, ready {name}?')
         print('Take some time for describing every object...\n')
+        # Start with test questions
         choice_answer()
 
 
@@ -404,4 +412,5 @@ def information_display():
            \_/____________________________/.''')
 
 
+# Calling first function to start the game
 welcome_choice_user()
