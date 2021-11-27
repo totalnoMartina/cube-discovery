@@ -354,7 +354,7 @@ def choice_answer():
             cube()
         elif ask.lower() == 'n':
             clear()
-            print('You chose n, thanks for checking this out!')
+            print('You chose n, thanks for checking this out! Bye!')
             sys.exit()
         else:
             clear()
