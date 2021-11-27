@@ -17,7 +17,7 @@ Steps are as follows:
 - After user enters the name, users are greeted back and encouraged to be creative and take time to describe objects. As the name contains a word 'test', I wanted to assure the users mentioning that all answers are right, so they feel free to describe in greater details.
 - Choosing 'a' to start, 'b' to read about, and 'q' to quit. If chosen 'q', users exit the application with appropriate 'Goodbye' message, if chosen to see informations about the test, users can read a bit more, and after reading about the application, users are asked to try the test or not; if not, the users exit the test with appropriate message displayed. If chosen to try it, user starts with first object, the cube.
 - Describing the objects - 5 different objects, starting from the cube, to be described, then a horse, then the flowers and lastly, a thunderstorm. Users are asked to describe in detail what do they imagine, what kind of setting they imagine, position and the relation between objects if there is any.
-- After describing every object, user is offered to read about the interpretation of every object. If not wanting to read at that moment, user can choose 'n' to exit or start the test again by entering 'y'.
+- After describing every object, user is offered to read about the interpretation of every object. If not wanting to read at that moment, user can choose 'n' to exit or read about every object and what does it represent, also after reading interpretations, user can start the test again by entering 'y' or exit by just pressing 'Enter'.
 
 ## User Stories 
 
@@ -33,8 +33,8 @@ Steps are as follows:
 ## Site Owner Goals
 
 * To entertain users by inspiring them to know themselves better
-* To offer user a display of answers to the questions
-* To be able to guide users and collect their answers and a name
+* To offer user a display of their description
+* To be able to guide users and collect their descriptions and a name
 * To be able to display a personality test in a fun way to users
 * To inspire people to love themselves more by paying more attention to their thoughts
 
@@ -54,7 +54,7 @@ Display of the starting idea flowchart for this application
 
 Choosing option 'b' it displays some information about this test, to sparkle imagination
 
-![](documentation/readme-images/about_test.png)
+![](documentation/readme-images/about-symbols-test.png)
 
 Entered test - First object - user is asked to describe
 
@@ -62,19 +62,19 @@ Entered test - First object - user is asked to describe
 
 Second object - Ladder - user is asked to describe
 
-![](documentation/readme-images/ladder.png)
+![](documentation/readme-images/final-ladder.png)
 
 Third object - Horse - user is asked to describe
 
-![](documentation/readme-images/horse.png)
+![](documentation/readme-images/final-horse.png)
 
 Fourth object - Flowers - user is asked to describe
 
-![](documentation/readme-images/flowers.png)
+![](documentation/readme-images/final-flowers.png)
 
 Fifth object - Thunderstorm - user is asked to describe
 
-![](documentation/readme-images/thunder.png)
+![](documentation/readme-images/final-thunder.png)
 
 After writing out descriptions, user can see the interpretations of their objects one by one, navigating by pressing 'Enter'
 Interpretation - Cube
@@ -98,19 +98,24 @@ Interpretation - Thunderstorm
 
 ![](documentation/readme-images/thunder-interpret.png)
 
+Goodbye message
+
+![](documentation/readme-images/goodbye-message.png)
+
+
 ### Future features
 
-I was trying using global variables for storing user_answer_first/second/third/fourth/fifth and placing them inside another function using conditional `if/else`. Then, declaring certain input as `True` and call the belonging variable to print it out within a formatted text containing that variable. However, it kept returning 'user_answer_first - variable not defined',so I tried putting it in snake case and/or capital case and/or mentioning keyword `global` in a couple of places and combinations. It kept sticking to the error. In future it will be working perfectly.
+I was trying using global variables for storing user_answer_first/second/third/fourth/fifth and placing them inside another function using conditional `if/else` for checking existence. Then, declaring certain input as `True` and call the belonging variable to print it out within a formatted text containing that variable. However, it kept returning 'user_answer_first - variable not defined',so I tried putting it in snake case and/or capital case and/or mentioning keyword `global` in a couple of places and combinations. It kept displaying the error so at the moment, this was put aside as a future feature.
 
-I would also like this app to be able to generate the whole separate document with answers and interpretations together for users so they could print it and keep a hard copy if they would like. When doing this test periodically users can compare how they evolve according to their answers in different occasions. 
+I would also like this app to be able to generate the whole separate document with answers and interpretations together for users so they could print it and keep a hard copy if they would like. When doing this test periodically users can compare how they evolve according to their answers in different stages of life. 
 More work on graphic display for the future features, also an idea.
 
 ## Application Model
 
 Pure Python and python libraries as `os` and `sys` are used to create this application. It is made for a user to interact by writing down user name, descriptions and navigate using keyboard, mostly 'y/n' options. 
-The Flow of functions is relevant as the goal is for the user to control to start playing this test or exit the test.
-ASCII visual display is used in a print() with `r`(raw) before triple quotes, as well as conditional, nested conditionals, a for loop, checking input by calling `lower()` for to be accepted any letter, regardless of capitalization.
-At the name input, it is checked with a function isalpha(), accepting one word only. It is created to be entertaining and practical for users to use.
+The flow of functions is relevant as the goal is for the user to control to start playing this test or exit the test.
+ASCII visual display is used in a print() function with `r`(raw) before triple quotes, as well as conditionals, nested conditionals, a `for` loop, checking input by calling `lower()` for to be accepted any letter, regardless of capitalization.
+At the name input, it is checked with a function `isalpha()`, accepting one word only. It is created to be entertaining and practical for users to use.
 
 ## Testing
 

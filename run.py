@@ -307,7 +307,7 @@ def ladder():
 def cube():
     """Function to start with first object"""
 
-    print('\x1B[3mYou have chosen a to start the game!\x1B[0m \n')
+    print('\x1B[3mYou have chosen to start the game!\x1B[0m \n')
     print('''Imagine now... You find yourself in the dessert...
 Nothing around you... The objects start to appear...
 There is the first object! Looks like a cube''')
