@@ -6,7 +6,7 @@ This Python application is a personality test deriving from Japanese culture, an
 
 The image of the Welcome page
 
-![](documentation/readme-images/welcome.png)
+![](documentation/readme-images/final-welcome.png)
 
 ## Instructions
 
@@ -48,7 +48,7 @@ Display of the starting idea flowchart for this application
 
 ### Welcome Page
 
-![](documentation/readme-images/welcome.png)
+![](documentation/readme-images/final-welcome.png)
 
 ### About
 
@@ -58,7 +58,7 @@ Choosing option 'b' it displays some information about this test, to sparkle ima
 
 Entered test - First object - user is asked to describe
 
-![](documentation/readme-images/cube-start.png)
+![](documentation/readme-images/final-cube.png)
 
 Second object - Ladder - user is asked to describe
 
