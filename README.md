@@ -104,9 +104,9 @@ I would like this app to be able to generate the whole document with answers and
 
 ## Application Model
 
-Pure Python and python libraries as 'os' and 'sys' are used to create this application. It is made for a user to interact by writing down user name, descriptions and navigate using keyboard, mostly 'y/n' options. 
+Pure Python and python libraries as `os` and `sys` are used to create this application. It is made for a user to interact by writing down user name, descriptions and navigate using keyboard, mostly 'y/n' options. 
 The Flow of functions is relevant as the goal is for the user to control to start playing this test or exit the test.
-ASCII visual display is used in a print() with 'r'(raw) before triple quotes, as well as conditional, nested conditionals, a for loop, checking input by calling lower() for to be accepted any letter, regardless of capitalization.
+ASCII visual display is used in a print() with `r`(raw) before triple quotes, as well as conditional, nested conditionals, a for loop, checking input by calling `lower()` for to be accepted any letter, regardless of capitalization.
 At the name input, it is checked with a function isalpha(), accepting one word only. It is created to be entertaining and practical for users to use.
 
 ## Testing
@@ -122,8 +122,8 @@ The link to images and more details on all testing is [here](https://github.com/
 
 ## Technologies 
 
-* [GitHub](https://github.com/) - used for version control
-* [Gitpod](https://github.com/) - cloud-based IDE and the steps for deployment are below in the 'Deployment' section
+* [GitHub](https://github.com/) - used for secure storage of code online
+* [Git](https://git-scm.com/) - used for version control
 * [Python](https://www.python.org/) - Python is used for creating this application
 
 ## Validator - PEP8
