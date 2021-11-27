@@ -126,10 +126,6 @@ The link to images and more details on all testing is [here](https://github.com/
 * [Git](https://git-scm.com/) - used for version control
 * [Python](https://www.python.org/) - Python is used for creating this application
 
-## Validator - PEP8
-
-Validating through PEP8 online website, and no issues were presented
-![](documentation/readme-images/thunder-interpret.png)
 
 ## Deployment
 

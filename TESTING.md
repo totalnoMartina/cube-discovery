@@ -66,11 +66,13 @@ At the welcome, the input that takes the name of the user could be more detailed
 
 This application is created using Chromebook based on Chromium (Linux) and sometimes it would freeze, not sure is it because of machine, or the app, or the fact that the changes are recorded by Heroku and that could make it freeze. Refreshing resolves this issue.
 
-### Validation testing
+## Validator - PEP8
 
-No errors were returned from PEP8online.com
+Validating through PEP8 online website, and no issues were presented
+![](documentation/readme-images/pep8-alright-validation.png)
 
-#### Validation testing Notes
+
+### Validation testing Notes
 
 Please Note - accepting all characters in user_answer_inputs ('user_anwer_first/second/third/fourth/fifth') is planned for this app.
 Details below:
