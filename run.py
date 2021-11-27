@@ -142,6 +142,7 @@ def interpretation():
             print('RUN PROGRAM for starting over! Have fun!')
             sys.exit()
         elif ask_explain.lower() == 'y':
+            clear()
             display_users_descriptions()
             another_try = input('Press y to start again or Enter to exit!')
             if another_try.lower() == 'y':
@@ -242,7 +243,7 @@ def horse():
     """Function to call third object"""
 
     print('Looks like a horse!')
-    print('Imagine his figure, movement, relation to others')
+    print('Imagine its figure, movement, relation to others')
     print(r'''
 
 
@@ -382,6 +383,7 @@ def welcome_choice_user():
         print('You entered invalid value, please try again')
         welcome_choice_user()
     else:
+        clear()
         print('This is a test where all answers are right.')
         print(f'Use your imagination, ready {name}?')
         print('Take some time for describing every object...\n')
