@@ -100,7 +100,10 @@ Interpretation - Thunderstorm
 
 ### Future features
 
-I would like this app to be able to generate the whole document with answers and interpretations together for users so they could print and keep a hard copy if they would like. More work on graphic display for the future features, also an idea.
+I was trying using global variables for storing user_answer_first/second/third/fourth/fifth and placing them inside another function using conditional `if/else`. Then, declaring certain input as `True` and call the belonging variable to print it out within a formatted text containing that variable. However, it kept returning 'user_answer_first - variable not defined',so I tried putting it in snake case and/or capital case and/or mentioning keyword `global` in a couple of places and combinations. It kept sticking to the error. In future it will be working perfectly.
+
+I would also like this app to be able to generate the whole separate document with answers and interpretations together for users so they could print it and keep a hard copy if they would like. When doing this test periodically users can compare how they evolve according to their answers in different occasions. 
+More work on graphic display for the future features, also an idea.
 
 ## Application Model
 
@@ -125,7 +128,6 @@ The link to images and more details on all testing is [here](https://github.com/
 * [GitHub](https://github.com/) - used for secure storage of code online
 * [Git](https://git-scm.com/) - used for version control
 * [Python](https://www.python.org/) - Python is used for creating this application
-
 
 ## Deployment
 
