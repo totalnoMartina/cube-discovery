@@ -106,54 +106,13 @@ The testing of app in the start was done by creating a function called all_funcs
 * I want User to be notified when the empty space that he inputs is not supported and prompted with an appropriate message
 ![](documentation/readme-images/empty-input-starting-test.png)
 
-* I want the User to be given another chance to put information for description if nothing entered
+* I want the User to be given another chance to put information for description if nothing was entered
 ![](documentation/readme-images/empty-input-thunderstorm-test.png)
 
 * I want the User to be able to stop the test from asking, and exit with a greeting
-
+![](documentation/readme-images/goodbye-message.png)
 
 * I want the User to have fun, get personal and have a positive experience
-
-
-Second object - Ladder
-
-![](documentation/readme-images/ladder.png)
-
-Third object - Horse
-
-![](documentation/readme-images/horse.png)
-
-Fourth object - Flowers
-
-![](documentation/readme-images/flowers.png)
-
-Fifth object - Thunderstorm
-
-![](documentation/readme-images/thunder.png)
-
-Interpretation - Cube
-
-![](documentation/readme-images/cube-interpret.png)
-
-Interpretation - Ladder
-
-![](documentation/readme-images/ladder-interpret.png)
-
-Interpretation - Horse
-
-![](documentation/readme-images/horse-interpret.png)
-
-Interpretation - Flowers
-
-![](documentation/readme-images/flowers-interpret.png)
-
-Interpretation - Thunderstorm
-
-![](documentation/readme-images/thunder-interpret.png)
-
-Ending of the Test
-
-![](documentation/readme-images/ending-goodbye-test.png)
 
 ## Further Testing
 

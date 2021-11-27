@@ -382,6 +382,7 @@ def welcome_choice_user():
         print('You entered invalid value, please try again')
         welcome_choice_user()
     else:
+        clear()
         print('This is a test where all answers are right.')
         print(f'Use your imagination, ready {name}?')
         print('Take some time for describing every object...\n')
