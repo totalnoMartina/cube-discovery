@@ -60,7 +60,7 @@ Double function cube showed up as a bug during creating this test, and dicovered
 
 Trying using isalpha() as a function does not suit in taking input without spaces, and this concept, so it took some time to accept and apply another simple solution instead. I mostly focused on empty space being entered and validated with appropriate message for the user at all occasions.
 
-At the welcome, the input that takes the name of the user could be more detailed in explanation, and stating that user should write in one word. I wanted only normal letters and one word to be accepted and obvious to user.
+At the welcome, the input that takes the name of the user could be more detailed in explanation(example: multiple names), and I wanted to note that user should write in one word. I wanted only normal letters and one word to be accepted and obvious to the user.
 
 ### Unresolved bugs
 
