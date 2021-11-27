@@ -231,9 +231,9 @@ def flowers():
         clear()
         print('Ooops, nothing is written. Please describe in details')
         flowers()
-    else:
+    elif user_answer_fourth:
         clear()
-        print(f'About the flowers, you wrote: "{user_answer_fourth}"\n')
+        print(f'About the flowers, you wrote: "{user_answer_fourth}" \n')
         print('There is something else appearing here...')
         thunder()
 
