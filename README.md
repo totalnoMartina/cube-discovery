@@ -129,13 +129,6 @@ The link to images and more details on all testing is [here](https://github.com/
 
 ## Deployment
 
-### GitHub
-
-- If not already a user on GitHub, create an account on [GitHub](https://github.com/)
-- In the [GitHub repository](https://github.com/totalnoMartina/cube-discovery), navigate to the Settings tab.
-- From the Source section drop-down menu, select the `Main` Branch (alt: `Master`).
-- Once the `Main` branch has been selected, the page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.
-
 ### Local Deployment
 
 In order to make a local copy of this project, you can clone it using the following link in an IDE terminal of your choice:
@@ -151,7 +144,7 @@ Alternatively, if using Gitpod, you can click below to create your own workspace
 This project was deployed using Code Institute's Python mock terminal for Heroku
 
 The steps are as follows:
-- If not having a 'Heroku' account, create one by clicking on 'Sign up' and follow instructions until you confirm with your email that the account is created
+- If not having a 'Heroku' account, create one by clicking [here](https://www.heroku.com) and follow instructions until you confirm with your email that the account is created
 - Create a new app, by clicking 'New' in the top right section of the welcome page
 - Choose a name for your new application and select your region 
 - Go to 'Deploy' tab and select 'GitHub' as deployment method

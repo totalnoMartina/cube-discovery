@@ -151,7 +151,7 @@ def interpretation():
                 choice_answer()
             elif another_try != 'y':
                 print('Hope you enjoyed! Thanks for trying it out!')
-                print('RUN PROGRAM to start over! Have fun!')
+                print('RUN PROGRAM to start over! Hope you had fun! Goodbye!')
                 sys.exit()
         else:
             print('Wrong letter, try again!')

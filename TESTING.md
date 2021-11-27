@@ -85,32 +85,35 @@ While infinite loops are caused, that was handled with an exiting function, and 
 
 For iterating from one object to another, I had an idea to use separate function called next_or_restart() which was used before the functions were ready to connect to each other. As the app evolved, the function is no longer needed and therefore, deleted.
 At the bottom of this [image](https://github.com/totalnoMartina/cube-discovery/blob/main/documentation/readme-images/ladder.png) you can see user being asked to go 'Next or Restart'.
+![](documentation/readme-images/ladder.png)
 
 The testing of app in the start was done by creating a function called all_funcs() that had smaller functions for me to test and manipulate. It was deleted after the app is ready, as it was no longer needed.
 
 ## User Stories 
 
-* I want the User to easily understand and navigate through the test
-* I want the User to be able to start/quit the app and get information about the game 
-* I want the User to be able to write the description of objects
-* I want User to have the responses displayed after the user input
-* I want User to be notified when the empty space that he inputs is not supported and prompted with an appropriate message
-* I want the User to be given another chance to put information for description if nothing entered
-* I want the User to be able to stop the test from asking, and exit with a greeting
-* I want the User to have fun, get personal and have a positive experience
-
-## Features
-### Welcome Page
-
+* I want the User to be welcomed and asked for a name
 ![](documentation/readme-images/welcome.png)
 
-### About
-
+* I want the User to be able to start/quit the app and get information about the game
 ![](documentation/readme-images/about_test.png)
 
-Entered test - First object - Cube
-
+* I want the User to be able to write the description of objects
 ![](documentation/readme-images/cube-start.png)
+
+* I want User to have the responses displayed after the user input
+![](documentation/readme-images/about-cube.png)
+
+* I want User to be notified when the empty space that he inputs is not supported and prompted with an appropriate message
+![](documentation/readme-images/empty-input-starting-test.png)
+
+* I want the User to be given another chance to put information for description if nothing entered
+![](documentation/readme-images/empty-input-thunderstorm-test.png)
+
+* I want the User to be able to stop the test from asking, and exit with a greeting
+
+
+* I want the User to have fun, get personal and have a positive experience
+
 
 Second object - Ladder
 
